@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+@import 'reset.scss';
+// font
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600;700&display=swap');
+
+// header
+
+#header {
+	position: absolute;
+	width: 100%;
+	padding: 2vw 6vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.log {
+		font-size: 24px;
+		i {
+			margin-right: 16px;
+			background-color: #e2e2d3;
+			padding: 8px;
+			border-radius: 4px;
+		}
+		span {
+			font: 600 28px/1 "alice";
+			color: #e2e2d3;
+		}
+	}
+	.header-menu {
+		display: flex;
+		li {
+			margin-left: 24px;
+			a {
+				font: 18px/1 'alice';
+				color: #fff;
+                transition: all 0.3s;
+                &:hover{
+                    color: #e2e2d3;
+                }
+			}
+		}
+	}
+}
