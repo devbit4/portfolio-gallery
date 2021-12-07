@@ -237,13 +237,19 @@ section {
     }
 
 }
-// works
-#works{
-    padding: 0 12vw;
-    .work{
+// events
+#events{
+    padding: 8vh 12vw;
+    h1 {
+        font: bold 60px/1 'alice';
+        margin-bottom: 60px;
+        position: absolute;
+        left: 50%;
+    }
+    .event{
         display: flex;
         align-items: center;
-        .work-pic{
+        .event-pic{
             flex-basis: 50%;
             text-align: center;
             img{
@@ -251,11 +257,44 @@ section {
                 height: 400px;
             }
         }
-        .work-description{
+        .event-description{
             flex-basis: 50%;
-            h2{
-                font-size: ;
+            padding-right: 40px;
+            h2 {
+
+                font: 28px 'alice';
+                margin: 40px 0;
+                color: #a6a695;
             }
+            p {
+                font: 16px/1.5 'arial';
+                margin-bottom: 80px;
+                color: #aaa5bc;
+            }
+            span {
+                font: bold 16px/1 'alice';
+                margin-left: 30px;
+                position: relative;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    border-bottom: 2px solid black;
+                    position: absolute;
+                    top: 10px;
+                    left: -30px;
+                }
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .reverse{
+        flex-direction: row-reverse;
+        .event-description{
+            padding-right: 0;
+            padding-left: 40px;
         }
     }
 }
