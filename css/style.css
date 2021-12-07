@@ -1,182 +1,69 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "...    font-size: ": expected expression (e.g. 1px, bold), was ";"
+        on line 257 of scss/style.scss
 
-ul,
-ol,
-li {
-  list-style: none; }
+252:             }
+253:         }
+254:         .work-description{
+255:             flex-basis: 50%;
+256:             h2{
+257:                 font-size: ;
+258:             }
+259:         }
+260:     }
+261: }
 
-a {
-  text-decoration: none; }
-
-section {
-  background: url(../img/bg.png) no-repeat center/cover; }
-
-#header {
-  position: absolute;
-  width: 100%;
-  padding: 2vw 12vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2; }
-  #header .logo {
-    font-size: 24px; }
-    #header .logo i {
-      margin-right: 10px;
-      background-color: #e2e2d3;
-      padding: 6px;
-      border-radius: 4px; }
-    #header .logo span {
-      font: 600 28px/1 'alice';
-      color: #e2e2d3; }
-  #header .header-menu {
-    display: flex; }
-    #header .header-menu li {
-      margin-left: 24px; }
-      #header .header-menu li a {
-        font: 16px/1 'alice';
-        color: #fff;
-        transition: all 0.3s; }
-        #header .header-menu li a:hover {
-          color: #e2e2d3; }
-
-#home .background {
-  width: 100%;
-  height: 90vh; }
-  #home .background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  #home .background .title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff; }
-    #home .background .title h1 {
-      font: bold 80px 'alice';
-      margin-bottom: 20px; }
-    #home .background .title span {
-      position: relative;
-      left: 60px; }
-      #home .background .title span:before {
-        content: '';
-        display: block;
-        width: 30px;
-        border: 1px solid #fff;
-        position: absolute;
-        left: -40px;
-        top: 10px; }
-      #home .background .title span a {
-        font: 18px 'alice';
-        color: #fff;
-        transition: all 0.3s; }
-        #home .background .title span a:hover {
-          color: #e2e2d3; }
-#home .info {
-  background-color: #e2e2d3; }
-  #home .info .inner {
-    padding: 0 12vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    #home .info .inner h2 {
-      font: bold 28px/1 'alice'; }
-    #home .info .inner .notice .alarm {
-      font: 16px/1 'arial'; }
-    #home .info .inner .notice .more {
-      font: bold 16px/1 'alice';
-      margin-left: 40px;
-      position: relative; }
-      #home .info .inner .notice .more::before {
-        content: '';
-        display: block;
-        width: 20px;
-        border-bottom: 2px solid black;
-        position: absolute;
-        top: 10px;
-        left: -30px; }
-      #home .info .inner .notice .more a {
-        color: #000; }
-
-#about {
-  padding: 8vh 12vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between; }
-  #about .intro {
-    flex-basis: 30%; }
-    #about .intro h1 {
-      font: bold 60px/1 'alice';
-      margin: 80px 0; }
-    #about .intro h2 {
-      font: 28px 'alice';
-      margin-bottom: 40px;
-      color: #a6a695; }
-    #about .intro p {
-      font: 16px/1.5 'arial';
-      margin-bottom: 80px;
-      color: #aaa5bc; }
-    #about .intro span {
-      font: bold 16px/1 'alice';
-      margin-left: 30px;
-      position: relative; }
-      #about .intro span::before {
-        content: '';
-        display: block;
-        width: 20px;
-        border-bottom: 2px solid black;
-        position: absolute;
-        top: 10px;
-        left: -30px; }
-      #about .intro span a {
-        color: #000; }
-  #about .place-pics {
-    flex-basis: 70%;
-    padding: 2vw 0;
-    display: flex;
-    padding-right: 40px; }
-    #about .place-pics img {
-      object-fit: cover;
-      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
-    #about .place-pics .place1 {
-      width: 40%;
-      height: 80%;
-      position: relative;
-      top: 50px;
-      left: 40px; }
-    #about .place-pics .place2 {
-      width: 60%; }
-
-#exhibitions {
-  padding: 8vh 12vw;
-  height: 100vh; }
-  #exhibitions h1 {
-    font: bold 60px/1 'alice';
-    margin-bottom: 60px; }
-  #exhibitions .displays {
-    display: flex;
-    justify-content: space-between; }
-    #exhibitions .displays .display {
-      padding-right: 20px;
-      width: 280px; }
-      #exhibitions .displays .display:last-child {
-        padding-right: 0; }
-      #exhibitions .displays .display .pic img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        margin-bottom: 40px; }
-      #exhibitions .displays .display .pic h2 {
-        font: 18px/1 'alice';
-        margin-bottom: 20px; }
-      #exhibitions .displays .display .pic p {
-        font: 16px/1.5 'arial';
-        color: #aaa5bc; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/style.scss:257
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...    font-size: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 257 of scss/style.scss\A \A 252:             }\A 253:         }\A 254:         .work-description{\A 255:             flex-basis: 50%;\A 256:             h2{\A 257:                 font-size: ;\A 258:             }\A 259:         }\A 260:     }\A 261: }"; }
