@@ -183,7 +183,7 @@ section {
         color: #aaa5bc; }
 
 #events {
-  padding: 8vh 12vw; }
+  padding: 0vh 12vw 8vh 12vw; }
   #events h1 {
     font: bold 60px/1 'alice';
     position: absolute;
@@ -251,22 +251,27 @@ section {
         position: relative;
         top: 40px;
         left: -30px; }
-    #collection .collection-intro .collection-description, #collection .collection-intro .collection-gallery {
+    #collection .collection-intro .collection-description,
+    #collection .collection-intro .collection-gallery {
       flex-basis: 30%;
       padding: 20px; }
-      #collection .collection-intro .collection-description h2, #collection .collection-intro .collection-gallery h2 {
+      #collection .collection-intro .collection-description h2,
+      #collection .collection-intro .collection-gallery h2 {
         font: 28px 'alice';
-        margin: 80px 0 40px 0;
+        margin: 40px 0;
         color: #fff; }
-      #collection .collection-intro .collection-description p, #collection .collection-intro .collection-gallery p {
+      #collection .collection-intro .collection-description p,
+      #collection .collection-intro .collection-gallery p {
         font: 16px/1.5 'arial';
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         color: #aaa5bc; }
-      #collection .collection-intro .collection-description span, #collection .collection-intro .collection-gallery span {
+      #collection .collection-intro .collection-description span,
+      #collection .collection-intro .collection-gallery span {
         font: bold 16px/1 'alice';
         margin-left: 40px;
         position: relative; }
-        #collection .collection-intro .collection-description span::before, #collection .collection-intro .collection-gallery span::before {
+        #collection .collection-intro .collection-description span::before,
+        #collection .collection-intro .collection-gallery span::before {
           content: '';
           display: block;
           width: 20px;
@@ -274,7 +279,8 @@ section {
           position: absolute;
           top: 10px;
           left: -30px; }
-        #collection .collection-intro .collection-description span a, #collection .collection-intro .collection-gallery span a {
+        #collection .collection-intro .collection-description span a,
+        #collection .collection-intro .collection-gallery span a {
           color: #fff; }
   #collection .collection-gallery h2 {
     font: 28px 'alice';
@@ -298,5 +304,29 @@ section {
       left: -30px; }
     #collection .collection-gallery span a {
       color: #fff; }
+
+#testimonials {
+  padding: 8vh 12vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #testimonials h1 {
+    font: bold 60px/1 'alice';
+    margin-bottom: 40px; }
+  #testimonials .testimonial {
+    text-align: center; }
+    #testimonials .testimonial .profile img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
+    #testimonials .testimonial p {
+      font: 16px/1.5 'arial';
+      margin: 40px 0;
+      color: #aaa5bc; }
+    #testimonials .testimonial span {
+      font: 28px 'alice';
+      color: #e2e2d3; }
 
 /*# sourceMappingURL=style.css.map */
