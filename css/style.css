@@ -327,6 +327,24 @@ section {
       color: #aaa5bc; }
     #testimonials .testimonial span {
       font: 28px 'alice';
-      color: #e2e2d3; }
+      color: #a6a695; }
+
+#guidance {
+  padding: 0vh 12vw; }
+  #guidance ul {
+    display: flex;
+    justify-content: space-between; }
+    #guidance ul li {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 15%;
+      text-align: center;
+      padding: 30px; }
+      #guidance ul li i {
+        font-size: 60px;
+        color: #a6a695;
+        margin-bottom: 20px; }
+      #guidance ul li:hover {
+        background-color: #e2e2d3; }
 
 /*# sourceMappingURL=style.css.map */

@@ -409,7 +409,31 @@ section {
 		}
 		span {
 			font: 28px 'alice';
-			color: #e2e2d3;
+			color: #a6a695;
 		}
 	}
+}
+//guidance
+#guidance{
+    padding: 0vh 12vw;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 15%;
+            text-align: center;
+            padding: 30px;
+            i{
+                font-size: 60px;
+                color: #a6a695;
+                margin-bottom: 20px;
+
+            }
+            &:hover{
+                background-color: #e2e2d3;
+             }
+        }
+    }
 }
