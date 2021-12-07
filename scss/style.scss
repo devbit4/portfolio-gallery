@@ -8,10 +8,11 @@
 #header {
 	position: absolute;
 	width: 100%;
-	padding: 2vw 6vw;
+	padding: 2vw 10vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    z-index: 2;
 
 	.log {
 		font-size: 24px;
@@ -43,12 +44,14 @@
 }
 // home
 #home {
-	width: 100%;
 	.background {
+        width: 100%;
+        height: 90vh;
 		img {
 			width: 100%;
-			height: 100vh;
+			height: 100%;
 			object-fit: cover;
+            // filter: grayscale(30%);
 		}
 		.title {
 			position: absolute;
@@ -62,7 +65,6 @@
 			}
 
 			span {
-				font: 18px 'alice';
 				position: relative;
 				left: 60px;
 				&:before {
@@ -74,16 +76,23 @@
 					left: -40px;
 					top: 10px;
 				}
+                a{
+                    font: 18px 'alice';
+                    color: #fff;
+                    transition: all 0.3s;
+                    &:hover{
+                        color:#e2e2d3;
+                    }
+
+                }
 			}
 		}
 	}
 	.info {
-		border: none;
 		background-color: #e2e2d3;
 		.inner {
-            max-width: 1180px;
+            padding: 0 10vw;
 			height: 10vh;
-            margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
