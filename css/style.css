@@ -22,22 +22,76 @@ a {
   #header .log {
     font-size: 24px; }
     #header .log i {
-      margin-right: 16px;
+      margin-right: 10px;
       background-color: #e2e2d3;
-      padding: 8px;
+      padding: 6px;
       border-radius: 4px; }
     #header .log span {
-      font: 600 28px/1 "alice";
+      font: 600 28px/1 'alice';
       color: #e2e2d3; }
   #header .header-menu {
     display: flex; }
     #header .header-menu li {
       margin-left: 24px; }
       #header .header-menu li a {
-        font: 18px/1 'alice';
+        font: 16px/1 'alice';
         color: #fff;
         transition: all 0.3s; }
         #header .header-menu li a:hover {
           color: #e2e2d3; }
+
+#home {
+  width: 100%; }
+  #home .background img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; }
+  #home .background .title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; }
+    #home .background .title h1 {
+      font: bold 80px 'alice';
+      margin-bottom: 20px; }
+    #home .background .title span {
+      font: 18px 'alice';
+      position: relative;
+      left: 60px; }
+      #home .background .title span:before {
+        content: '';
+        display: block;
+        width: 30px;
+        border: 1px solid #fff;
+        position: absolute;
+        left: -40px;
+        top: 10px; }
+  #home .info {
+    border: none;
+    background-color: #e2e2d3; }
+    #home .info .inner {
+      max-width: 1180px;
+      height: 10vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #home .info .inner h2 {
+        font: bold 28px/1 'alice'; }
+      #home .info .inner .notice .alarm {
+        font: 16px/1 'arial'; }
+      #home .info .inner .notice .more {
+        font: bold 16px/1 'alice';
+        margin-left: 40px;
+        position: relative; }
+        #home .info .inner .notice .more::before {
+          content: "";
+          display: block;
+          width: 20px;
+          border-bottom: 2px solid black;
+          position: absolute;
+          top: 10px;
+          left: -30px; }
 
 /*# sourceMappingURL=style.css.map */
