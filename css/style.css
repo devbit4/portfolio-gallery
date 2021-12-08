@@ -45,7 +45,7 @@ body {
           color: #e2e2d3; }
   #header .toggle {
     position: fixed;
-    top: 24px;
+    top: 30px;
     right: 80px;
     color: #000;
     border: none;
@@ -59,7 +59,8 @@ body {
 
 #home .background {
   width: 100%;
-  height: 90vh; }
+  height: 90vh;
+  position: relative; }
   #home .background img {
     width: 100%;
     height: 100%;
@@ -72,25 +73,29 @@ body {
     color: #fff;
     width: max-content; }
     #home .background .title h1 {
-      font: bold 88px 'alice';
-      margin-bottom: 20px; }
+      font: bold 100px 'alice';
+      margin-bottom: 25px;
+      text-shadow: 10px 5px 10px #aaa; }
     #home .background .title span {
       position: relative;
-      left: 40px; }
+      left: 50px;
+      text-shadow: 5px 5px 5px #aaa; }
       #home .background .title span:before {
         content: '';
         display: block;
         width: 30px;
-        border: 1px solid #fff;
+        border: 1px solid #e2e2d3;
         position: absolute;
         left: -40px;
         top: 10px; }
       #home .background .title span a {
-        font: 18px 'alice';
-        color: #fff;
-        transition: all 0.3s; }
+        font: 20px 'alice';
+        color: #e2e2d3;
+        transition: all 0.3s;
+        display: inline-block; }
         #home .background .title span a:hover {
-          color: #e2e2d3; }
+          color: #fff;
+          transform: translateX(10px); }
 #home .info {
   background-color: #e2e2d3; }
   #home .info .inner {
@@ -111,12 +116,16 @@ body {
         content: '';
         display: block;
         width: 20px;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #000;
         position: absolute;
         top: 8px;
         left: -30px; }
       #home .info .inner .notice .more a {
+        transition: all 0.3s;
+        display: inline-block;
         color: #000; }
+        #home .info .inner .notice .more a:hover {
+          transform: translateX(10px); }
 
 #about {
   padding: 8vh 12vw;
@@ -149,7 +158,11 @@ body {
         top: 8px;
         left: -30px; }
       #about .intro span a {
-        color: #000; }
+        color: #000;
+        display: inline-block;
+        transition: all 0.3s; }
+        #about .intro span a:hover {
+          transform: translateX(10px); }
   #about .place-pics {
     flex-basis: 70%;
     padding: 2vw 0;
@@ -178,7 +191,7 @@ body {
     justify-content: space-between; }
     #exhibitions .displays .display {
       padding-right: 20px;
-      width: 280px; }
+      width: 300px; }
       #exhibitions .displays .display:last-child {
         padding-right: 0; }
       #exhibitions .displays .display .pic img {
@@ -186,9 +199,11 @@ body {
         height: 200px;
         object-fit: cover;
         margin-bottom: 40px;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        opacity: 0.8; }
         #exhibitions .displays .display .pic img:hover {
-          transform: translateY(-20px); }
+          transform: translateY(-20px);
+          opacity: 1; }
       #exhibitions .displays .display .pic h2 {
         font: 18px/1 'alice';
         margin-bottom: 20px; }
@@ -207,11 +222,18 @@ body {
     align-items: center; }
     #events .event .event-pic {
       flex-basis: 50%;
-      text-align: center; }
+      text-align: center;
+      width: 100%;
+      overflow: hidden; }
       #events .event .event-pic img {
         width: 80%;
         height: 400px;
-        object-fit: cover; }
+        object-fit: cover;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+        transition: all 0.3s;
+        filter: grayscale(1); }
+      #events .event .event-pic:hover img {
+        filter: grayscale(0); }
     #events .event .event-description {
       flex-basis: 50%;
       padding-right: 40px; }
@@ -236,7 +258,11 @@ body {
           top: 8px;
           left: -30px; }
         #events .event .event-description span a {
+          display: inline-block;
+          transition: all 0.3s;
           color: #000; }
+          #events .event .event-description span a:hover {
+            transform: translateX(10px); }
   #events .reverse {
     flex-direction: row-reverse; }
     #events .reverse .event-description {
@@ -245,7 +271,7 @@ body {
 
 #collection {
   padding: 8vh 12vw;
-  background: black; }
+  background: #000; }
   #collection h1 {
     font: bold 60px/1 'alice';
     margin-bottom: 60px;
@@ -266,27 +292,22 @@ body {
         position: relative;
         top: 40px;
         left: -30px; }
-    #collection .collection-intro .collection-description,
-    #collection .collection-intro .collection-gallery {
+    #collection .collection-intro .collection-description {
       flex-basis: 30%;
       padding: 20px; }
-      #collection .collection-intro .collection-description h2,
-      #collection .collection-intro .collection-gallery h2 {
+      #collection .collection-intro .collection-description h2 {
         font: 28px 'alice';
         margin: 40px 0;
         color: #fff; }
-      #collection .collection-intro .collection-description p,
-      #collection .collection-intro .collection-gallery p {
+      #collection .collection-intro .collection-description p {
         font: 16px/1.5 'arial';
         margin-bottom: 40px;
         color: #aaa5bc; }
-      #collection .collection-intro .collection-description span,
-      #collection .collection-intro .collection-gallery span {
+      #collection .collection-intro .collection-description span {
         font: bold 16px/1 'alice';
         margin-left: 30px;
         position: relative; }
-        #collection .collection-intro .collection-description span::before,
-        #collection .collection-intro .collection-gallery span::before {
+        #collection .collection-intro .collection-description span::before {
           content: '';
           display: block;
           width: 20px;
@@ -294,9 +315,12 @@ body {
           position: absolute;
           top: 8px;
           left: -30px; }
-        #collection .collection-intro .collection-description span a,
-        #collection .collection-intro .collection-gallery span a {
+        #collection .collection-intro .collection-description span a {
+          display: inline-block;
+          transition: all 0.3s;
           color: #fff; }
+          #collection .collection-intro .collection-description span a:hover {
+            transform: translateX(10px); }
   #collection .collection-gallery h2 {
     font: 28px 'alice';
     margin: 40px 0;
@@ -315,10 +339,14 @@ body {
       width: 20px;
       border-bottom: 2px solid #fff;
       position: absolute;
-      top: 10px;
+      top: 8px;
       left: -30px; }
     #collection .collection-gallery span a {
+      display: inline-block;
+      transition: all 0.3s;
       color: #fff; }
+      #collection .collection-gallery span a:hover {
+        transform: translateX(10px); }
 
 #testimonials {
   padding: 8vh 12vw;
@@ -351,12 +379,12 @@ body {
     #guidance ul li {
       display: flex;
       flex-direction: column;
-      flex-basis: 15%;
+      width: 16%;
       text-align: center;
       padding: 30px; }
       #guidance ul li i {
         font-size: 60px;
-        color: #a6a695;
+        color: #e2e2d3;
         margin-bottom: 20px; }
       #guidance ul li span {
         font: 20px/1 'alice'; }
@@ -364,6 +392,9 @@ body {
           color: #000; }
       #guidance ul li:hover {
         background-color: #e2e2d3; }
+        #guidance ul li:hover i {
+          color: #fff;
+          transform: rotateY(180deg); }
 
 #footer {
   background-color: #e2e2d3; }
@@ -393,27 +424,29 @@ body {
             color: #000;
             transition: all 0.3s; }
             #footer .wrap .footer-upper .footer-menu li a:hover {
-              color: #e2e2d3; }
+              color: #fff; }
     #footer .wrap .footer-lower ul {
       display: flex;
       justify-content: space-between; }
       #footer .wrap .footer-lower ul li {
-        flex-basis: 20%;
-        display: flex;
-        flex-direction: column; }
-        #footer .wrap .footer-lower ul li h2 {
-          font: bold 18px 'alice';
-          margin-bottom: 10px; }
-        #footer .wrap .footer-lower ul li p {
-          font: 14px/1.5 'arial';
-          color: #a6a695; }
-        #footer .wrap .footer-lower ul li > a {
-          color: #a6a695; }
-        #footer .wrap .footer-lower ul li input {
-          max-width: 200px;
-          margin: 20px 0; }
-        #footer .wrap .footer-lower ul li span a {
-          color: #000; }
+        width: 25%; }
+        #footer .wrap .footer-lower ul li .inner {
+          display: flex;
+          flex-direction: column;
+          padding: 10px; }
+          #footer .wrap .footer-lower ul li .inner h2 {
+            font: bold 18px 'alice';
+            margin-bottom: 10px; }
+          #footer .wrap .footer-lower ul li .inner p {
+            font: 14px/1.5 'arial';
+            color: #a6a695; }
+          #footer .wrap .footer-lower ul li .inner > a {
+            color: #a6a695; }
+          #footer .wrap .footer-lower ul li .inner input {
+            max-width: 200px;
+            margin: 20px 0; }
+          #footer .wrap .footer-lower ul li .inner span a {
+            color: #000; }
   #footer .copyright {
     height: 70px;
     background: #000;
@@ -452,12 +485,9 @@ body {
       display: block; }
 
   #home .background .title {
-    left: 0;
-    transform: translateX(0);
-    padding: 0 12vw;
-    width: auto; }
+    top: 50%; }
     #home .background .title h1 {
-      font: bold 80px 'alice'; }
+      font: bold 70px 'alice'; }
   #home .info .inner .notice .alarm {
     display: none; }
 
@@ -524,36 +554,20 @@ body {
   #guidance ul {
     flex-wrap: wrap; }
     #guidance ul li {
-      flex-basis: 33%; }
+      width: 33%; }
 
   #footer .wrap .footer-upper {
-    margin-bottom: 20px; }
-    #footer .wrap .footer-upper .footer-menu {
-      display: none; }
+    display: none; }
   #footer .wrap .footer-lower ul {
-    flex-direction: column; }
+    flex-wrap: wrap; }
     #footer .wrap .footer-lower ul li {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #aaa5bc; }
-      #footer .wrap .footer-lower ul li h2 {
-        font: bold 14px 'alice';
-        margin-bottom: 10px;
-        margin-top: 20px; }
-      #footer .wrap .footer-lower ul li p {
-        font: 10px/1.5 'arial'; }
-      #footer .wrap .footer-lower ul li > a {
-        font: 10px/1.5 'arial'; } }
+      width: 50%; } }
 @media screen and (max-width: 539px) {
   #header .toggle {
     right: 10px; }
 
-  #home .background .title {
-    left: 0;
-    transform: translateX(0);
-    padding: 0 12vw;
-    width: auto; }
-    #home .background .title h1 {
-      font: bold 50px 'alice'; }
+  #home .background .title h1 {
+    font: bold 45px 'alice'; }
 
   #about .intro h1 {
     font: bold 40px 'alice'; }
@@ -581,7 +595,10 @@ body {
   #testimonials h1 {
     font: bold 40px/1 'alice'; }
 
-  #guidance ul {
-    flex-direction: column; } }
+  #guidance ul li {
+    width: 50%; }
+
+  #footer .wrap .footer-lower ul li {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
