@@ -47,7 +47,7 @@ section {
 			}
 		}
 	}
-	.toggle{
+	.toggle {
 		position: fixed;
 		top: 28px;
 		right: 80px;
@@ -55,9 +55,9 @@ section {
 		border: none;
 		background-color: transparent;
 		display: none;
-		i{
+		i {
 			font-size: 20px;
-			padding:6px;
+			padding: 6px;
 			color: #a6a695;
 			cursor: pointer;
 		}
@@ -81,6 +81,7 @@ section {
 			left: 50%;
 			transform: translateX(-50%);
 			color: #fff;
+			width: max-content;
 
 			h1 {
 				font: bold 88px 'alice';
@@ -537,6 +538,7 @@ section {
 }
 
 @media screen and (max-width: $tablet) {
+	// header
 	#header {
 		background: #fff;
 		padding: 4vh 12vw;
@@ -566,22 +568,71 @@ section {
 
 				a {
 					color: #000;
-
 				}
-				&:hover{
+				&:hover {
 					background-color: #e2e2d3;
 				}
-				&:hover a{
+				&:hover a {
 					color: #a6a695;
 				}
 			}
 		}
-		.toggle{
+		.toggle {
 			display: block;
+		}
+	}
+	// home
+	#home {
+		.background {
+			.title {
+				left: 0;
+				transform: translateX(0);
+				padding: 0 12vw;
+				width: auto;
+				h1 {
+					font: bold 80px 'alice';
+				}
+			}
+		}
+		.info {
+			.inner {
+
+				h2 {
+					font: bold 28px/1 'alice';
+				}
+				.notice {
+					.alarm {
+						font: 14px/1 'arial';
+						display: none;
+					}
+					.more {
+						font: bold 14px/1 'alice';
+						margin-left: 40px;
+					}
+				}
+			}
 		}
 	}
 }
 
-
 @media screen and (max-width: $mobile) {
+	#header{
+		.toggle{
+			right: 10px;
+		}
+	}
+	#home {
+		.background {
+			.title {
+				left: 0;
+				transform: translateX(0);
+				padding: 0 12vw;
+				width: auto;
+				h1 {
+					font: bold 50px 'alice';
+				}
+			}
+		}
+
+	}
 }

@@ -69,7 +69,8 @@ section {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff; }
+    color: #fff;
+    width: max-content; }
     #home .background .title h1 {
       font: bold 88px 'alice';
       margin-bottom: 20px; }
@@ -446,6 +447,33 @@ section {
         #header .header-menu li:hover a {
           color: #a6a695; }
     #header .toggle {
-      display: block; } }
+      display: block; }
+
+  #home .background .title {
+    left: 0;
+    transform: translateX(0);
+    padding: 0 12vw;
+    width: auto; }
+    #home .background .title h1 {
+      font: bold 80px 'alice'; }
+  #home .info .inner h2 {
+    font: bold 28px/1 'alice'; }
+  #home .info .inner .notice .alarm {
+    font: 14px/1 'arial';
+    display: none; }
+  #home .info .inner .notice .more {
+    font: bold 14px/1 'alice';
+    margin-left: 40px; } }
+@media screen and (max-width: 539px) {
+  #header .toggle {
+    right: 10px; }
+
+  #home .background .title {
+    left: 0;
+    transform: translateX(0);
+    padding: 0 12vw;
+    width: auto; }
+    #home .background .title h1 {
+      font: bold 50px 'alice'; } }
 
 /*# sourceMappingURL=style.css.map */
