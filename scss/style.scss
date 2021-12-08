@@ -7,8 +7,8 @@ $tablet: 1179px;
 $mobile: 539px;
 
 // background
-section {
-	background: url(../img/bg.png) no-repeat center/cover;
+body{
+	background: url(../img/bg.svg);
 }
 // header
 #header {
@@ -49,7 +49,7 @@ section {
 	}
 	.toggle {
 		position: fixed;
-		top: 28px;
+		top: 24px;
 		right: 80px;
 		color: #000;
 		border: none;
@@ -407,7 +407,7 @@ section {
 // testimonials
 #testimonials {
 	padding: 8vh 12vw;
-	height: 100vh;
+	// height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -453,6 +453,7 @@ section {
 			}
 			span {
 				font: 20px/1 'alice';
+				a{color: #000;}
 			}
 			&:hover {
 				background-color: #e2e2d3;
@@ -465,11 +466,11 @@ section {
 #footer {
 	background-color: #e2e2d3;
 	.wrap {
-		padding: 10vh 12vw;
+		padding: 5vh 12vw;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 80px;
+			margin-bottom: 60px;
 			.logo {
 				font-size: 24px;
 				i {
@@ -697,12 +698,45 @@ section {
 			}
 		}
 	}
+
 	//guidance
 	#guidance {
 		ul {
 			flex-wrap: wrap;
 			li {
 				flex-basis: 33%;
+			}
+		}
+	}
+	// footer
+	#footer {
+		.wrap {
+			.footer-upper {
+				margin-bottom: 20px;
+				.footer-menu {
+					display: none;
+				}
+			}
+			.footer-lower {
+				ul {
+					flex-direction: column;
+					li {
+						padding-bottom: 10px;
+						border-bottom: 1px solid #aaa5bc;
+
+						h2 {
+							font: bold 14px 'alice';
+							margin-bottom: 10px;
+							margin-top: 20px;
+						}
+						p {
+							font: 10px/1.5 'arial';
+						}
+						> a {
+							font: 10px/1.5 'arial';
+						}
+					}
+				}
 			}
 		}
 	}
@@ -729,10 +763,20 @@ section {
 			}
 		}
 	}
+	// about
+	#about {
+		.intro {
+			h1 {
+				font: bold 40px 'alice';
+			}
+		}
+	}
 	// exhibitions
 	#exhibitions {
 		height: auto;
-
+		h1 {
+			font: bold 40px/1 'alice';
+		}
 		.displays {
 			flex-direction: column;
 
@@ -742,6 +786,10 @@ section {
 			}
 		}
 	}
+	// section
+	#events h1 {
+		font: bold 40px/1 'alice';
+	}
 	// testimonials
 	#testimonials {
 		.testimonial {
@@ -750,6 +798,14 @@ section {
 				height: 200px;
 			}
 		}
+	}
+	// collection
+	#collection h1 {
+		font: bold 40px/1 'alice';
+	}
+	// testimonial
+	#testimonials h1 {
+		font: bold 40px/1 'alice';
 	}
 	//guidance
 	#guidance {

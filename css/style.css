@@ -12,8 +12,8 @@ li {
 a {
   text-decoration: none; }
 
-section {
-  background: url(../img/bg.png) no-repeat center/cover; }
+body {
+  background: url(../img/bg.svg); }
 
 #header {
   position: absolute;
@@ -45,7 +45,7 @@ section {
           color: #e2e2d3; }
   #header .toggle {
     position: fixed;
-    top: 28px;
+    top: 24px;
     right: 80px;
     color: #000;
     border: none;
@@ -322,7 +322,6 @@ section {
 
 #testimonials {
   padding: 8vh 12vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -361,17 +360,19 @@ section {
         margin-bottom: 20px; }
       #guidance ul li span {
         font: 20px/1 'alice'; }
+        #guidance ul li span a {
+          color: #000; }
       #guidance ul li:hover {
         background-color: #e2e2d3; }
 
 #footer {
   background-color: #e2e2d3; }
   #footer .wrap {
-    padding: 10vh 12vw; }
+    padding: 5vh 12vw; }
     #footer .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 80px; }
+      margin-bottom: 60px; }
       #footer .wrap .footer-upper .logo {
         font-size: 24px; }
         #footer .wrap .footer-upper .logo i {
@@ -523,7 +524,25 @@ section {
   #guidance ul {
     flex-wrap: wrap; }
     #guidance ul li {
-      flex-basis: 33%; } }
+      flex-basis: 33%; }
+
+  #footer .wrap .footer-upper {
+    margin-bottom: 20px; }
+    #footer .wrap .footer-upper .footer-menu {
+      display: none; }
+  #footer .wrap .footer-lower ul {
+    flex-direction: column; }
+    #footer .wrap .footer-lower ul li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #aaa5bc; }
+      #footer .wrap .footer-lower ul li h2 {
+        font: bold 14px 'alice';
+        margin-bottom: 10px;
+        margin-top: 20px; }
+      #footer .wrap .footer-lower ul li p {
+        font: 10px/1.5 'arial'; }
+      #footer .wrap .footer-lower ul li > a {
+        font: 10px/1.5 'arial'; } }
 @media screen and (max-width: 539px) {
   #header .toggle {
     right: 10px; }
@@ -536,17 +555,31 @@ section {
     #home .background .title h1 {
       font: bold 50px 'alice'; }
 
+  #about .intro h1 {
+    font: bold 40px 'alice'; }
+
   #exhibitions {
     height: auto; }
+    #exhibitions h1 {
+      font: bold 40px/1 'alice'; }
     #exhibitions .displays {
       flex-direction: column; }
       #exhibitions .displays .display {
         padding-right: 0px;
         width: 100%; }
 
+  #events h1 {
+    font: bold 40px/1 'alice'; }
+
   #testimonials .testimonial .profile img {
     width: 200px;
     height: 200px; }
+
+  #collection h1 {
+    font: bold 40px/1 'alice'; }
+
+  #testimonials h1 {
+    font: bold 40px/1 'alice'; }
 
   #guidance ul {
     flex-direction: column; } }
