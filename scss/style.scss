@@ -161,7 +161,7 @@ body {
 
 //about
 #about {
-	padding: 8vh 12vw;
+	padding: 10vh 12vw;
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
@@ -229,8 +229,7 @@ body {
 
 // exhibitions
 #exhibitions {
-	padding: 8vh 12vw;
-	height: 100vh;
+	padding: 10vh 12vw;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 80px;
@@ -238,16 +237,15 @@ body {
 	.displays {
 		display: flex;
 		justify-content: space-between;
+
 		.display {
-			padding-right: 20px;
-			width: 300px;
-			&:last-child {
-				padding-right: 0;
-			}
-			.pic {
+			width: 25%;
+			padding: 10px;
+			.inner {
+				width: 100%;
 				img {
 					width: 100%;
-					height: 200px;
+					height: 280px;
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
@@ -256,7 +254,6 @@ body {
 					&:hover {
 						transform: translateY(-20px);
 						opacity: 1;
-						// filter: grayscale(0);
 					}
 				}
 				h2 {
@@ -266,6 +263,7 @@ body {
 				p {
 					font: 16px/1.5 'arial';
 					color: #aaa5bc;
+					margin-bottom: 40px;
 				}
 			}
 		}
@@ -273,64 +271,73 @@ body {
 }
 // events
 #events {
-	padding: 0vh 12vw 8vh 12vw;
+	padding: 0 12vw 10vh 12vw;
 	h1 {
 		font: bold 60px/1 'alice';
 		position: absolute;
-		left: 50%;
+		left: 55%;
 	}
 	.event {
 		display: flex;
 		align-items: center;
+		margin-bottom: 40px;
 		.event-pic {
-			flex-basis: 50%;
-			text-align: center;
-			width: 100%;
-			overflow: hidden;
-			img {
+			width: 50%;
+			.img {
+				margin: 0 auto;
+
+				overflow: hidden;
 				width: 80%;
 				height: 400px;
-				object-fit: cover;
-				box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
-				transition: all 0.3s;
-				filter: grayscale(1);
-			}
-			&:hover img {
-				filter: grayscale(0);
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+					transition: all 0.3s;
+					filter: grayscale(1);
+					&:hover {
+						filter: grayscale(0);
+						transform: scale(1.2);
+					}
+				}
 			}
 		}
 		.event-description {
-			flex-basis: 50%;
-			padding-right: 40px;
-			h2 {
-				font: 28px 'alice';
-				margin: 80px 0 40px 0;
-				color: #a6a695;
-			}
-			p {
-				font: 16px/1.5 'arial';
-				margin-bottom: 80px;
-				color: #aaa5bc;
-			}
-			span {
-				font: bold 16px/1 'alice';
-				margin-left: 30px;
-				position: relative;
-				&::before {
-					content: '';
-					display: block;
-					width: 20px;
-					border-bottom: 2px solid black;
-					position: absolute;
-					top: 8px;
-					left: -30px;
+			width: 50%;
+			.inner {
+				width: 80%;
+				margin: 0 auto;
+				h2 {
+					font: 28px 'alice';
+					color: #a6a695;
+					margin-bottom: 40px;
 				}
-				a {
-					display: inline-block;
-					transition: all 0.3s;
-					color: #000;
-					&:hover {
-						transform: translateX(10px);
+				p {
+					font: 16px/1.5 'arial';
+					margin-bottom: 40px;
+					color: #aaa5bc;
+				}
+				span {
+					font: bold 16px/1 'alice';
+					margin-left: 30px;
+					position: relative;
+					&::before {
+						content: '';
+						display: block;
+						width: 20px;
+						border-bottom: 2px solid black;
+						position: absolute;
+						top: 8px;
+						left: -30px;
+					}
+					a {
+						display: inline-block;
+						transition: all 0.3s;
+						color: #000;
+						&:hover {
+							transform: translateX(10px);
+						}
 					}
 				}
 			}
@@ -338,16 +345,12 @@ body {
 	}
 	.reverse {
 		flex-direction: row-reverse;
-		.event-description {
-			padding-right: 0;
-			padding-left: 40px;
-		}
 	}
 }
 
 // collection
 #collection {
-	padding: 8vh 12vw;
+	padding: 10vh 12vw;
 	background: #000;
 	h1 {
 		font: bold 60px/1 'alice';
@@ -447,8 +450,7 @@ body {
 }
 // testimonials
 #testimonials {
-	padding: 8vh 12vw;
-	// height: 100vh;
+	padding: 10vh 12vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -477,7 +479,7 @@ body {
 }
 //guidance
 #guidance {
-	padding: 8vh 12vw;
+	padding: 10vh 12vw;
 	ul {
 		display: flex;
 		justify-content: space-between;
@@ -675,61 +677,28 @@ body {
 	}
 	// exhibitions
 	#exhibitions {
-		height: auto;
 		.displays {
 			flex-wrap: wrap;
 			.display {
-				padding-right: 20px;
 				width: 50%;
-				&:nth-last-child(2n-1) {
-					padding-right: 0;
-				}
-				.pic {
-					img {
-						margin-bottom: 20px;
-					}
-
-					p {
-						margin-bottom: 40px;
-					}
-				}
 			}
 		}
 	}
 
 	// events
 	#events {
-		padding: 0vh 12vw 8vh 12vw;
-		h1 {
-			position: static;
-			margin-bottom: 60px;
-		}
 		.event {
 			flex-direction: column;
-			margin-bottom: 40px;
-			text-align: center;
 			.event-pic {
-				flex-basis: 100%;
-				img {
-					width: 80%;
-				}
+				width: 100%;
+				margin-bottom: 20px;
 			}
 			.event-description {
-				flex-basis: 100%;
-				padding-right: 0;
-				h2 {
-					margin: 40px 0;
-				}
-				p {
-					margin-bottom: 20px;
-				}
+				width: 100%;
 			}
 		}
 		.reverse {
 			flex-direction: column;
-			.event-description {
-				padding-left: 0;
-			}
 		}
 	}
 	// collection
@@ -749,14 +718,10 @@ body {
 
 	//guidance
 	#guidance {
-
 		ul {
 			flex-wrap: wrap;
 			li {
-
 				width: 33%;
-
-
 			}
 		}
 	}
@@ -806,22 +771,34 @@ body {
 	}
 	// exhibitions
 	#exhibitions {
-		height: auto;
 		h1 {
-			font: bold 40px/1 'alice';
+			font: bold 40px 'alice';
 		}
 		.displays {
-			flex-direction: column;
-
 			.display {
-				padding-right: 0px;
 				width: 100%;
 			}
 		}
 	}
-	// section
-	#events h1 {
-		font: bold 40px/1 'alice';
+
+	// event
+	#events {
+		.event {
+			.event-pic {
+				.img {
+					width: 100%;
+					height: 280px;
+				}
+			}
+			.event-description {
+				.inner {
+					width: 100%;
+				}
+			}
+		}
+		.reverse {
+			flex-direction: column;
+		}
 	}
 	// testimonials
 	#testimonials {
@@ -833,16 +810,13 @@ body {
 		}
 	}
 	// collection
-	#collection h1 {
-		font: bold 40px/1 'alice';
-	}
-	// testimonial
+	#collection h1,
 	#testimonials h1 {
 		font: bold 40px/1 'alice';
 	}
+
 	//guidance
 	#guidance {
-
 		ul {
 			li {
 				width: 50%;
@@ -853,18 +827,14 @@ body {
 	#footer {
 		.wrap {
 			.footer-upper {
-
 			}
 			.footer-lower {
 				ul {
-
-
 					li {
 						width: 100%;
 					}
 				}
 			}
 		}
-
 	}
 }

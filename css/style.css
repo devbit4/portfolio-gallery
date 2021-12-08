@@ -128,7 +128,7 @@ body {
           transform: translateX(10px); }
 
 #about {
-  padding: 8vh 12vw;
+  padding: 10vh 12vw;
   height: 100vh;
   display: flex;
   justify-content: space-between; }
@@ -181,8 +181,7 @@ body {
       width: 60%; }
 
 #exhibitions {
-  padding: 8vh 12vw;
-  height: 100vh; }
+  padding: 10vh 12vw; }
   #exhibitions h1 {
     font: bold 60px/1 'alice';
     margin-bottom: 80px; }
@@ -190,87 +189,91 @@ body {
     display: flex;
     justify-content: space-between; }
     #exhibitions .displays .display {
-      padding-right: 20px;
-      width: 300px; }
-      #exhibitions .displays .display:last-child {
-        padding-right: 0; }
-      #exhibitions .displays .display .pic img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        margin-bottom: 40px;
-        transition: all 0.3s ease;
-        opacity: 0.8; }
-        #exhibitions .displays .display .pic img:hover {
-          transform: translateY(-20px);
-          opacity: 1; }
-      #exhibitions .displays .display .pic h2 {
-        font: 18px/1 'alice';
-        margin-bottom: 20px; }
-      #exhibitions .displays .display .pic p {
-        font: 16px/1.5 'arial';
-        color: #aaa5bc; }
+      width: 25%;
+      padding: 10px; }
+      #exhibitions .displays .display .inner {
+        width: 100%; }
+        #exhibitions .displays .display .inner img {
+          width: 100%;
+          height: 280px;
+          object-fit: cover;
+          margin-bottom: 40px;
+          transition: all 0.3s ease;
+          opacity: 0.8; }
+          #exhibitions .displays .display .inner img:hover {
+            transform: translateY(-20px);
+            opacity: 1; }
+        #exhibitions .displays .display .inner h2 {
+          font: 18px/1 'alice';
+          margin-bottom: 20px; }
+        #exhibitions .displays .display .inner p {
+          font: 16px/1.5 'arial';
+          color: #aaa5bc;
+          margin-bottom: 40px; }
 
 #events {
-  padding: 0vh 12vw 8vh 12vw; }
+  padding: 0 12vw 10vh 12vw; }
   #events h1 {
     font: bold 60px/1 'alice';
     position: absolute;
-    left: 50%; }
+    left: 55%; }
   #events .event {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 40px; }
     #events .event .event-pic {
-      flex-basis: 50%;
-      text-align: center;
-      width: 100%;
-      overflow: hidden; }
-      #events .event .event-pic img {
+      width: 50%; }
+      #events .event .event-pic .img {
+        margin: 0 auto;
+        overflow: hidden;
         width: 80%;
-        height: 400px;
-        object-fit: cover;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
-        transition: all 0.3s;
-        filter: grayscale(1); }
-      #events .event .event-pic:hover img {
-        filter: grayscale(0); }
-    #events .event .event-description {
-      flex-basis: 50%;
-      padding-right: 40px; }
-      #events .event .event-description h2 {
-        font: 28px 'alice';
-        margin: 80px 0 40px 0;
-        color: #a6a695; }
-      #events .event .event-description p {
-        font: 16px/1.5 'arial';
-        margin-bottom: 80px;
-        color: #aaa5bc; }
-      #events .event .event-description span {
-        font: bold 16px/1 'alice';
-        margin-left: 30px;
-        position: relative; }
-        #events .event .event-description span::before {
-          content: '';
-          display: block;
-          width: 20px;
-          border-bottom: 2px solid black;
-          position: absolute;
-          top: 8px;
-          left: -30px; }
-        #events .event .event-description span a {
-          display: inline-block;
+        height: 400px; }
+        #events .event .event-pic .img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
           transition: all 0.3s;
-          color: #000; }
-          #events .event .event-description span a:hover {
-            transform: translateX(10px); }
+          filter: grayscale(1); }
+          #events .event .event-pic .img img:hover {
+            filter: grayscale(0);
+            transform: scale(1.2); }
+    #events .event .event-description {
+      width: 50%; }
+      #events .event .event-description .inner {
+        width: 80%;
+        margin: 0 auto; }
+        #events .event .event-description .inner h2 {
+          font: 28px 'alice';
+          color: #a6a695;
+          margin-bottom: 40px; }
+        #events .event .event-description .inner p {
+          font: 16px/1.5 'arial';
+          margin-bottom: 40px;
+          color: #aaa5bc; }
+        #events .event .event-description .inner span {
+          font: bold 16px/1 'alice';
+          margin-left: 30px;
+          position: relative; }
+          #events .event .event-description .inner span::before {
+            content: '';
+            display: block;
+            width: 20px;
+            border-bottom: 2px solid black;
+            position: absolute;
+            top: 8px;
+            left: -30px; }
+          #events .event .event-description .inner span a {
+            display: inline-block;
+            transition: all 0.3s;
+            color: #000; }
+            #events .event .event-description .inner span a:hover {
+              transform: translateX(10px); }
   #events .reverse {
     flex-direction: row-reverse; }
-    #events .reverse .event-description {
-      padding-right: 0;
-      padding-left: 40px; }
 
 #collection {
-  padding: 8vh 12vw;
+  padding: 10vh 12vw;
   background: #000; }
   #collection h1 {
     font: bold 60px/1 'alice';
@@ -349,7 +352,7 @@ body {
         transform: translateX(10px); }
 
 #testimonials {
-  padding: 8vh 12vw;
+  padding: 10vh 12vw;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -372,7 +375,7 @@ body {
       color: #a6a695; }
 
 #guidance {
-  padding: 8vh 12vw; }
+  padding: 10vh 12vw; }
   #guidance ul {
     display: flex;
     justify-content: space-between; }
@@ -503,44 +506,20 @@ body {
     #about .place-pics {
       margin-top: 20px; }
 
-  #exhibitions {
-    height: auto; }
-    #exhibitions .displays {
-      flex-wrap: wrap; }
-      #exhibitions .displays .display {
-        padding-right: 20px;
-        width: 50%; }
-        #exhibitions .displays .display:nth-last-child(2n-1) {
-          padding-right: 0; }
-        #exhibitions .displays .display .pic img {
-          margin-bottom: 20px; }
-        #exhibitions .displays .display .pic p {
-          margin-bottom: 40px; }
+  #exhibitions .displays {
+    flex-wrap: wrap; }
+    #exhibitions .displays .display {
+      width: 50%; }
 
-  #events {
-    padding: 0vh 12vw 8vh 12vw; }
-    #events h1 {
-      position: static;
-      margin-bottom: 60px; }
-    #events .event {
-      flex-direction: column;
-      margin-bottom: 40px;
-      text-align: center; }
-      #events .event .event-pic {
-        flex-basis: 100%; }
-        #events .event .event-pic img {
-          width: 80%; }
-      #events .event .event-description {
-        flex-basis: 100%;
-        padding-right: 0; }
-        #events .event .event-description h2 {
-          margin: 40px 0; }
-        #events .event .event-description p {
-          margin-bottom: 20px; }
-    #events .reverse {
-      flex-direction: column; }
-      #events .reverse .event-description {
-        padding-left: 0; }
+  #events .event {
+    flex-direction: column; }
+    #events .event .event-pic {
+      width: 100%;
+      margin-bottom: 20px; }
+    #events .event .event-description {
+      width: 100%; }
+  #events .reverse {
+    flex-direction: column; }
 
   #collection .collection-intro {
     flex-direction: column; }
@@ -572,26 +551,24 @@ body {
   #about .intro h1 {
     font: bold 40px 'alice'; }
 
-  #exhibitions {
-    height: auto; }
-    #exhibitions h1 {
-      font: bold 40px/1 'alice'; }
-    #exhibitions .displays {
-      flex-direction: column; }
-      #exhibitions .displays .display {
-        padding-right: 0px;
-        width: 100%; }
+  #exhibitions h1 {
+    font: bold 40px 'alice'; }
+  #exhibitions .displays .display {
+    width: 100%; }
 
-  #events h1 {
-    font: bold 40px/1 'alice'; }
+  #events .event .event-pic .img {
+    width: 100%;
+    height: 280px; }
+  #events .event .event-description .inner {
+    width: 100%; }
+  #events .reverse {
+    flex-direction: column; }
 
   #testimonials .testimonial .profile img {
     width: 200px;
     height: 200px; }
 
-  #collection h1 {
-    font: bold 40px/1 'alice'; }
-
+  #collection h1,
   #testimonials h1 {
     font: bold 40px/1 'alice'; }
 
