@@ -269,6 +269,7 @@ section {
 			img {
 				width: 80%;
 				height: 400px;
+				object-fit: cover;
 			}
 		}
 		.event-description {
@@ -625,6 +626,7 @@ section {
 		margin-top: 20px;
 	}
 	}
+	// exhibitions
 	#exhibitions {
 		height: auto;
 		.displays {
@@ -648,6 +650,38 @@ section {
 		}
 	}
 
+	// events
+#events {
+	padding: 0vh 12vw 8vh 12vw;
+	h1 {
+		position:static;
+		margin-bottom: 60px;
+	}
+	.event {
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: center;
+		.event-pic {
+			flex-basis: 100%;
+		}
+		.event-description {
+			flex-basis: 100%;
+			padding-right: 0;
+			h2 {
+				margin: 40px 0;
+			}
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.reverse {
+		flex-direction: column;
+		.event-description {
+			padding-left: 0;
+		}
+	}
+}
 }
 
 @media screen and (max-width: $mobile) {

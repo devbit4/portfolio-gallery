@@ -210,7 +210,8 @@ section {
       text-align: center; }
       #events .event .event-pic img {
         width: 80%;
-        height: 400px; }
+        height: 400px;
+        object-fit: cover; }
     #events .event .event-description {
       flex-basis: 50%;
       padding-right: 40px; }
@@ -483,7 +484,30 @@ section {
         #exhibitions .displays .display .pic img {
           margin-bottom: 20px; }
         #exhibitions .displays .display .pic p {
-          margin-bottom: 40px; } }
+          margin-bottom: 40px; }
+
+  #events {
+    padding: 0vh 12vw 8vh 12vw; }
+    #events h1 {
+      position: static;
+      margin-bottom: 60px; }
+    #events .event {
+      flex-direction: column;
+      margin-bottom: 40px;
+      text-align: center; }
+      #events .event .event-pic {
+        flex-basis: 100%; }
+      #events .event .event-description {
+        flex-basis: 100%;
+        padding-right: 0; }
+        #events .event .event-description h2 {
+          margin: 40px 0; }
+        #events .event .event-description p {
+          margin-bottom: 20px; }
+    #events .reverse {
+      flex-direction: column; }
+      #events .reverse .event-description {
+        padding-left: 0; } }
 @media screen and (max-width: 539px) {
   #header .toggle {
     right: 10px; }
