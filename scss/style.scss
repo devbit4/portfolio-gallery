@@ -607,24 +607,22 @@ section {
 	}
 	//about
 	#about {
-	height: auto;
-	flex-direction: column;
-	.intro {
-		h1 {
-			margin: 40px 0;
+		height: auto;
+		flex-direction: column;
+		.intro {
+			h1 {
+				margin: 40px 0;
+			}
+			h2 {
+				margin-bottom: 20px;
+			}
+			p {
+				margin-bottom: 40px;
+			}
 		}
-		h2 {
-			margin-bottom: 20px;
-
+		.place-pics {
+			margin-top: 20px;
 		}
-		p {
-			margin-bottom: 40px;
-		}
-
-	}
-	.place-pics {
-		margin-top: 20px;
-	}
 	}
 	// exhibitions
 	#exhibitions {
@@ -652,41 +650,42 @@ section {
 
 	// events
 	#events {
-	padding: 0vh 12vw 8vh 12vw;
-	h1 {
-		position:static;
-		margin-bottom: 60px;
-	}
-	.event {
-		flex-direction: column;
-		margin-bottom: 40px;
-		text-align: center;
-		.event-pic {
-			flex-basis: 100%;
+		padding: 0vh 12vw 8vh 12vw;
+		h1 {
+			position: static;
+			margin-bottom: 60px;
 		}
-		.event-description {
-			flex-basis: 100%;
-			padding-right: 0;
-			h2 {
-				margin: 40px 0;
+		.event {
+			flex-direction: column;
+			margin-bottom: 40px;
+			text-align: center;
+			.event-pic {
+				flex-basis: 100%;
+				img{
+					width: 80%;
+				}
 			}
-			p {
-				margin-bottom: 20px;
+			.event-description {
+				flex-basis: 100%;
+				padding-right: 0;
+				h2 {
+					margin: 40px 0;
+				}
+				p {
+					margin-bottom: 20px;
+				}
 			}
 		}
-	}
-	.reverse {
-		flex-direction: column;
-		.event-description {
-			padding-left: 0;
+		.reverse {
+			flex-direction: column;
+			.event-description {
+				padding-left: 0;
+			}
 		}
-	}
 	}
 	// collection
 	#collection {
-
 		.collection-intro {
-
 			flex-direction: column;
 			.colection-pics {
 				flex-basis: 100%;
@@ -695,10 +694,8 @@ section {
 			.collection-gallery {
 				flex-basis: 100%;
 				padding: 0px;
-
 			}
 		}
-
 	}
 }
 
@@ -725,7 +722,6 @@ section {
 	}
 	// exhibitions
 	#exhibitions {
-
 		height: auto;
 
 		.displays {
@@ -734,6 +730,15 @@ section {
 			.display {
 				padding-right: 0px;
 				width: 100%;
+			}
+		}
+	}
+	// testimonials
+	#testimonials {
+		.testimonial {
+			.profile img {
+				width: 200px;
+				height: 200px;
 			}
 		}
 	}

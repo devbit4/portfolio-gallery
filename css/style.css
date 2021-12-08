@@ -497,6 +497,8 @@ section {
       text-align: center; }
       #events .event .event-pic {
         flex-basis: 100%; }
+        #events .event .event-pic img {
+          width: 80%; }
       #events .event .event-description {
         flex-basis: 100%;
         padding-right: 0; }
@@ -535,6 +537,10 @@ section {
       flex-direction: column; }
       #exhibitions .displays .display {
         padding-right: 0px;
-        width: 100%; } }
+        width: 100%; }
+
+  #testimonials .testimonial .profile img {
+    width: 200px;
+    height: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
