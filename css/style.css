@@ -469,7 +469,21 @@ section {
     #about .intro p {
       margin-bottom: 40px; }
     #about .place-pics {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  #exhibitions {
+    height: auto; }
+    #exhibitions .displays {
+      flex-wrap: wrap; }
+      #exhibitions .displays .display {
+        padding-right: 20px;
+        width: 50%; }
+        #exhibitions .displays .display:nth-last-child(2n-1) {
+          padding-right: 0; }
+        #exhibitions .displays .display .pic img {
+          margin-bottom: 20px; }
+        #exhibitions .displays .display .pic p {
+          margin-bottom: 40px; } }
 @media screen and (max-width: 539px) {
   #header .toggle {
     right: 10px; }
@@ -480,6 +494,14 @@ section {
     padding: 0 12vw;
     width: auto; }
     #home .background .title h1 {
-      font: bold 50px 'alice'; } }
+      font: bold 50px 'alice'; }
+
+  #exhibitions {
+    height: auto; }
+    #exhibitions .displays {
+      flex-direction: column; }
+      #exhibitions .displays .display {
+        padding-right: 0px;
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
