@@ -456,14 +456,20 @@ section {
     width: auto; }
     #home .background .title h1 {
       font: bold 80px 'alice'; }
-  #home .info .inner h2 {
-    font: bold 28px/1 'alice'; }
   #home .info .inner .notice .alarm {
-    font: 14px/1 'arial';
     display: none; }
-  #home .info .inner .notice .more {
-    font: bold 14px/1 'alice';
-    margin-left: 40px; } }
+
+  #about {
+    height: auto;
+    flex-direction: column; }
+    #about .intro h1 {
+      margin: 40px 0; }
+    #about .intro h2 {
+      margin-bottom: 20px; }
+    #about .intro p {
+      margin-bottom: 40px; }
+    #about .place-pics {
+      margin-top: 20px; } }
 @media screen and (max-width: 539px) {
   #header .toggle {
     right: 10px; }

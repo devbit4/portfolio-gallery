@@ -596,31 +596,45 @@ section {
 		}
 		.info {
 			.inner {
-
-				h2 {
-					font: bold 28px/1 'alice';
-				}
 				.notice {
 					.alarm {
-						font: 14px/1 'arial';
 						display: none;
-					}
-					.more {
-						font: bold 14px/1 'alice';
-						margin-left: 40px;
 					}
 				}
 			}
 		}
 	}
+	//about
+	#about {
+	height: auto;
+	flex-direction: column;
+	.intro {
+		h1 {
+			margin: 40px 0;
+		}
+		h2 {
+			margin-bottom: 20px;
+
+		}
+		p {
+			margin-bottom: 40px;
+		}
+
+	}
+	.place-pics {
+		margin-top: 20px;
+	}
+}
 }
 
 @media screen and (max-width: $mobile) {
-	#header{
-		.toggle{
+	// header
+	#header {
+		.toggle {
 			right: 10px;
 		}
 	}
+	// home
 	#home {
 		.background {
 			.title {
@@ -633,6 +647,5 @@ section {
 				}
 			}
 		}
-
 	}
 }
