@@ -43,6 +43,19 @@ section {
         transition: all 0.3s; }
         #header .header-menu li a:hover {
           color: #e2e2d3; }
+  #header .toggle {
+    position: fixed;
+    top: 28px;
+    right: 80px;
+    color: #000;
+    border: none;
+    background-color: transparent;
+    display: none; }
+    #header .toggle i {
+      font-size: 20px;
+      padding: 6px;
+      color: #a6a695;
+      cursor: pointer; }
 
 #home .background {
   width: 100%;
@@ -58,11 +71,11 @@ section {
     transform: translateX(-50%);
     color: #fff; }
     #home .background .title h1 {
-      font: bold 80px 'alice';
+      font: bold 88px 'alice';
       margin-bottom: 20px; }
     #home .background .title span {
       position: relative;
-      left: 60px; }
+      left: 40px; }
       #home .background .title span:before {
         content: '';
         display: block;
@@ -99,7 +112,7 @@ section {
         width: 20px;
         border-bottom: 2px solid black;
         position: absolute;
-        top: 10px;
+        top: 8px;
         left: -30px; }
       #home .info .inner .notice .more a {
         color: #000; }
@@ -132,7 +145,7 @@ section {
         width: 20px;
         border-bottom: 2px solid black;
         position: absolute;
-        top: 10px;
+        top: 8px;
         left: -30px; }
       #about .intro span a {
         color: #000; }
@@ -218,7 +231,7 @@ section {
           width: 20px;
           border-bottom: 2px solid black;
           position: absolute;
-          top: 10px;
+          top: 8px;
           left: -30px; }
         #events .event .event-description span a {
           color: #000; }
@@ -277,7 +290,7 @@ section {
           width: 20px;
           border-bottom: 2px solid #fff;
           position: absolute;
-          top: 10px;
+          top: 8px;
           left: -30px; }
         #collection .collection-intro .collection-description span a,
         #collection .collection-intro .collection-gallery span a {
@@ -326,7 +339,7 @@ section {
       margin: 40px 0;
       color: #aaa5bc; }
     #testimonials .testimonial span {
-      font: 28px 'alice';
+      font: bold 28px 'alice';
       color: #a6a695; }
 
 #guidance {
@@ -404,5 +417,35 @@ section {
     color: #aaa5bc;
     text-align: center;
     line-height: 70px; }
+
+@media screen and (max-width: 1179px) {
+  #header {
+    background: #fff;
+    padding: 4vh 12vw;
+    flex-direction: column;
+    position: fixed;
+    border-bottom: 1px solid #e2e2d3; }
+    #header .logo i {
+      background-color: #000;
+      color: #fff; }
+    #header .logo span {
+      color: #000; }
+    #header .header-menu {
+      margin-top: 20px;
+      flex-direction: column;
+      width: 100%;
+      display: none; }
+      #header .header-menu li {
+        margin-left: 0px;
+        text-align: center;
+        padding: 10px; }
+        #header .header-menu li a {
+          color: #000; }
+        #header .header-menu li:hover {
+          background-color: #e2e2d3; }
+        #header .header-menu li:hover a {
+          color: #a6a695; }
+    #header .toggle {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
