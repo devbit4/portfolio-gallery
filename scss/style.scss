@@ -216,7 +216,7 @@ section {
 	height: 100vh;
 	h1 {
 		font: bold 60px/1 'alice';
-		margin-bottom: 60px;
+		margin-bottom: 80px;
 	}
 	.displays {
 		display: flex;
@@ -357,7 +357,7 @@ section {
 			}
 			span {
 				font: bold 16px/1 'alice';
-				margin-left: 40px;
+				margin-left: 30px;
 				position: relative;
 				&::before {
 					content: '';
@@ -387,7 +387,7 @@ section {
 		}
 		span {
 			font: bold 16px/1 'alice';
-			margin-left: 40px;
+			margin-left: 30px;
 			position: relative;
 			&::before {
 				content: '';
@@ -651,7 +651,7 @@ section {
 	}
 
 	// events
-#events {
+	#events {
 	padding: 0vh 12vw 8vh 12vw;
 	h1 {
 		position:static;
@@ -681,7 +681,25 @@ section {
 			padding-left: 0;
 		}
 	}
-}
+	}
+	// collection
+	#collection {
+
+		.collection-intro {
+
+			flex-direction: column;
+			.colection-pics {
+				flex-basis: 100%;
+			}
+			.collection-description,
+			.collection-gallery {
+				flex-basis: 100%;
+				padding: 0px;
+
+			}
+		}
+
+	}
 }
 
 @media screen and (max-width: $mobile) {
