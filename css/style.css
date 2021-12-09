@@ -127,7 +127,7 @@ body {
           transform: translateX(10px); }
 
 #about {
-  padding: 8vh 12vw 0vh 12vw;
+  padding: 8vh 12vw;
   height: 100vh;
   display: flex;
   justify-content: space-between; }
@@ -160,9 +160,8 @@ body {
         color: #000; }
   #about .place-pics {
     flex-basis: 70%;
-    padding: 2vw 0;
-    display: flex;
-    padding-right: 40px; }
+    padding: 6vw 0;
+    display: flex; }
     #about .place-pics img {
       object-fit: cover;
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
