@@ -200,7 +200,8 @@ body {
           object-fit: cover;
           margin-bottom: 40px;
           transition: all 0.3s ease;
-          opacity: 0.8; }
+          opacity: 0.8;
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
           #exhibitions .displays .display .inner img:hover {
             transform: translateY(-30px);
             opacity: 1; }
@@ -226,6 +227,7 @@ body {
       width: 50%; }
       #events .event .event-pic .img {
         margin: 0 auto;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
         overflow: hidden;
         width: 70%;
         height: 400px; }
@@ -233,7 +235,6 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
           transition: all 0.5s;
           filter: grayscale(1); }
           #events .event .event-pic .img img:hover {
@@ -288,7 +289,8 @@ body {
       display: flex; }
       #collection .collection-intro .colection-pics img {
         filter: grayscale(0.1);
-        object-fit: cover; }
+        object-fit: cover;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
       #collection .collection-intro .colection-pics .collection1 {
         width: 60%;
         object-fit: cover; }
