@@ -450,7 +450,8 @@ body {
             font: 14px/1.5 'arial';
             color: #a6a695; }
           #footer .wrap .footer-lower ul li .inner > a {
-            color: #a6a695; }
+            color: #a6a695;
+            font-family: 'arial'; }
           #footer .wrap .footer-lower ul li .inner input {
             max-width: 200px;
             margin: 20px 0; }
@@ -576,12 +577,13 @@ body {
   #events .reverse {
     flex-direction: column; }
 
+  #testimonials h1 {
+    font: bold 40px/1 'alice'; }
   #testimonials .testimonial .profile img {
     width: 200px;
     height: 200px; }
 
-  #collection h1,
-  #testimonials h1 {
+  #collection h1 {
     font: bold 40px/1 'alice'; }
 
   #guidance ul li {

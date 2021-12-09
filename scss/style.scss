@@ -372,7 +372,7 @@ body {
 			img{
 				filter: grayscale(0.1);
 				object-fit: cover;
-				box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.6);
+				box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 			}
 			.collection1 {
 				width: 60%;
@@ -509,6 +509,7 @@ body {
 				font: 20px/1 'alice';
 				a {
 					color: #000;
+
 				}
 			}
 			&:hover {
@@ -581,6 +582,7 @@ body {
 						}
 						> a {
 							color: #a6a695;
+							font-family: 'arial';
 						}
 						input {
 							max-width: 200px;
@@ -588,6 +590,7 @@ body {
 						}
 						span a {
 							color: #000;
+
 						}
 					}
 				}
@@ -821,6 +824,9 @@ body {
 	}
 	// testimonials
 	#testimonials {
+		h1{
+			font: bold 40px/1 'alice';
+		}
 		.testimonial {
 			.profile img {
 				width: 200px;
@@ -829,8 +835,7 @@ body {
 		}
 	}
 	// collection
-	#collection h1,
-	#testimonials h1 {
+	#collection h1 {
 		font: bold 40px/1 'alice';
 	}
 
