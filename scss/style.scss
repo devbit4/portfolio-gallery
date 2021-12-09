@@ -253,11 +253,10 @@ body {
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
-					// opacity: 0.6;
+					opacity: 0.8;
 
 					&:hover {
 						transform: translateY(-30px);
-
 						opacity: 1;
 					}
 				}
@@ -312,7 +311,7 @@ body {
 		.event-description {
 			width: 50%;
 			.inner {
-				width: 80%;
+				width: 70%;
 				margin: 0 auto;
 				h2 {
 					font: 28px 'alice';
@@ -357,7 +356,7 @@ body {
 // collection
 #collection {
 	padding: 10vh 12vw;
-	background: #000;
+	background: #1e1d1c;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 60px;
@@ -716,6 +715,7 @@ body {
 	}
 	// collection
 	#collection {
+
 		.collection-intro {
 			flex-direction: column;
 			.colection-pics {
