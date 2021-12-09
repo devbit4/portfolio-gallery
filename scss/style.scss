@@ -69,11 +69,12 @@ body {
 		width: 100%;
 		height: 90vh;
 		position: relative;
-		img {
+		video {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			// filter: grayscale(30%);
+			// opacity: 0.8;
+			filter: grayscale(100%);
 		}
 		.title {
 			position: absolute;
@@ -86,13 +87,13 @@ body {
 			h1 {
 				font: bold 100px 'alice';
 				margin-bottom: 25px;
-				text-shadow: 10px 5px 10px #aaa;
+				text-shadow: 7px 2px 3px rgba(226,226,211,0.6);
 			}
 
 			span {
 				position: relative;
 				left: 50px;
-				text-shadow: 5px 5px 5px #aaa;
+				text-shadow: 7px 2px 3px rgba(226,226,211,0.6);
 				&:before {
 					content: '';
 					display: block;
@@ -194,8 +195,12 @@ body {
 				left: -30px;
 			}
 			a {
+				display: inline-block;
+				transition: all 0.3s;
 				color: #000;
-
+				&:hover {
+					transform: translateX(10px);
+				}
 			}
 
 		}
@@ -240,6 +245,7 @@ body {
 			width: 25%;
 			padding: 10px;
 			.inner {
+				position: relative;
 				width: 100%;
 				img {
 					width: 100%;
@@ -247,10 +253,11 @@ body {
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
-					opacity: 0.8;
+					// opacity: 0.6;
 
 					&:hover {
-						transform: translateY(-20px);
+						transform: translateY(-30px);
+
 						opacity: 1;
 					}
 				}
@@ -263,6 +270,7 @@ body {
 					color: #aaa5bc;
 					margin-bottom: 40px;
 				}
+
 			}
 		}
 	}
@@ -285,7 +293,7 @@ body {
 				margin: 0 auto;
 
 				overflow: hidden;
-				width: 80%;
+				width: 70%;
 				height: 400px;
 				img {
 					width: 100%;
@@ -514,7 +522,7 @@ body {
 #footer {
 	background-color: #e2e2d3;
 	.wrap {
-		padding: 5vh 12vw;
+		padding: 10vh 12vw;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;

@@ -60,10 +60,11 @@ body {
   width: 100%;
   height: 90vh;
   position: relative; }
-  #home .background img {
+  #home .background video {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    filter: grayscale(100%); }
   #home .background .title {
     position: absolute;
     top: 40%;
@@ -74,11 +75,11 @@ body {
     #home .background .title h1 {
       font: bold 100px 'alice';
       margin-bottom: 25px;
-      text-shadow: 10px 5px 10px #aaa; }
+      text-shadow: 7px 2px 3px rgba(226, 226, 211, 0.6); }
     #home .background .title span {
       position: relative;
       left: 50px;
-      text-shadow: 5px 5px 5px #aaa; }
+      text-shadow: 7px 2px 3px rgba(226, 226, 211, 0.6); }
       #home .background .title span:before {
         content: '';
         display: block;
@@ -157,7 +158,11 @@ body {
         top: 8px;
         left: -30px; }
       #about .intro span a {
+        display: inline-block;
+        transition: all 0.3s;
         color: #000; }
+        #about .intro span a:hover {
+          transform: translateX(10px); }
   #about .place-pics {
     flex-basis: 70%;
     padding: 4vw 0;
@@ -187,16 +192,16 @@ body {
       width: 25%;
       padding: 10px; }
       #exhibitions .displays .display .inner {
+        position: relative;
         width: 100%; }
         #exhibitions .displays .display .inner img {
           width: 100%;
           height: 280px;
           object-fit: cover;
           margin-bottom: 40px;
-          transition: all 0.3s ease;
-          opacity: 0.8; }
+          transition: all 0.3s ease; }
           #exhibitions .displays .display .inner img:hover {
-            transform: translateY(-20px);
+            transform: translateY(-30px);
             opacity: 1; }
         #exhibitions .displays .display .inner h2 {
           font: 18px/1 'alice';
@@ -221,7 +226,7 @@ body {
       #events .event .event-pic .img {
         margin: 0 auto;
         overflow: hidden;
-        width: 80%;
+        width: 70%;
         height: 400px; }
         #events .event .event-pic .img img {
           width: 100%;
@@ -397,7 +402,7 @@ body {
 #footer {
   background-color: #e2e2d3; }
   #footer .wrap {
-    padding: 5vh 12vw; }
+    padding: 10vh 12vw; }
     #footer .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
