@@ -356,7 +356,7 @@ body {
 // collection
 #collection {
 	padding: 10vh 12vw;
-	background: url(../img/bb.jpg) no-repeat center/cover;
+	background: url(../img/bg2.jpg) no-repeat center/cover;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 60px;
@@ -368,6 +368,10 @@ body {
 		.colection-pics {
 			flex-basis: 70%;
 			display: flex;
+			img{
+				filter: grayscale(0.1);
+				object-fit: cover;
+			}
 			.collection1 {
 				width: 60%;
 				object-fit: cover;
