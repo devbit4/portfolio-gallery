@@ -529,14 +529,16 @@ body {
   #events .reverse {
     flex-direction: column; }
 
-  #collection .collection-intro {
-    flex-direction: column; }
-    #collection .collection-intro .colection-pics {
-      flex-basis: 100%; }
-    #collection .collection-intro .collection-description,
-    #collection .collection-intro .collection-gallery {
-      flex-basis: 100%;
-      padding: 0px; }
+  #collection {
+    background: url(../img/bg2.jpg) no-repeat center/cover; }
+    #collection .collection-intro {
+      flex-direction: column; }
+      #collection .collection-intro .colection-pics {
+        flex-basis: 100%; }
+      #collection .collection-intro .collection-description,
+      #collection .collection-intro .collection-gallery {
+        flex-basis: 100%;
+        padding: 0px; }
 
   #guidance ul {
     flex-wrap: wrap; }
