@@ -74,7 +74,7 @@ body {
 			height: 100%;
 			object-fit: cover;
 			// opacity: 0.8;
-			filter: grayscale(100%);
+			filter: grayscale(90%);
 		}
 		.title {
 			position: absolute;
@@ -87,13 +87,13 @@ body {
 			h1 {
 				font: bold 100px 'alice';
 				margin-bottom: 25px;
-				text-shadow: 7px 2px 3px rgba(226,226,211,0.6);
+				text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 			}
 
 			span {
 				position: relative;
 				left: 50px;
-				text-shadow: 7px 2px 3px rgba(226,226,211,0.6);
+				text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 				&:before {
 					content: '';
 					display: block;
@@ -644,7 +644,13 @@ body {
 	}
 	// home
 	#home {
+		background: url(../img/art4.jpg)no-repeat center/cover;
+
 		.background {
+			video{
+				display: none;
+			}
+
 			.title {
 				top: 50%;
 				h1 {
