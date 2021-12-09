@@ -356,7 +356,7 @@ body {
 // collection
 #collection {
 	padding: 10vh 12vw;
-	background: url(../img/bg2.jpg) no-repeat center/cover;
+	background: url(../img/bg2.jpg) no-repeat center/cover fixed;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 60px;
@@ -593,11 +593,11 @@ body {
 		}
 	}
 	.copyright {
-		height: 70px;
+		height: 50px;
 		background: #000;
 		color: #aaa5bc;
 		text-align: center;
-		line-height: 70px;
+		line-height: 50px;
 	}
 }
 
