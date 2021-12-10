@@ -74,7 +74,7 @@ body {
 			height: 100%;
 			object-fit: cover;
 			// opacity: 0.8;
-			filter: grayscale(90%);
+			// filter: grayscale(30%);
 		}
 		.title {
 			position: absolute;
@@ -87,13 +87,13 @@ body {
 			h1 {
 				font: bold 100px 'alice';
 				margin-bottom: 25px;
-				text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
+				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 			}
 
 			span {
 				position: relative;
 				left: 50px;
-				text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
+				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 				&:before {
 					content: '';
 					display: block;
@@ -161,7 +161,7 @@ body {
 
 //about
 #about {
-	padding: 8vh 12vw;
+	padding: 12vh 12vw;
 	height: 90vh;
 	display: flex;
 	justify-content: space-between;
@@ -207,8 +207,9 @@ body {
 	}
 	.place-pics {
 		flex-basis: 70%;
-		padding: 4vw 0;
+		padding: 4vw 0 0 0;
 		display: flex;
+		margin-top: 40px;
 		// padding-right: 40px;
 		img {
 			object-fit: cover;
@@ -219,7 +220,7 @@ body {
 			width: 40%;
 			height: 80%;
 			position: relative;
-			top: 50px;
+			top:40px;
 			left: 40px;
 			filter: grayscale(0.6);
 		}
@@ -232,7 +233,7 @@ body {
 
 // exhibitions
 #exhibitions {
-	padding: 10vh 12vw;
+	padding: 12vh 12vw;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 60px;
@@ -277,7 +278,7 @@ body {
 }
 // events
 #events {
-	padding: 0 12vw 10vh 12vw;
+	padding: 0 12vw 12vh 12vw;
 	h1 {
 		font: bold 60px/1 'alice';
 		position: absolute;
@@ -356,7 +357,7 @@ body {
 
 // collection
 #collection {
-	padding: 10vh 12vw;
+	padding: 12vh 12vw;
 	background: url(../img/bg2.jpg) no-repeat center/cover fixed;
 	h1 {
 		font: bold 60px/1 'alice';
@@ -461,7 +462,7 @@ body {
 }
 // testimonials
 #testimonials {
-	padding: 10vh 12vw;
+	padding: 12vh 12vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -490,7 +491,7 @@ body {
 }
 //guidance
 #guidance {
-	padding: 5vh 12vw;
+	padding: 6vh 12vw;
 	ul {
 		display: flex;
 		justify-content: space-between;
@@ -528,7 +529,7 @@ body {
 #footer {
 	background-color: #e2e2d3;
 	.wrap {
-		padding: 10vh 12vw;
+		padding: 12vh 12vw 6vh 12vw;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;
