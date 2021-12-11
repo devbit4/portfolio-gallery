@@ -69,7 +69,7 @@ fieldset {
   text-align: center; }
   .content .sub_visual {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background: #000; }
   .content .inner {
     margin-top: 100px;
@@ -86,6 +86,11 @@ fieldset {
           content: '/';
           margin-right: 20px;
           margin-left: 10px; }
+    .content .inner > p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      padding: 0 60px;
+      text-align: center; }
 
 #footer_sub {
   background-color: #e2e2d3; }
@@ -203,10 +208,6 @@ fieldset {
     width: 100%; } }
 .about .inner h1 {
   margin-top: 150px; }
-.about .inner > p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  padding: 0 60px; }
 .about .inner .space {
   display: flex;
   flex-wrap: wrap;
@@ -300,16 +301,19 @@ fieldset {
 .community .inner table {
   width: 100%;
   margin-top: 20px;
-  border-bottom: 2px solid #777777;
+  border-bottom: 2px solid #777;
   margin-bottom: 50px;
   border-collapse: collapse; }
-  .community .inner table tr:nth-of-type(even) {
+  .community .inner table tr:nth-of-type(odd) {
     background: #eee; }
   .community .inner table tr th {
     padding: 15px;
-    background: #777777;
-    color: #fff;
-    font-size: 18px; }
+    background: #d8d9cc;
+    color: #777;
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777;
+    font-size: 18px;
+    margin-bottom: 40px; }
     .community .inner table tr th:nth-of-type(1) {
       width: 10%; }
     .community .inner table tr th:nth-of-type(3) {
@@ -384,6 +388,161 @@ fieldset {
   .community .inner table tr td:nth-of-type(1) {
     width: 0%;
     display: none; } }
+.join h1 {
+  text-align: center; }
+.join .inner {
+  text-align: left; }
+  .join .inner .pricacy {
+    border-top: 2px solid #777;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex; }
+    .join .inner .pricacy h2 {
+      width: 25%; }
+    .join .inner .pricacy .text {
+      width: 75%; }
+      .join .inner .pricacy .text textarea {
+        width: 100%;
+        background: #eee;
+        padding: 10px;
+        margin-bottom: 10px; }
+      .join .inner .pricacy .text .agreement {
+        text-align: right; }
+        .join .inner .pricacy .text .agreement input {
+          margin-left: 10px; }
+  .join .inner .user {
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex; }
+    .join .inner .user h2 {
+      width: 25%; }
+    .join .inner .user table {
+      width: 75%; }
+      .join .inner .user table th {
+        width: 20%;
+        text-align: left;
+        font-size: 14px;
+        color: #666;
+        background: #eee;
+        border-right: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+        .join .inner .user table th:last-child {
+          border-right: none;
+          text-align: center;
+          background-color: #fff; }
+      .join .inner .user table td {
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+      .join .inner .user table th.submit {
+        text-align: right; }
+      .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
+        width: 50%;
+        height: 30px;
+        border: 1px solid #bbb;
+        padding-left: 20px; }
+      .join .inner .user table input[type=checkbox], .join .inner .user table input[type=radio] {
+        margin-right: 10px; }
+      .join .inner .user table label {
+        margin-right: 30px; }
+      .join .inner .user table select {
+        width: 40%;
+        height: 30px;
+        border: 1px solid #bbb;
+        padding-left: 20px; }
+      .join .inner .user table textarea#comments {
+        width: 80%;
+        height: 100px;
+        border: 1px solid #bbb;
+        padding: 20px;
+        resize: none;
+        font-family: 'arial'; }
+      .join .inner .user table .pathTxt, .join .inner .user table .genderTxt {
+        font-size: 12px;
+        margin-top: 10px;
+        display: none; }
+      .join .inner .user table .check td {
+        display: flex;
+        flex-wrap: wrap; }
+  .join .inner .btns {
+    text-align: center; }
+    .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
+      width: 150px;
+      height: 40px;
+      border: none;
+      background-color: #444;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 10px; }
+
+@media screen and (max-width: 1179px) {
+  .join .inner .pricacy {
+    flex-wrap: wrap; }
+    .join .inner .pricacy h2 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .join .inner .pricacy .text {
+      width: 100%; }
+      .join .inner .pricacy .text textarea {
+        width: 100%; }
+  .join .inner .user {
+    flex-wrap: wrap; }
+    .join .inner .user h2 {
+      width: 100%;
+      margin-bottom: 20px; }
+    .join .inner .user table {
+      width: 100%; }
+      .join .inner .user table th {
+        width: 10%;
+        text-align: left;
+        font-size: 14px;
+        color: #666;
+        background: #eee;
+        border-right: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+        .join .inner .user table th:last-child {
+          border-right: none;
+          text-align: center;
+          background-color: #fff; }
+      .join .inner .user table td {
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+      .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
+        width: 40%;
+        min-width: 200px;
+        margin-bottom: 10px; }
+      .join .inner .user table select {
+        width: 35%;
+        min-width: 200px; }
+      .join .inner .user table textarea#comments {
+        width: 80%; } }
+@media screen and (max-width: 539px) {
+  .join .inner .user table th {
+    display: none; }
+  .join .inner .user table textarea#comments {
+    width: 100%;
+    padding-left: 5px; }
+  .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
+    width: 100%;
+    min-width: auto;
+    padding-left: 5px; }
+  .join .inner .user table select {
+    width: 100%;
+    min-width: auto;
+    padding-left: 5px; }
+  .join .inner .btns {
+    text-align: center; }
+    .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
+      width: 90px;
+      height: 40px;
+      border: none;
+      background-color: #444;
+      font-size: 14px;
+      color: #fff;
+      margin: 0 10px; } }
 body {
   background: url(../img/bg0.svg); }
 

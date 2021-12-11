@@ -1,0 +1,267 @@
+.join{
+    h1{
+        text-align: center;
+    }
+    .inner{
+        text-align: left;
+        .pricacy{
+            border-top: 2px solid #777;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+
+            h2{
+                width: 25%;
+
+            }
+            .text{
+                width: 75%;
+                textarea{
+                    width: 100%;
+                    background: #eee;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+                .agreement{
+                    text-align: right;
+                    input{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .user{
+            border-top: 2px solid #777;
+            border-bottom: 2px solid #777;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+
+            h2{
+                width: 25%;
+            }
+            table{
+
+                width: 75%;
+                th{
+                    width: 20%;
+                    text-align: left;
+                    font-size: 14px;
+                    color: #666;
+                    background: #eee;
+                    border-right: 1px solid #bbb;
+                    border-bottom:1px solid #bbb;
+                    padding:20px;
+                    &:last-child{
+                        border-right:none;
+                        text-align:center;
+                        background-color:#fff;
+                     }
+                }
+                td{
+                    border-bottom:1px solid #bbb;
+                    padding:20px;
+
+                }
+                th.submit{
+                    text-align: right;
+                }
+                 input[type=text], input[type=password]{
+                    width:50%;
+                    height:30px;
+                    border:1px solid #bbb;
+                    padding-left:20px;
+                 }
+                 input[type=checkbox], input[type=radio]{
+                    margin-right:10px;
+                 }
+                 label{
+                    margin-right:30px;
+                 }
+                 select{
+                    width:40%;
+                    height:30px;
+                    border:1px solid #bbb;
+                    padding-left:20px;
+                 }
+
+                 textarea#comments{
+                    width:80%;
+                    height:100px;
+                    border:1px solid #bbb;
+                    padding:20px;
+                    resize:none;
+                    font-family: 'arial';
+                 }
+
+                 .pathTxt, .genderTxt{
+                   font-size: 12px;
+                    margin-top:10px;
+                    display:none;
+                 }
+                 .check td{
+                     display: flex;
+                     flex-wrap: wrap;
+                 }
+
+            }
+
+        }
+        .btns{
+            text-align: center;
+            input[type=reset], input[type=submit]{
+                width:150px;
+                height:40px;
+                border:none;
+                background-color:#444;
+                font-size: 14px;
+                color:#fff;
+                margin:0 10px;
+
+             }
+
+
+        }
+
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .join{
+        .inner{
+
+            .pricacy{
+                flex-wrap: wrap;
+
+                h2{
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                }
+                .text{
+                    width: 100%;
+                    textarea{
+                        width: 100%;
+
+                    }
+
+                }
+            }
+            .user{
+                flex-wrap: wrap;
+
+                h2{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                table{
+                    width: 100%;
+                    th{
+                        width: 10%;
+                        text-align: left;
+                        font-size: 14px;
+                        color: #666;
+                        background: #eee;
+                        border-right: 1px solid #bbb;
+                        border-bottom:1px solid #bbb;
+                        padding:20px;
+                        &:last-child{
+                            border-right:none;
+                            text-align:center;
+                            background-color:#fff;
+                         }
+                    }
+                    td{
+                        border-bottom:1px solid #bbb;
+                        padding:20px;
+
+                    }
+
+
+                     input[type=text], input[type=password]{
+                        width:40%;
+                        min-width: 200px;
+                        margin-bottom: 10px;
+
+                     }
+
+
+                     select{
+                        width:35%;
+                        min-width: 200px;
+
+                     }
+
+                     textarea#comments{
+                        width:80%;
+
+
+                     }
+
+
+
+                }
+
+            }
+        }
+    }
+
+}
+@media screen and (max-width: $mobile) {
+    .join{
+        .inner{
+            .user{
+                table{
+
+                    th{display: none;
+
+                    }
+                     textarea#comments{
+                        width:100%;
+                        padding-left: 5px;
+
+                     }
+                     input[type=text], input[type=password]{
+
+                        width: 100%;
+                        min-width: auto;
+                        padding-left: 5px;
+
+
+                     }
+
+
+                     select{
+                         width: 100%;
+                        min-width: auto;
+                        padding-left: 5px;
+                     }
+
+
+
+                }
+
+            }
+            .btns{
+                text-align: center;
+                input[type=reset], input[type=submit]{
+                    width:90px;
+                    height:40px;
+                    border:none;
+                    background-color:#444;
+                    font-size: 14px;
+                    color:#fff;
+                    margin:0 10px;
+
+                 }
+
+
+            }
+
+
+
+        }
+    }
+
+
+}

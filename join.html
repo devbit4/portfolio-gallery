@@ -33,10 +33,137 @@
 
     </header>
     <!-- content -->
-    <section class="content">
+    <section class="content join">
         <div class="sub_visual"></div>
         <div class="inner">
-            <h1>Join<span>Membership</span></h1>
+            <h1>Welcome New Members</h1>
+
+            <form action="/" method="post">
+                <fieldset>
+                    <legend class="hidden">Sign Up form</legend>
+
+                    <div class="pricacy">
+                        <h2><label for="terms">Privacy Policy</label></h2>
+                        <div class="text">
+                            <textarea name="terms" id="terms" cols="30" rows="5"> #temrs & policy1.&#13;&#10;lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero omnis cupiditate voluptatem quo id assumenda atque, repellat eius officia quos ipsa deserunt. Natus dolorem saepe dicta doloremque mollitia voluptates beatae velit, nihil praesentium, eius veniam obcaecati necessitatibus. Ullam minima recusandae quos omnis quae! Doloribus, dolorem. Iste, hic voluptates! Voluptatem quas vero delectus laudantium blanditiis commodi veniam eos explicabo perspiciatis rerum quasi aspernatur quisquam ratione enim et quos deserunt voluptate aperiam quod, eaque dolorum. Aliquam exercitationem fugit enim quaerat. Nobis nemo eos ratione omnis assumenda ipsa similique hic, illum aliquam commodi veritatis autem dolorem iusto! Rem, hic. Consequatur itaque dicta molestiae quidem rerum id similique autem possimus necessitatibus dolor assumenda libero, eaque deleniti dolores mollitia. Dicta eius perferendis dolorem dolor odio ipsam qui in quos accusantium animi quo maxime, vitae a? Quae minus vero deserunt iusto atque impedit, aperiam facilis explicabo, nisi natus quasi tempora cumque? Aliquid provident molestiae accusamus assumenda saepe, fuga minus ea architecto soluta a, voluptatibus veritatis quis repudiandae officia mollitia voluptatum ipsum ex quaerat eum corporis maiores. Suscipit, consequuntur, iste sapiente eligendi culpa exercitationem et dolorum accusantium repellendus fugiat facere explicabo dicta atque ab. Eum sunt quam atque voluptatum dolorum ducimus, vitae sed beatae porro voluptates amet!
+                            </textarea>
+                            <div class="agreement">
+                                <input type="checkbox" name="agree" id="agree">
+                                <label for="agree">I agree to the terms and conditions</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricacy">
+                        <h2><label for="terms2">Cookies Policy</label></h2>
+                        <div class="text">
+                            <textarea name="terms2" id="terms2" cols="30" rows="5">#temrs & policy2.&#13;&#10;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero omnis cupiditate voluptatem quo id assumenda atque, repellat eius officia quos ipsa deserunt. Natus dolorem saepe dicta doloremque mollitia voluptates beatae velit, nihil praesentium, eius veniam obcaecati necessitatibus. Ullam minima recusandae quos omnis quae! Doloribus, dolorem. Iste, hic voluptates! Voluptatem quas vero delectus laudantium blanditiis commodi veniam eos explicabo perspiciatis rerum quasi aspernatur quisquam ratione enim et quos deserunt voluptate aperiam quod, eaque dolorum. Aliquam exercitationem fugit enim quaerat. Nobis nemo eos ratione omnis assumenda ipsa similique hic, illum aliquam commodi veritatis autem dolorem iusto! Rem, hic. Consequatur itaque dicta molestiae quidem rerum id similique autem possimus necessitatibus dolor assumenda libero, eaque deleniti dolores mollitia. Dicta eius perferendis dolorem dolor odio ipsam qui in quos accusantium animi quo maxime, vitae a? Quae minus vero deserunt iusto atque impedit, aperiam facilis explicabo, nisi natus quasi tempora cumque? Aliquid provident molestiae accusamus assumenda saepe, fuga minus ea architecto soluta a, voluptatibus veritatis quis repudiandae officia mollitia voluptatum ipsum ex quaerat eum corporis maiores. Suscipit, consequuntur, iste sapiente eligendi culpa exercitationem et dolorum accusantium repellendus fugiat facere explicabo dicta atque ab. Eum sunt quam atque voluptatum dolorum ducimus, vitae sed beatae porro voluptates amet!
+                            </textarea>
+                            <div class="agreement">
+                                <input type="checkbox" name="agree2" id="agree2">
+                                <label for="agree2">I agree</label>
+                                <input type="checkbox" name="disagree2" id="disagree2">
+                                <label for="disagree2">I dont't agree</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <h2>User Information</h2>
+                        <table summary="id,password,user information form">
+                            <caption class="hidden">user information table</caption>
+
+                            <tr>
+                                <th scope="row"><label for="id">Name</label> </th>
+                                <td>
+                                    <input type="text" name="name" id="name" placeholder="Your Name Here" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="id">ID</label> </th>
+                                <td>
+                                    <input type="text" name="id" id="id" placeholder="Your ID Here" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="pwd">Password</label></th>
+                                <td><input type="password" name="pwd" id="pwd" placeholder="Your Password Here"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="pwd2">Re Password</label></th>
+                                <td><input type="password" name="pwd2" id="pwd2" placeholder="Check Your Password"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="email">E-mail</label></th>
+                                <td>
+                                    <input type="text" name="email" id="email" placeholder="Your Email Here">
+                                    <select name="company" id="company">
+                                        <option value="naver">@google.com</option>
+                                        <option value="nate">@naver.com</option>
+                                        <option value="daum">@daum.net</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="check">
+                                <th scope="row">Gender</th>
+                                <td>
+                                    <label for="male">
+                                        <input type="radio" name="gender" id="male" value="male">Male
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" name="gender" id="female" value="female">Female
+                                    </label>
+                                    <p class="genderTxt">Check Your Gender</p>
+                                </td>
+                            </tr>
+                            <tr class="check">
+                                <th scope="row">News Letter</th>
+                                <td>
+                                    <label for="agree">
+                                        <input type="radio" name="news" id="agree" value="agree">Agree
+                                    </label>
+                                    <label for="disagree">
+                                        <input type="radio" name="news" id="disagree" value="disagree">Disagree
+                                    </label>
+                                    <p class="genderTxt">Confirm Your Agreement</p>
+                                </td>
+                            </tr>
+                            <tr class="check">
+                                <th scope="row">Path</th>
+                                <td>
+                                    <label for="internet"><input type="checkbox" value="internet" id="internet"
+                                            name="path">Internet</label>
+
+                                    <label for="book"><input type="checkbox" value="book" id="book"
+                                            name="path">Book</label>
+
+                                    <label for="peple"><input type="checkbox" value="peple" id="peple"
+                                            name="path">People</label>
+                                    <label for="etc"><input type="checkbox" value="etc" id="etc" name="path">Etc</label>
+                                    <p class="pathTxt">Check Options</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="comments">Comments</label></th>
+                                <td>
+                                    <textarea name="comments" id="comments" cols="30" rows="10"
+                                        placeholder="Comments Here"></textarea>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="btns">
+                        <input type="reset" value="CANCEL">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+
+                </fieldset>
+            </form>
             <!-- 컨텐츠 들어가는 부분 -->
         </div>
     </section>
@@ -49,12 +176,12 @@
                     <a href="#"><span>Gallery</span></a>
                 </div>
                 <ul class="footer-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Exhibition</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="join.html"><i class="fas fa-user-cog"></i></a></li>
                 </ul>
             </div>
             <div class="footer-lower">
