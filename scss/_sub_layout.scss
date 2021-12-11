@@ -1,11 +1,6 @@
 $tablet: 1179px;
 $mobile: 539px;
 
-// background
-body {
-	background: url(../img/bg0.svg);
-}
-
 // header
 #header_sub {
 	position: absolute;
@@ -63,10 +58,11 @@ body {
 .content{
     width:100%;
     padding:0px 0px 150px;
+	text-align: center;
 
     .sub_visual{
        width:100%;
-       height:100px;
+       height:300px;
        background:#000;
 
     }
@@ -224,7 +220,7 @@ body {
     .content{
       padding:0px 0px 100px;
 
-      .sub_visual{  height:300px;  }
+    //   .sub_visual{  height:300px;  }
       .inner{
          width:100%;
       }
@@ -258,9 +254,9 @@ body {
     .content{
         padding:0px 0px 80px;
 
-        .sub_visual{
-            height:150px;
-             }
+        // .sub_visual{
+        //     height:150px;
+        //      }
         .inner{
             h1{
               font-size:42px;
