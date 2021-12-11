@@ -1,7 +1,15 @@
 @charset 'UTF-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600;700&display=swap');
 @import 'reset.scss';
+@import 'sub_layout.scss';
+@import 'about.scss';
+@import 'program.scss';
+@import 'collection.scss';
+@import 'community.scss';
+@import 'contact.scss';
+@import 'join.scss';
+
 
 $tablet: 1179px;
 $mobile: 539px;
@@ -162,7 +170,6 @@ body {
 //about
 #about {
 	padding: 12vh 12vw;
-	height: 90vh;
 	display: flex;
 	justify-content: space-between;
 	.intro {
@@ -207,7 +214,7 @@ body {
 	}
 	.place-pics {
 		flex-basis: 70%;
-		padding: 4vw 0 0 0;
+		padding: 6vw 0 0 0;
 		display: flex;
 		margin-top: 40px;
 		// padding-right: 40px;
@@ -231,8 +238,8 @@ body {
 	}
 }
 
-// exhibitions
-#exhibitions {
+// programs
+#programs {
 	padding: 12vh 12vw;
 	h1 {
 		font: bold 60px/1 'alice';
@@ -254,7 +261,7 @@ body {
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
-					opacity: 0.8;
+					opacity: 0.9;
 					box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 
 					&:hover {
@@ -583,7 +590,7 @@ body {
 						}
 						> a {
 							color: #a6a695;
-							font-family: 'arial';
+							font: 14px/1.5 'arial';
 						}
 						input {
 							max-width: 200px;
@@ -697,8 +704,8 @@ body {
 			margin-top: 20px;
 		}
 	}
-	// exhibitions
-	#exhibitions {
+	// programs
+	#programs {
 		.displays {
 			flex-wrap: wrap;
 			.display {
@@ -792,8 +799,8 @@ body {
 			}
 		}
 	}
-	// exhibitions
-	#exhibitions {
+	// programs
+	#programs {
 		h1 {
 			font: bold 40px 'alice';
 		}
