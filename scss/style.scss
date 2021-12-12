@@ -377,7 +377,7 @@ body {
 // collection
 #collection {
 	padding: 12vh 12vw;
-	background: url(../img/bg2.jpg) no-repeat center/cover fixed;
+	background: url(../img/main/pic17.jpg) no-repeat center/cover fixed;
 	h1 {
 		font: bold 60px/1 'alice';
 		margin-bottom: 60px;
@@ -619,10 +619,11 @@ body {
 	}
 	.copyright {
 		height: 50px;
-		background: #000;
-		color: #aaa5bc;
+		background: #2F4858;
+		color: #000;
 		text-align: center;
 		line-height: 50px;
+
 	}
 }
 
@@ -672,7 +673,8 @@ body {
 	}
 	// home
 	#home {
-		background: url(../img/art4.jpg)no-repeat center/cover;
+		background: url(../img/main/bg1.jpeg)no-repeat center/cover;
+		filter: grayscale(0.2);
 
 		.background {
 			video{
@@ -744,7 +746,7 @@ body {
 	}
 	// collection
 	#collection {
-		background: url(../img/bg2.jpg) no-repeat center/cover;
+		background: url(../img/main/pic17.jpg) no-repeat center/cover;
 		.collection-intro {
 			flex-direction: column;
 			.colection-pics {

@@ -155,8 +155,8 @@ fieldset {
             color: #000; }
   #footer_sub .copyright {
     height: 50px;
-    background: #000;
-    color: #aaa5bc;
+    background: #2F4858;
+    color: #000;
     text-align: center;
     line-height: 50px; }
 
@@ -223,7 +223,7 @@ fieldset {
     color: #000;
     margin-bottom: 80px; }
     .about .space h1::after {
-      content: "";
+      content: '';
       display: block;
       width: 200px;
       height: 2px;
@@ -239,7 +239,7 @@ fieldset {
     .about .space .intro p {
       font-family: 'arial';
       width: 48%;
-      color: #B7C3B4;
+      color: #b7c3b4;
       font-size: 16px;
       margin-bottom: 40px; }
       .about .space .intro p:nth-of-type(1) {
@@ -250,7 +250,7 @@ fieldset {
     display: flex;
     justify-content: space-around; }
     .about .space .boxs .box {
-      width: 33%;
+      width: 30%;
       height: 200px;
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
       position: relative; }
@@ -290,7 +290,7 @@ fieldset {
     font-family: 'arial';
     margin-bottom: 40px;
     padding: 0 60px;
-    color: #B7C3B4; }
+    color: #b7c3b4; }
   .about .inner .team .member {
     display: flex;
     width: 49%;
@@ -305,7 +305,7 @@ fieldset {
       .about .inner .team .member .text h3 {
         font: 16px 'arial';
         margin-bottom: 20px;
-        color: #B7C3B4; }
+        color: #b7c3b4; }
       .about .inner .team .member .text p {
         font-size: 14px;
         font: 14px/1.22 'arial';
@@ -346,11 +346,13 @@ fieldset {
   .about .inner .team .member {
     width: 100%; } }
 @media screen and (max-width: 539px) {
-  .about .space .boxs {
-    flex-wrap: wrap; }
-    .about .space .boxs .box {
-      width: 48%;
-      margin-bottom: 10px; }
+  .about .space {
+    padding: 0; }
+    .about .space .boxs {
+      flex-wrap: wrap; }
+      .about .space .boxs .box {
+        width: 48%;
+        margin-bottom: 10px; }
   .about .inner .team > p {
     padding: 0px; }
   .about .inner .team .member {
@@ -889,7 +891,7 @@ body {
 
 #collection {
   padding: 12vh 12vw;
-  background: url(../img/bg2.jpg) no-repeat center/cover fixed; }
+  background: url(../img/main/pic17.jpg) no-repeat center/cover fixed; }
   #collection h1 {
     font: bold 60px/1 'alice';
     margin-bottom: 60px;
@@ -1072,8 +1074,8 @@ body {
             color: #000; }
   #footer .copyright {
     height: 50px;
-    background: #000;
-    color: #aaa5bc;
+    background: #2F4858;
+    color: #000;
     text-align: center;
     line-height: 50px; }
 
@@ -1108,7 +1110,8 @@ body {
       display: block; }
 
   #home {
-    background: url(../img/art4.jpg) no-repeat center/cover; }
+    background: url(../img/main/bg1.jpeg) no-repeat center/cover;
+    filter: grayscale(0.2); }
     #home .background video {
       display: none; }
     #home .background .title {
@@ -1146,7 +1149,7 @@ body {
     flex-direction: column; }
 
   #collection {
-    background: url(../img/bg2.jpg) no-repeat center/cover; }
+    background: url(../img/main/pic17.jpg) no-repeat center/cover; }
     #collection .collection-intro {
       flex-direction: column; }
       #collection .collection-intro .colection-pics {
