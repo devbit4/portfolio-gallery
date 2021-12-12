@@ -232,16 +232,25 @@ fieldset {
       position: relative;
       left: 50%;
       transform: translateX(-50%); }
-  .about .space > p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    padding: 0 60px;
-    color: #B7C3B4; }
+  .about .space .intro {
+    padding: 0 12vw;
+    display: flex;
+    justify-content: space-between; }
+    .about .space .intro p {
+      font-family: 'arial';
+      width: 48%;
+      color: #B7C3B4;
+      font-size: 16px;
+      margin-bottom: 40px; }
+      .about .space .intro p:nth-of-type(1) {
+        text-align: right; }
+      .about .space .intro p:nth-of-type(2) {
+        text-align: left; }
   .about .space .boxs {
     display: flex;
     justify-content: space-around; }
     .about .space .boxs .box {
-      width: 23%;
+      width: 33%;
       height: 200px;
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
       position: relative; }
@@ -277,7 +286,8 @@ fieldset {
   justify-content: space-around;
   flex-wrap: wrap; }
   .about .inner .team > p {
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'arial';
     margin-bottom: 40px;
     padding: 0 60px;
     color: #B7C3B4; }
@@ -704,7 +714,7 @@ body {
     justify-content: space-between;
     align-items: center; }
     #home .info .inner h2 {
-      font: bold 28px/1 'alice';
+      font: bold 24px/1 'alice';
       color: #e2e2d3; }
     #home .info .inner .notice .alarm {
       font: 16px/1 'arial';
