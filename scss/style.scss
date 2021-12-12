@@ -125,7 +125,7 @@ body {
 		}
 	}
 	.info {
-		background-color: #e2e2d3;
+		background-color: #2F4858;
 		.inner {
 			padding: 0 12vw;
 			height: 10vh;
@@ -134,10 +134,12 @@ body {
 			align-items: center;
 			h2 {
 				font: bold 28px/1 'alice';
+				color: #e2e2d3;
 			}
 			.notice {
 				.alarm {
 					font: 16px/1 'arial';
+					color: #777;
 				}
 				.more {
 					font: bold 16px/1 'alice';
@@ -147,7 +149,7 @@ body {
 						content: '';
 						display: block;
 						width: 20px;
-						border-bottom: 2px solid #000;
+						border-bottom: 2px solid #e2e2d3;
 						position: absolute;
 						top: 8px;
 						left: -30px;
@@ -156,7 +158,7 @@ body {
 					a {
 						transition: all 0.3s;
 						display: inline-block;
-						color: #000;
+						color: #e2e2d3;
 						&:hover {
 							transform: translateX(10px);
 						}
@@ -253,6 +255,8 @@ body {
 		.display {
 			width: 25%;
 			padding: 10px;
+			transition: all 0.3s;
+			opacity: 0.9;
 			.inner {
 				position: relative;
 				width: 100%;
@@ -262,13 +266,13 @@ body {
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
-					opacity: 0.8;
+					// opacity: 0.8;
 					box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 
-					&:hover {
-						transform: translateY(-30px);
-						opacity: 1;
-					}
+					// &:hover {
+					// 	transform: translateY(-30px);
+					// 	opacity: 1;
+					// }
 				}
 				h2 {
 					font: 18px/1 'alice';
@@ -281,6 +285,13 @@ body {
 				}
 
 			}
+
+		&:hover{
+			transform: translateY(-30px);
+			opacity: 1;
+		}
+
+
 		}
 	}
 }
