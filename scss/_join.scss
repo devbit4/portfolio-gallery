@@ -5,7 +5,7 @@
     .inner{
         text-align: left;
         .pricacy{
-            border-top: 2px solid #777;
+            border-top: 2px solid #000;
             margin-bottom: 20px;
             padding: 20px;
             display: flex;
@@ -18,7 +18,7 @@
                 width: 75%;
                 textarea{
                     width: 100%;
-                    background: #eee;
+                    background: #efefef;
                     padding: 10px;
                     margin-bottom: 10px;
                 }
@@ -31,8 +31,8 @@
             }
         }
         .user{
-            border-top: 2px solid #777;
-            border-bottom: 2px solid #777;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
             margin-bottom: 20px;
             padding: 20px;
             display: flex;
@@ -47,8 +47,8 @@
                     width: 20%;
                     text-align: left;
                     font-size: 14px;
-                    color: #666;
-                    background: #eee;
+                    color: #000;
+                    background: #E2E2D3;
                     border-right: 1px solid #bbb;
                     border-bottom:1px solid #bbb;
                     padding:20px;
@@ -113,7 +113,7 @@
                 width:150px;
                 height:40px;
                 border:none;
-                background-color:#444;
+                background-color:#000;
                 font-size: 14px;
                 color:#fff;
                 margin:0 10px;
@@ -246,11 +246,6 @@
                 text-align: center;
                 input[type=reset], input[type=submit]{
                     width:90px;
-                    height:40px;
-                    border:none;
-                    background-color:#444;
-                    font-size: 14px;
-                    color:#fff;
                     margin:0 10px;
 
                  }

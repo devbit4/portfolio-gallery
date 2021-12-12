@@ -27,6 +27,7 @@
              height: 30px;
              color: #Fff;
              cursor: pointer;
+             background: #000;
           }
        }
        .notice{
@@ -38,7 +39,7 @@
        table{
           width:100%;
           margin-top: 20px;
-          border-bottom:2px solid #777;
+          border-bottom:2px solid #000;
           margin-bottom:50px;
           border-collapse:collapse;
 
@@ -50,9 +51,9 @@
              th{
                 padding:15px;
                 background:#d8d9cc;
-                color:#777;
-                border-top: 2px solid #777;
-                border-bottom: 2px solid #777;
+                color:#000;
+                border-top: 2px solid #000;
+                border-bottom:1px solid #000;
                 font-size: 18px;
                 margin-bottom: 40px;
 
@@ -110,9 +111,10 @@
             width: 30px;
             height: 30px;
             border: none;
-            background-color: #777;
+            background-color: #000;
             margin: 0 20px;
             color: #fff;
+
 
          }
       }
@@ -155,6 +157,12 @@
  @media screen and (max-width:$mobile){
     .community{
        .inner{
+         .searchbox{
+
+            input{
+               width: 120px;
+            }
+         }
           table{
              tr{
                 th{

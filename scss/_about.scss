@@ -1,32 +1,45 @@
 .about {
 	.inner {
-		h1{
-			margin-top: 150px;
-		}
-		
+
         .space{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin-bottom: 80px;
+           padding-bottom: 12vh;
+			>p {
+				font-size: 18px;
+				margin-bottom: 40px;
+				padding: 0 60px;
+				color: #B7C3B4;
+
+			}
+
             img{
 
                 width: 30%;
                 height: 200px;
                 background: #000;
+				object-fit: cover;
+				box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+
 
             }
         }
 		.team {
-
-            text-align: left;
-			margin-top: 40px;
+			padding-top: 12vh;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			flex-wrap: wrap;
+			>p {
+				font-size: 18px;
+				margin-bottom: 40px;
+				padding: 0 60px;
+				color: #B7C3B4;
+
+			}
 			.member {
 				display: flex;
-				width: 48%;
+				width: 49%;
 				margin-bottom: 20px;
 				border: 1px solid #000;
 				.text {
@@ -38,13 +51,14 @@
 					}
 					h3 {
 						font: 16px 'arial';
-						color: #d8d9cc;
 						margin-bottom: 20px;
+						color:#B7C3B4;
 					}
 					p {
 						font-size: 14px;
 						font: 14px/1.22 'arial';
 						margin-bottom: 30px;
+						color: #e2e2d3;
 					}
 					a {
 						color: #000;
@@ -64,9 +78,10 @@
                     img{
                         width: 100%;
                         height: 100%;
+						object-fit: cover;
                         transition: all 0.3s;
 
-                        &:nth-of-type(2){
+                        &:nth-of-type(1){
                             position: absolute;
                             top: 0;
                             left: 0;
@@ -99,14 +114,27 @@
 	.about {
 		.inner {
             .space{
+				>p {
+					padding: 0px;
+
+
+				}
                 img{
                     width: 80%;
                     margin-bottom: 20px;
                 }
             }
 			.team {
+				>p {
+
+					padding: 0px;
+
+				}
 				.member {
 					width: 100%;
+					.text{
+						padding: 10px;
+					}
 				}
 			}
 		}

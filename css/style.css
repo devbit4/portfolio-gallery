@@ -65,32 +65,29 @@ fieldset {
 
 .content {
   width: 100%;
-  padding: 0px 0px 150px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 12vh; }
   .content .sub_visual {
     width: 100%;
     height: 200px;
     background: #000; }
   .content .inner {
-    margin-top: 100px;
-    padding: 0 12vw;
+    padding: 12vh 12vw;
     min-height: 500px; }
     .content .inner h1 {
       font-size: 50px;
       color: #000;
-      margin-bottom: 60px; }
-      .content .inner h1 span {
-        font: normal 20px/1 'arial';
-        color: #aaa; }
-        .content .inner h1 span::before {
-          content: '/';
-          margin-right: 20px;
-          margin-left: 10px; }
-    .content .inner > p {
-      font-size: 18px;
-      margin-bottom: 40px;
-      padding: 0 60px;
-      text-align: center; }
+      margin-bottom: 80px; }
+      .content .inner h1::after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 2px;
+        background-color: #e2e2d3;
+        margin-top: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
 
 #footer_sub {
   background-color: #e2e2d3; }
@@ -206,26 +203,35 @@ fieldset {
 
   #footer_sub .wrap .footer-lower ul li {
     width: 100%; } }
-.about .inner h1 {
-  margin-top: 150px; }
 .about .inner .space {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 80px; }
+  padding-bottom: 12vh; }
+  .about .inner .space > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+    color: #B7C3B4; }
   .about .inner .space img {
     width: 30%;
     height: 200px;
-    background: #000; }
+    background: #000;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
 .about .inner .team {
-  text-align: left;
-  margin-top: 40px;
+  padding-top: 12vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
+  .about .inner .team > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+    color: #B7C3B4; }
   .about .inner .team .member {
     display: flex;
-    width: 48%;
+    width: 49%;
     margin-bottom: 20px;
     border: 1px solid #000; }
     .about .inner .team .member .text {
@@ -236,12 +242,13 @@ fieldset {
         margin-bottom: 10px; }
       .about .inner .team .member .text h3 {
         font: 16px 'arial';
-        color: #d8d9cc;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        color: #B7C3B4; }
       .about .inner .team .member .text p {
         font-size: 14px;
         font: 14px/1.22 'arial';
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        color: #e2e2d3; }
       .about .inner .team .member .text a {
         color: #000; }
         .about .inner .team .member .text a i {
@@ -257,8 +264,9 @@ fieldset {
       .about .inner .team .member .pic img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
         transition: all 0.3s; }
-        .about .inner .team .member .pic img:nth-of-type(2) {
+        .about .inner .team .member .pic img:nth-of-type(1) {
           position: absolute;
           top: 0;
           left: 0; }
@@ -269,11 +277,17 @@ fieldset {
   .about .inner .team .member {
     width: 100%; } }
 @media screen and (max-width: 539px) {
+  .about .inner .space > p {
+    padding: 0px; }
   .about .inner .space img {
     width: 80%;
     margin-bottom: 20px; }
+  .about .inner .team > p {
+    padding: 0px; }
   .about .inner .team .member {
-    width: 100%; } }
+    width: 100%; }
+    .about .inner .team .member .text {
+      padding: 10px; } }
 .community .inner > a {
   display: inline-block;
   font-size: 20px;
@@ -293,7 +307,8 @@ fieldset {
     width: 70px;
     height: 30px;
     color: #Fff;
-    cursor: pointer; }
+    cursor: pointer;
+    background: #000; }
 .community .inner .notice {
   display: block; }
 .community .inner .faq {
@@ -301,7 +316,7 @@ fieldset {
 .community .inner table {
   width: 100%;
   margin-top: 20px;
-  border-bottom: 2px solid #777;
+  border-bottom: 2px solid #000;
   margin-bottom: 50px;
   border-collapse: collapse; }
   .community .inner table tr:nth-of-type(odd) {
@@ -309,9 +324,9 @@ fieldset {
   .community .inner table tr th {
     padding: 15px;
     background: #d8d9cc;
-    color: #777;
-    border-top: 2px solid #777;
-    border-bottom: 2px solid #777;
+    color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
     font-size: 18px;
     margin-bottom: 40px; }
     .community .inner table tr th:nth-of-type(1) {
@@ -352,7 +367,7 @@ fieldset {
     width: 30px;
     height: 30px;
     border: none;
-    background-color: #777;
+    background-color: #000;
     margin: 0 20px;
     color: #fff; }
 
@@ -380,6 +395,8 @@ fieldset {
     display: none; } }
 /* mobile ----------------------------------------------------- */
 @media screen and (max-width: 539px) {
+  .community .inner .searchbox input {
+    width: 120px; }
   .community .inner table tr th:nth-of-type(1) {
     width: 0%;
     display: none; }
@@ -393,7 +410,7 @@ fieldset {
 .join .inner {
   text-align: left; }
   .join .inner .pricacy {
-    border-top: 2px solid #777;
+    border-top: 2px solid #000;
     margin-bottom: 20px;
     padding: 20px;
     display: flex; }
@@ -403,7 +420,7 @@ fieldset {
       width: 75%; }
       .join .inner .pricacy .text textarea {
         width: 100%;
-        background: #eee;
+        background: #efefef;
         padding: 10px;
         margin-bottom: 10px; }
       .join .inner .pricacy .text .agreement {
@@ -411,8 +428,8 @@ fieldset {
         .join .inner .pricacy .text .agreement input {
           margin-left: 10px; }
   .join .inner .user {
-    border-top: 2px solid #777;
-    border-bottom: 2px solid #777;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     margin-bottom: 20px;
     padding: 20px;
     display: flex; }
@@ -424,8 +441,8 @@ fieldset {
         width: 20%;
         text-align: left;
         font-size: 14px;
-        color: #666;
-        background: #eee;
+        color: #000;
+        background: #E2E2D3;
         border-right: 1px solid #bbb;
         border-bottom: 1px solid #bbb;
         padding: 20px; }
@@ -472,7 +489,7 @@ fieldset {
       width: 150px;
       height: 40px;
       border: none;
-      background-color: #444;
+      background-color: #000;
       font-size: 14px;
       color: #fff;
       margin: 0 10px; }
@@ -537,11 +554,6 @@ fieldset {
     text-align: center; }
     .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
       width: 90px;
-      height: 40px;
-      border: none;
-      background-color: #444;
-      font-size: 14px;
-      color: #fff;
       margin: 0 10px; } }
 body {
   background: url(../img/bg0.svg); }
@@ -728,7 +740,7 @@ body {
           object-fit: cover;
           margin-bottom: 40px;
           transition: all 0.3s ease;
-          opacity: 0.9;
+          opacity: 0.8;
           box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6); }
           #programs .displays .display .inner img:hover {
             transform: translateY(-30px);

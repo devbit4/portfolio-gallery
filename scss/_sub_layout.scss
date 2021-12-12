@@ -57,8 +57,8 @@ $mobile: 539px;
 
 .content{
     width:100%;
-    padding:0px 0px 150px;
 	text-align: center;
+	padding-bottom: 12vh;
 
     .sub_visual{
        width:100%;
@@ -68,33 +68,25 @@ $mobile: 539px;
     }
 
     .inner{
-		margin-top:100px;
-       padding: 0 12vw;
+       padding: 12vh 12vw;
        min-height:500px;
 
        h1{
           font-size: 50px;
           color:#000;
-          margin-bottom:60px;
-
-          span{
-             font:normal 20px/1 'arial';
-             color:#aaa;
-
-             &::before{
-                content:'/';
-                margin-right:20px;
-                margin-left:10px;
-             }
-          }
+          margin-bottom:80px;
+		&::after{
+			content: "";
+			display: block;
+			width: 200px;
+			height: 2px;
+			background-color: #e2e2d3;
+			margin-top: 20px;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
        }
-	   > p {
-		font-size: 18px;
-		margin-bottom: 40px;
-		padding: 0 60px;
-		text-align: center;
-
-	}
     }
  }
 
