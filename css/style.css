@@ -272,6 +272,13 @@ fieldset {
           left: 0; }
         .about .inner .team .member .pic img:hover {
           opacity: 0; }
+      .about .inner .team .member .pic p {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: default; }
 
 @media screen and (max-width: 1000px) {
   .about .inner .team .member {
@@ -291,12 +298,14 @@ fieldset {
 .community .inner > a {
   display: inline-block;
   font-size: 20px;
-  color: #000;
+  color: #e2e2d3;
   margin-right: 20px;
   margin-bottom: 40px; }
   .community .inner > a:nth-of-type(1)::after {
     content: "/";
     margin-left: 20px; }
+  .community .inner > a.active {
+    color: #000; }
 .community .inner .searchbox {
   text-align: right; }
   .community .inner .searchbox input {
@@ -351,10 +360,8 @@ fieldset {
       font-size: 24px; }
   .community .inner table tr:hover td {
     background: #ccc; }
-  .community .inner table tr .answer {
-    display: none;
-    text-align: left;
-    padding-left: 10%; }
+  .community .inner table .answer {
+    display: none; }
 .community .inner .pagination {
   display: flex;
   justify-content: center; }
@@ -724,7 +731,8 @@ body {
   padding: 12vh 12vw; }
   #programs h1 {
     font: bold 60px/1 'alice';
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    text-align: center; }
   #programs .displays {
     display: flex;
     justify-content: space-between; }
