@@ -134,7 +134,13 @@
 							border: 1px solid #000;
 							padding: 4px;
 							margin-right: 4px;
+							transition: all 0.3s;
+							&:hover{
+								transform: scale(1.2);
+							}
+
 						}
+
 					}
 				}
 				}

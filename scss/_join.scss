@@ -24,8 +24,9 @@
                 }
                 .agreement{
                     text-align: right;
-                    input{
+                    input[type=checkbox]{
                         margin-left: 10px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -74,6 +75,7 @@
                  }
                  input[type=checkbox], input[type=radio]{
                     margin-right:10px;
+                    cursor: pointer;
                  }
                  label{
                     margin-right:30px;
@@ -83,6 +85,7 @@
                     height:30px;
                     border:1px solid #bbb;
                     padding-left:20px;
+                    cursor: pointer;
                  }
 
                  textarea#comments{
@@ -117,6 +120,7 @@
                 font-size: 14px;
                 color:#fff;
                 margin:0 10px;
+                cursor: pointer;
 
              }
 
