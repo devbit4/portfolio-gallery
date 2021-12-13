@@ -106,6 +106,7 @@
 					width: 60%;
 					padding: 20px;
 					h2 {
+
 						font-size: 20px;
 						margin-bottom: 10px;
 					}
@@ -120,6 +121,11 @@
 						margin-bottom: 30px;
 						color: #e2e2d3;
 					}
+					.sns{
+						background: #e2e2d381;
+						padding: 10px 0;
+						border-radius: 4px;
+
 					a {
 						color: #000;
 						i {
@@ -130,6 +136,7 @@
 							margin-right: 4px;
 						}
 					}
+				}
 				}
 				.pic {
 					width: 40%;
@@ -180,6 +187,7 @@
 		.space {
 			padding: 0;
 			.boxs {
+				padding: 0 12vw;
 				flex-wrap: wrap;
 				.box {
 					width: 48%;

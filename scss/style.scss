@@ -101,6 +101,7 @@ body {
 			span {
 				position: relative;
 				left: 50px;
+
 				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 				&:before {
 					content: '';
@@ -112,7 +113,7 @@ body {
 					top: 10px;
 				}
 				a {
-					font: 20px 'alice';
+					font: 20px 'arial';
 					color: #e2e2d3;
 					transition: all 0.3s;
 					display: inline-block;
@@ -232,9 +233,11 @@ body {
 			top:40px;
 			left: 40px;
 			filter: grayscale(0.6);
+
 		}
 		.place2 {
 			width: 60%;
+
 
 		}
 	}
@@ -405,6 +408,10 @@ body {
 				position: relative;
 				top: 40px;
 				left: -30px;
+				padding: 5px;
+				border-top: 5px solid #fff;
+				border-left: 5px solid #fff;
+
 			}
 		}
 		.collection-description {
@@ -817,6 +824,7 @@ body {
 	#programs {
 		h1 {
 			font: bold 40px 'alice';
+			text-align: left;
 		}
 		.displays {
 			.display {
