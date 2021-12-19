@@ -391,7 +391,7 @@ body {
 	h1 {
 		font: bold 60px/1 'Work Sans';
 		margin-bottom: 60px;
-		color: #fff;
+		color: #e2e2d3;
 	}
 	.collection-intro {
 		display: flex;
@@ -415,9 +415,9 @@ body {
 				position: relative;
 				top: 40px;
 				left: -30px;
-				padding: 5px;
-				border-top: 5px solid #fff;
-				border-left: 5px solid #fff;
+				padding: 10px;
+				border-top: 5px solid #e2e2d3;
+				border-left: 5px solid #e2e2d3;
 
 			}
 		}
@@ -738,6 +738,7 @@ body {
 			flex-wrap: wrap;
 			.display {
 				width: 50%;
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -825,6 +826,9 @@ body {
 			h1 {
 				font: bold 40px 'Work Sans';
 			}
+		}
+		.place-pics .place2{
+			box-shadow: 15px 15px 0 #e2e2d3;
 		}
 	}
 	// programs
