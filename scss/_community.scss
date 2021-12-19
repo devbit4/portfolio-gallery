@@ -1,13 +1,9 @@
 .community {
-	.sub_visual {
-		//    background:url(../img/brand3.jpg) no-repeat center/cover;
-	}
 	.inner {
 		.services {
 			margin-bottom: 40px;
 			display: flex;
 			width: 100%;
-
 			.number,
 			.money {
 				padding: 20px;
@@ -23,7 +19,6 @@
 					line-height: 50px;
 					border-radius: 50%;
 				}
-
 				.number-upper,
 				.money-upper {
 					padding-bottom: 20px;
@@ -41,7 +36,7 @@
 					}
 				}
 			}
-			.info{
+			.info {
 				padding: 20px;
 				text-align: left;
 				flex-basis: 50%;
@@ -49,11 +44,18 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
-
+				position: relative;
+				overflow: hidden;
 				h2 {
-
 					font-size: 20px;
 					margin-bottom: 10px;
+				}
+				h3{
+					position: absolute;
+					top: -25px;
+					right: -10px;
+					font-size: 80px;
+					color: #e2e2d3;
 				}
 				li {
 					font-size: 16px;
@@ -188,6 +190,7 @@
 	}
 }
 
+
 /*tablet -----------------------------------------------------------*/
 @media screen and (max-width: $tablet) {
 	.community {
@@ -214,8 +217,6 @@
 					}
 				}
 			}
-
-
 		}
 	}
 }
@@ -258,19 +259,17 @@
 					}
 				}
 			}
-         .pagination {
-
-            a {
-
-               width: 20px;
-               height: 20px;
-               line-height: 20px;
-            }
-            button {
-               width: 20px;
-               height: 20px;
-            }
-         }
+			.pagination {
+				a {
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+				}
+				button {
+					width: 20px;
+					height: 20px;
+				}
+			}
 		}
 	}
 }

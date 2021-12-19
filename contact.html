@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a0bfa0bc39.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="form.js"></script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
 
     </header>
     <!-- content -->
-    <section class="content">
+    <section class="content contact">
         <div class="sub_visual"></div>
         <div class="custom-shape-divider-top-1639286701">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -43,7 +45,53 @@
         </div>
         <div class="inner">
             <h1>Contact</h1>
-            <!-- 컨텐츠 들어가는 부분 -->
+
+            <div class="contactUs">
+                <div class="description">
+                    <div class="description-upper">
+                        <h2>Contact Us</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum vero minus, debitis quas
+                            cumque
+                            provident expedita quibusdam sapiente nesciunt fuga?</p>
+                        <p><U>Lorem ipsum dolor sit.</U> amet consectetur adipisicing elit. Nostrum vero minus, debitis
+                            quas
+                            cumque
+                            provident expedita quibusdam sapiente nesciunt fuga?</p>
+                    </div>
+                    <div class="description-lower">
+                        <div class="branch">
+                            <h3>New York</h3>
+                            <span>email@email.com</span>
+                            <span>+350 00 55 55 007</span>
+                            <span>Grand Street 409. LA</span>
+                        </div>
+                        <div class="branch">
+                            <h3>New York</h3>
+                            <span>email@email.com</span>
+                            <span>+350 00 55 55 007</span>
+                            <span>Grand Street 409. LA</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form id="contact-form">
+                    <h2>Have A Question?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, blanditiis.</p>
+                    <input type="hidden" name="contact_number">
+                    <input type="text" required placeholder="Your Name Here" name="to_name">
+                    <input type="text" required placeholder="Your Number Here" name="contact">
+                    <input type="text" required placeholder="Your Email Here" name="from_name">
+                    <textarea required placeholder="Please ask anything." name="message_html" cols="30"
+                        rows="5"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+
+            </div>
+
+
+
+
         </div>
     </section>
     <!-- footer -->
