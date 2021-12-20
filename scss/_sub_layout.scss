@@ -230,9 +230,13 @@ $mobile: 539px;
 					background-color: #e2e2d3;
 				}
 				&:hover a {
-					color: #a6a695;
+					color: #fff;
 				}
 			}
+			&.on{
+				display: block;
+			}
+
 		}
 		.toggle {
 			display: block;

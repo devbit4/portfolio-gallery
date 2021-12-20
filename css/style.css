@@ -186,7 +186,9 @@ fieldset {
         #header_sub .header-menu li:hover {
           background-color: #e2e2d3; }
         #header_sub .header-menu li:hover a {
-          color: #a6a695; }
+          color: #fff; }
+      #header_sub .header-menu.on {
+        display: block; }
     #header_sub .toggle {
       display: block; }
 
@@ -689,11 +691,20 @@ fieldset {
       margin-bottom: 20px;
       padding: 1vh 0;
       padding-left: 1vw; }
-    .contact .inner .contactUs #contact-form input[type=submit] {
+    .contact .inner .contactUs #contact-form input[type='submit'] {
       background: #2f4858;
       color: #e2e2d3;
       cursor: pointer; }
 
+@media screen and (max-width: 1179px) {
+  .contact .inner .contactUs {
+    flex-wrap: wrap; }
+    .contact .inner .contactUs .description {
+      padding-left: 0;
+      width: 100%;
+      margin-bottom: 20px; }
+    .contact .inner .contactUs #contact-form {
+      width: 100%; } }
 .join h1 {
   text-align: center; }
 .join .inner {
@@ -923,14 +934,14 @@ body {
         transition: all 0.3s;
         display: inline-block; }
       #home .background .title span:hover a {
-        color: #2F4858;
+        color: #2f4858;
         transform: scale(1.04);
         transform: translateX(10px); }
       #home .background .title span:hover {
         border: 1px solid #e2e2d3;
         background: #e2e2d3; }
 #home .info {
-  background-color: #2F4858; }
+  background-color: #2f4858; }
   #home .info .inner {
     padding: 0 12vw;
     height: 10vh;
@@ -1033,7 +1044,7 @@ body {
       #programs .displays .display .inner {
         position: relative;
         width: 100%;
-        border-bottom: 8px solid #2F4858;
+        border-bottom: 8px solid #2f4858;
         padding: 0 10px; }
         #programs .displays .display .inner img {
           width: 100%;
@@ -1302,7 +1313,7 @@ body {
             color: #000; }
   #footer .copyright {
     height: 50px;
-    background: #2F4858;
+    background: #2f4858;
     color: #000;
     text-align: center;
     line-height: 50px; }
@@ -1333,7 +1344,9 @@ body {
         #header .header-menu li:hover {
           background-color: #e2e2d3; }
         #header .header-menu li:hover a {
-          color: #a6a695; }
+          color: #fff; }
+      #header .header-menu.on {
+        display: block; }
     #header .toggle {
       display: block; }
 
@@ -1404,7 +1417,9 @@ body {
     right: 10px; }
 
   #home .background .title h1 {
-    font: bold 45px 'Work Sans'; }
+    font: bold 40px 'Work Sans'; }
+  #home .info .inner h2 {
+    font: bold 20px/1 'Work Sans'; }
 
   #about .intro h1 {
     font: bold 40px 'Work Sans'; }
