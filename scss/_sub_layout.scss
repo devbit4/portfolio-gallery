@@ -20,7 +20,7 @@ $mobile: 539px;
 			border-radius: 4px;
 		}
 		span {
-			font: 600 28px/1 'alice';
+			font: 600 26px/1 'Times New Roman';
 			color: #e2e2d3;
 		}
 	}
@@ -29,7 +29,7 @@ $mobile: 539px;
 		li {
 			margin-left: 24px;
 			a {
-				font: 16px/1 'alice';
+				font: 16px/1 'Times New Roman';
 				color: #fff;
 				transition: all 0.3s;
 				&:hover {
@@ -114,14 +114,13 @@ $mobile: 539px;
 #footer_sub {
 	background-color: #e2e2d3;
 	.wrap {
-		padding: 12vh 12vw 6vh 12vw;
+		padding: 7vh 12vw;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 60px;
 			.logo {
 				font-size: 24px;
-
 				i {
 					margin-right: 10px;
 					background-color: #000;
@@ -130,17 +129,16 @@ $mobile: 539px;
 					color: #fff;
 				}
 				span {
-					font: 600 28px/1 'alice';
+					font: 600 26px/1 'Times New Roman';
 					color: #000;
 				}
 			}
 			.footer-menu {
 				display: flex;
-
 				li {
 					margin-left: 24px;
 					a {
-						font: 16px/1 'alice';
+						font: 16px/1 'Times New Roman';
 						color: #000;
 						transition: all 0.3s;
 						&:hover {
@@ -161,25 +159,22 @@ $mobile: 539px;
 						flex-direction: column;
 						padding: 10px;
 						h2 {
-							font: bold 18px 'alice';
+							font: 18px 'Times New Roman';
 							margin-bottom: 10px;
 						}
 						p {
-							font: 14px/1.5 'arial';
+							font: 14px/1.5 'Roboto';
 							color: #a6a695;
 						}
 						> a {
 							color: #a6a695;
-							font: 14px/1.5 'arial';
+							font: 14px/1.5 'Roboto';
 						}
 						input {
 							max-width: 200px;
-							margin: 20px 0;
+							margin: 5px 0 ;
 						}
-						span a {
-							color: #000;
 
-						}
 					}
 				}
 			}
@@ -187,7 +182,7 @@ $mobile: 539px;
 	}
 	.copyright {
 		height: 50px;
-		background: #2F4858;
+		background: #2f4858;
 		color: #000;
 		text-align: center;
 		line-height: 50px;
@@ -303,6 +298,7 @@ $mobile: 539px;
 				ul {
 					li {
 						width: 100%;
+						margin-bottom: 10px;
 					}
 				}
 			}

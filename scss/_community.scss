@@ -1,6 +1,10 @@
 .community {
 	.inner {
+		h1{
+			font-family: 'Times New Roman';
+		}
 		.services {
+
 			margin-bottom: 40px;
 			display: flex;
 			width: 100%;
@@ -26,6 +30,8 @@
 					border-bottom: 1px solid #e2e2d3;
 					h2 {
 						font-size: 20px;
+						font-family: 'Times New Roman';
+
 					}
 				}
 				.number-lower,
@@ -33,6 +39,7 @@
 					p {
 						font-size: 16px;
 						color: #bbb;
+						font-family: 'Roboto';
 					}
 				}
 			}
@@ -49,6 +56,7 @@
 				h2 {
 					font-size: 20px;
 					margin-bottom: 10px;
+					font-family: 'Times New Roman';
 				}
 				h3{
 					position: absolute;
@@ -56,18 +64,27 @@
 					right: -10px;
 					font-size: 80px;
 					color: #e2e2d3;
+					font-family: 'Times New Roman';
+					z-index: -1;
 				}
 				li {
 					font-size: 16px;
+					font-family: 'Roboto';
+					a{
+						color: #9e9e9e;
+					}
 					span {
 						float: right;
 						color: #bbb;
+
+
 					}
 				}
 			}
 		}
 
 		> a {
+			font-family: 'Times New Roman';
 			display: inline-block;
 			font-size: 20px;
 			color: #e2e2d3;
@@ -76,9 +93,11 @@
 			&:nth-of-type(1)::after {
 				content: '/';
 				margin-left: 20px;
+
 			}
 			&.active {
 				color: #000;
+				font-weight: bold;
 			}
 		}
 
@@ -109,6 +128,7 @@
 			border-bottom: 2px solid #000;
 			margin-bottom: 50px;
 			border-collapse: collapse;
+			font-family: 'Times New Roman';
 
 			tr {
 				&:nth-of-type(odd) {

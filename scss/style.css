@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -40,14 +40,14 @@ fieldset {
       padding: 4px;
       border-radius: 4px; }
     #header_sub .logo span {
-      font: 600 26px/1 'Times New Roman';
+      font: 600 28px/1 'alice';
       color: #e2e2d3; }
   #header_sub .header-menu {
     display: flex; }
     #header_sub .header-menu li {
       margin-left: 24px; }
       #header_sub .header-menu li a {
-        font: 16px/1 'Times New Roman';
+        font: 16px/1 'alice';
         color: #fff;
         transition: all 0.3s; }
         #header_sub .header-menu li a:hover {
@@ -105,7 +105,7 @@ fieldset {
 #footer_sub {
   background-color: #e2e2d3; }
   #footer_sub .wrap {
-    padding: 7vh 12vw; }
+    padding: 12vh 12vw 6vh 12vw; }
     #footer_sub .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
@@ -119,14 +119,14 @@ fieldset {
           border-radius: 4px;
           color: #fff; }
         #footer_sub .wrap .footer-upper .logo span {
-          font: 600 26px/1 'Times New Roman';
+          font: 600 28px/1 'alice';
           color: #000; }
       #footer_sub .wrap .footer-upper .footer-menu {
         display: flex; }
         #footer_sub .wrap .footer-upper .footer-menu li {
           margin-left: 24px; }
           #footer_sub .wrap .footer-upper .footer-menu li a {
-            font: 16px/1 'Times New Roman';
+            font: 16px/1 'alice';
             color: #000;
             transition: all 0.3s; }
             #footer_sub .wrap .footer-upper .footer-menu li a:hover {
@@ -141,20 +141,22 @@ fieldset {
           flex-direction: column;
           padding: 10px; }
           #footer_sub .wrap .footer-lower ul li .inner h2 {
-            font: 18px 'Times New Roman';
+            font: bold 18px 'alice';
             margin-bottom: 10px; }
           #footer_sub .wrap .footer-lower ul li .inner p {
-            font: 14px/1.5 'Roboto';
+            font: 14px/1.5 'arial';
             color: #a6a695; }
           #footer_sub .wrap .footer-lower ul li .inner > a {
             color: #a6a695;
-            font: 14px/1.5 'Roboto'; }
+            font: 14px/1.5 'arial'; }
           #footer_sub .wrap .footer-lower ul li .inner input {
             max-width: 200px;
-            margin: 5px 0; }
+            margin: 20px 0; }
+          #footer_sub .wrap .footer-lower ul li .inner span a {
+            color: #000; }
   #footer_sub .copyright {
     height: 50px;
-    background: #2f4858;
+    background: #2F4858;
     color: #000;
     text-align: center;
     line-height: 50px; }
@@ -215,16 +217,14 @@ fieldset {
         margin-top: 10px; }
 
   #footer_sub .wrap .footer-lower ul li {
-    width: 100%;
-    margin-bottom: 10px; } }
+    width: 100%; } }
 .about .aboutUs {
   padding: 0 12vw;
-  padding-bottom: 80px; }
+  padding-bottom: 12vh; }
   .about .aboutUs h1 {
     font-size: 50px;
     color: #000;
-    margin-bottom: 80px;
-    font-family: 'Times New Roman'; }
+    margin-bottom: 80px; }
     .about .aboutUs h1::after {
       content: '';
       display: block;
@@ -240,7 +240,7 @@ fieldset {
     display: flex;
     justify-content: space-between; }
     .about .aboutUs .intro p {
-      font-family: 'Roboto';
+      font-family: 'arial';
       width: 48%;
       color: #9e9e9e;
       font-size: 16px;
@@ -258,7 +258,7 @@ fieldset {
       width: 30%;
       display: flex;
       justify-content: space-between;
-      border: 2px solid #e2e2d3;
+      border: 1px solid #e2e2d3;
       margin-bottom: 20px;
       border-radius: 10px; }
       .about .aboutUs .roles .role:nth-of-type(2) {
@@ -280,13 +280,12 @@ fieldset {
         text-align: left; }
         .about .aboutUs .roles .role .right h2 {
           font-size: 18px;
-          margin-bottom: 20px;
-          font-family: 'Times New Roman'; }
+          margin-bottom: 20px; }
         .about .aboutUs .roles .role .right p {
-          font: 14px 'Roboto';
+          font: 14px 'arial';
           color: #b7c3b4; }
 .about .space {
-  padding: 14vh 0 7vh 0;
+  padding: 12vh 0;
   display: flex; }
   .about .space .left {
     width: 50%;
@@ -297,8 +296,7 @@ fieldset {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-family: 'Times New Roman'; }
+    color: #fff; }
     .about .space .left h2 {
       margin-bottom: 20px; }
     .about .space .left p {
@@ -311,12 +309,11 @@ fieldset {
     flex-direction: column; }
     .about .space .right h2 {
       font-size: 18px;
-      margin-bottom: 20px;
-      font-family: 'Times New Roman'; }
+      margin-bottom: 20px; }
     .about .space .right p {
       font-size: 14px;
       margin-bottom: 20px;
-      font-family: 'Roboto';
+      font-family: 'arial';
       color: #b7c3b4; }
     .about .space .right .boxs {
       display: flex;
@@ -336,10 +333,10 @@ fieldset {
           top: 0;
           left: 0;
           background: #000;
-          opacity: 0.4;
+          opacity: 0.6;
           width: 100%;
           height: 100%;
-          transform: skewX(-5deg);
+          transform: rotateY(0deg) skewX(-5deg);
           transition: all 0.3s ease-in;
           color: #fff;
           display: flex;
@@ -347,21 +344,20 @@ fieldset {
           flex-direction: column;
           align-items: center; }
           .about .space .right .boxs .box .black h2 {
-            margin-bottom: 10px;
-            font-family: 'Roboto';
-            position: relative; }
-          .about .space .right .boxs .box .black p {
-            font-family: 'Roboto'; }
+            margin-bottom: 10px; }
+        .about .space .right .boxs .box span {
+          font-family: 'arial';
+          color: #b7c3b4; }
         .about .space .right .boxs .box:hover .black {
-          opacity: 0; }
+          transform: rotateY(90deg); }
 .about .inner .team {
-  padding-top: 14vh;
+  padding-top: 12vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
   .about .inner .team > p {
     font-size: 16px;
-    font-family: 'Roboto';
+    font-family: 'arial';
     margin-bottom: 40px;
     padding: 0 60px;
     color: #9e9e9e; }
@@ -369,23 +365,22 @@ fieldset {
     display: flex;
     width: 49%;
     margin-bottom: 20px;
-    border: 2px solid #e2e2d3; }
+    border: 1px solid #000; }
     .about .inner .team .member .text {
       width: 60%;
       padding: 20px; }
       .about .inner .team .member .text h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        font-family: 'Times New Roman'; }
+        font-size: 20px;
+        margin-bottom: 10px; }
       .about .inner .team .member .text h3 {
-        font: 16px 'Roboto';
+        font: 16px 'arial';
         margin-bottom: 20px;
         color: #b7c3b4; }
       .about .inner .team .member .text p {
         font-size: 14px;
-        font: 14px/1.22 'Roboto';
+        font: 14px/1.22 'arial';
         margin-bottom: 30px;
-        color: #b7c3b4; }
+        color: #e2e2d3; }
       .about .inner .team .member .text .sns {
         background: #e2e2d381;
         padding: 10px 0;
@@ -417,7 +412,6 @@ fieldset {
         .about .inner .team .member .pic img:hover {
           opacity: 0; }
       .about .inner .team .member .pic p {
-        font-family: 'Times New Roman';
         color: #fff;
         position: absolute;
         top: 50%;
@@ -464,8 +458,6 @@ fieldset {
     width: 100%; }
     .about .inner .team .member .text {
       padding: 10px; } }
-.community .inner h1 {
-  font-family: 'Times New Roman'; }
 .community .inner .services {
   margin-bottom: 40px;
   display: flex;
@@ -496,15 +488,13 @@ fieldset {
       .community .inner .services .number .money-upper h2,
       .community .inner .services .money .number-upper h2,
       .community .inner .services .money .money-upper h2 {
-        font-size: 20px;
-        font-family: 'Times New Roman'; }
+        font-size: 20px; }
     .community .inner .services .number .number-lower p,
     .community .inner .services .number .money-lower p,
     .community .inner .services .money .number-lower p,
     .community .inner .services .money .money-lower p {
       font-size: 16px;
-      color: #bbb;
-      font-family: 'Roboto'; }
+      color: #bbb; }
   .community .inner .services .info {
     padding: 20px;
     text-align: left;
@@ -517,26 +507,19 @@ fieldset {
     overflow: hidden; }
     .community .inner .services .info h2 {
       font-size: 20px;
-      margin-bottom: 10px;
-      font-family: 'Times New Roman'; }
+      margin-bottom: 10px; }
     .community .inner .services .info h3 {
       position: absolute;
       top: -25px;
       right: -10px;
       font-size: 80px;
-      color: #e2e2d3;
-      font-family: 'Times New Roman';
-      z-index: -1; }
+      color: #e2e2d3; }
     .community .inner .services .info li {
-      font-size: 16px;
-      font-family: 'Roboto'; }
-      .community .inner .services .info li a {
-        color: #9e9e9e; }
+      font-size: 16px; }
       .community .inner .services .info li span {
         float: right;
         color: #bbb; }
 .community .inner > a {
-  font-family: 'Times New Roman';
   display: inline-block;
   font-size: 20px;
   color: #e2e2d3;
@@ -546,8 +529,7 @@ fieldset {
     content: '/';
     margin-left: 20px; }
   .community .inner > a.active {
-    color: #000;
-    font-weight: bold; }
+    color: #000; }
 .community .inner .searchbox {
   text-align: right; }
   .community .inner .searchbox input {
@@ -569,8 +551,7 @@ fieldset {
   margin-top: 20px;
   border-bottom: 2px solid #000;
   margin-bottom: 50px;
-  border-collapse: collapse;
-  font-family: 'Times New Roman'; }
+  border-collapse: collapse; }
   .community .inner table tr:nth-of-type(odd) {
     background: #eee; }
   .community .inner table tr th {
@@ -661,8 +642,6 @@ fieldset {
   .community .inner .pagination button {
     width: 20px;
     height: 20px; } }
-.contact .inner h1 {
-  font-family: 'Times New Roman'; }
 .contact .inner .contactUs {
   display: flex;
   justify-content: space-between; }
@@ -674,13 +653,11 @@ fieldset {
     .contact .inner .contactUs .description .description-upper {
       margin-bottom: 80px; }
       .contact .inner .contactUs .description .description-upper h2 {
-        margin-bottom: 40px;
-        font-family: 'Times New Roman'; }
+        margin-bottom: 40px; }
       .contact .inner .contactUs .description .description-upper p {
         color: #9e9e9e;
         font-size: 16px;
-        margin-bottom: 20px;
-        font-family: 'Roboto'; }
+        margin-bottom: 20px; }
     .contact .inner .contactUs .description .description-lower {
       display: flex;
       justify-content: space-between; }
@@ -689,14 +666,12 @@ fieldset {
         display: flex;
         flex-direction: column; }
         .contact .inner .contactUs .description .description-lower .branch h3 {
-          margin-bottom: 20px;
-          font-family: 'Times New Roman'; }
+          margin-bottom: 20px; }
         .contact .inner .contactUs .description .description-lower .branch span {
           display: block;
           color: #9e9e9e;
           font-size: 16px;
-          line-height: 1.5;
-          font-family: 'Roboto'; }
+          line-height: 1.5; }
   .contact .inner .contactUs #contact-form {
     border-radius: 10px;
     padding: 20px;
@@ -707,24 +682,20 @@ fieldset {
     flex-direction: column; }
     .contact .inner .contactUs #contact-form h2 {
       font-size: 24px;
-      margin-bottom: 40px;
-      font-family: 'Times New Roman'; }
+      margin-bottom: 40px; }
     .contact .inner .contactUs #contact-form p {
       color: #9e9e9e;
       font-size: 16px;
-      margin-bottom: 40px;
-      font-family: 'Roboto'; }
+      margin-bottom: 40px; }
     .contact .inner .contactUs #contact-form input,
     .contact .inner .contactUs #contact-form textarea {
       margin-bottom: 20px;
-      padding: 1vw 0;
-      padding-left: 20px;
-      font-family: 'Roboto'; }
+      padding: 1vh 0;
+      padding-left: 1vw; }
     .contact .inner .contactUs #contact-form input[type='submit'] {
       background: #2f4858;
       color: #e2e2d3;
-      cursor: pointer;
-      font-family: 'Roboto'; }
+      cursor: pointer; }
 
 @media screen and (max-width: 1179px) {
   .contact .inner .contactUs {
@@ -736,8 +707,7 @@ fieldset {
     .contact .inner .contactUs #contact-form {
       width: 100%; } }
 .join h1 {
-  text-align: center;
-  font-family: 'Times New Roman'; }
+  text-align: center; }
 .join .inner {
   text-align: left; }
   .join .inner .pricacy {
@@ -746,19 +716,15 @@ fieldset {
     padding: 20px;
     display: flex; }
     .join .inner .pricacy h2 {
-      width: 25%;
-      font-family: 'Times New Roman'; }
+      width: 25%; }
     .join .inner .pricacy .text {
       width: 75%; }
       .join .inner .pricacy .text textarea {
         width: 100%;
         background: #efefef;
         padding: 10px;
-        margin-bottom: 10px;
-        font: 12px/1.4 'Roboto';
-        color: #777; }
+        margin-bottom: 10px; }
       .join .inner .pricacy .text .agreement {
-        font: 12px/1 'Roboto';
         text-align: right; }
         .join .inner .pricacy .text .agreement input[type=checkbox] {
           margin-left: 10px;
@@ -774,9 +740,9 @@ fieldset {
     .join .inner .user table {
       width: 75%; }
       .join .inner .user table th {
-        font: 14px/1 'Roboto';
         width: 20%;
         text-align: left;
+        font-size: 14px;
         color: #000;
         background: #E2E2D3;
         border-right: 1px solid #bbb;
@@ -795,30 +761,25 @@ fieldset {
         width: 50%;
         height: 30px;
         border: 1px solid #bbb;
-        padding-left: 20px;
-        font: 14px/1 'Roboto'; }
+        padding-left: 20px; }
       .join .inner .user table input[type=checkbox], .join .inner .user table input[type=radio] {
         margin-right: 10px;
-        cursor: pointer;
-        font: 14px/1 'Roboto'; }
+        cursor: pointer; }
       .join .inner .user table label {
-        margin-right: 30px;
-        font: 14px/1 'Roboto'; }
+        margin-right: 30px; }
       .join .inner .user table select {
         width: 40%;
         height: 30px;
         border: 1px solid #bbb;
         padding-left: 20px;
-        cursor: pointer;
-        font: 14px/1 'Roboto'; }
+        cursor: pointer; }
       .join .inner .user table textarea#comments {
         width: 80%;
         height: 100px;
         border: 1px solid #bbb;
         padding: 20px;
         resize: none;
-        font-family: 'Roboto';
-        font: 14px/1 'Roboto'; }
+        font-family: 'arial'; }
       .join .inner .user table .pathTxt, .join .inner .user table .genderTxt {
         font-size: 12px;
         margin-top: 10px;
@@ -833,7 +794,7 @@ fieldset {
       height: 40px;
       border: none;
       background-color: #2F4858;
-      font: 14px/1 'Roboto';
+      font-size: 14px;
       color: #fff;
       margin: 0 10px;
       cursor: pointer; }
@@ -883,19 +844,17 @@ fieldset {
 @media screen and (max-width: 539px) {
   .join .inner .user table th {
     display: none; }
-  .join .inner .user table td {
-    padding: 20px 0; }
   .join .inner .user table textarea#comments {
     width: 100%;
-    padding-left: 20px; }
+    padding-left: 5px; }
   .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
     width: 100%;
     min-width: auto;
-    padding-left: 20px; }
+    padding-left: 5px; }
   .join .inner .user table select {
     width: 100%;
     min-width: auto;
-    padding-left: 20px; }
+    padding-left: 5px; }
   .join .inner .btns {
     text-align: center; }
     .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
@@ -920,20 +879,20 @@ body {
       padding: 4px;
       border-radius: 4px; }
     #header .logo span {
-      font: 600 26px/1 'Times New Roman';
+      font: 600 24px/1 'Roboto';
       color: #e2e2d3; }
   #header .header-menu {
     display: flex; }
     #header .header-menu li {
       margin-left: 24px; }
       #header .header-menu li a {
-        font: 16px/1 'Times New Roman';
+        font: 16px/1 'Roboto';
         color: #fff;
         transition: all 0.3s; }
         #header .header-menu li a:hover {
           color: #e2e2d3; }
   #header .toggle {
-    position: absolute;
+    position: fixed;
     top: 28px;
     right: 80px;
     border: none;
@@ -961,7 +920,7 @@ body {
     color: #fff;
     width: max-content; }
     #home .background .title h1 {
-      font: bold 90px 'Times New Roman';
+      font: bold 90px 'Roboto';
       margin-bottom: 40px; }
     #home .background .title span {
       position: relative;
@@ -991,13 +950,13 @@ body {
     justify-content: space-between;
     align-items: center; }
     #home .info .inner h2 {
-      font: 24px/1 'Roboto';
+      font: bold 24px/1 'Roboto';
       color: #e2e2d3; }
     #home .info .inner .notice .alarm {
       font: 16px/1 'Roboto';
       color: #777; }
     #home .info .inner .notice .more {
-      font: 16px/1 'Roboto';
+      font: bold 16px/1 'Roboto';
       margin-left: 40px;
       position: relative; }
       #home .info .inner .notice .more::before {
@@ -1016,20 +975,20 @@ body {
           transform: translateX(10px); }
 
 #about {
-  padding: 14vh 12vw;
+  padding: 12vh 12vw;
   display: flex;
   justify-content: space-between; }
   #about .intro {
     flex-basis: 30%; }
     #about .intro h1 {
-      font: bold 60px/1 'Times New Roman';
+      font: bold 60px/1 'Roboto';
       margin: 80px 0; }
     #about .intro h2 {
       font: 28px 'Roboto';
       margin-bottom: 40px;
       color: #a6a695; }
     #about .intro p {
-      font: 16px/1.4 'Roboto';
+      font: 16px/1.5 'Roboto';
       margin-bottom: 80px;
       color: #9e9e9e; }
     #about .intro span {
@@ -1070,9 +1029,9 @@ body {
       box-shadow: 30px 30px 0px #e2e2d3; }
 
 #programs {
-  padding: 14vh 12vw; }
+  padding: 12vh 12vw; }
   #programs h1 {
-    font: bold 60px/1 'Times New Roman';
+    font: bold 60px/1 'Roboto';
     margin-bottom: 60px;
     text-align: center; }
   #programs .displays {
@@ -1096,15 +1055,14 @@ body {
           transition: all 0.3s ease; }
         #programs .displays .display .inner h2 {
           font: 18px/1 'Roboto';
-          color: #a6a695;
           margin-bottom: 20px; }
         #programs .displays .display .inner p {
-          font: 16px/1.4 'Roboto';
+          font: 16px/1.2 'Roboto';
           color: #9e9e9e;
           margin-bottom: 40px; }
 
 #events {
-  padding: 7vh 12vw 14vh 12vw; }
+  padding: 12vh 12vw; }
   #events h1 {
     font: bold 60px/1 'Roboto';
     position: absolute;
@@ -1139,7 +1097,7 @@ body {
           color: #e2e2d3;
           margin-bottom: 40px; }
         #events .event .event-description .inner p {
-          font: 16px/1.4 'Roboto';
+          font: 16px/1.5 'Roboto';
           margin-bottom: 40px;
           color: #9e9e9e; }
         #events .event .event-description .inner span {
@@ -1164,10 +1122,10 @@ body {
     flex-direction: row-reverse; }
 
 #collection {
-  padding: 14vh 12vw;
+  padding: 12vh 12vw;
   background: url(../img/main/pic17.jpg) no-repeat center/cover fixed; }
   #collection h1 {
-    font: 60px/1 'Times New Roman';
+    font: 60px/1 'Roboto';
     margin-bottom: 60px;
     color: #e2e2d3; }
   #collection .collection-intro {
@@ -1212,14 +1170,14 @@ body {
           content: '';
           display: block;
           width: 20px;
-          border-bottom: 2px solid #e2e2d3;
+          border-bottom: 2px solid #fff;
           position: absolute;
           top: 8px;
           left: -30px; }
         #collection .collection-intro .collection-description span a {
           display: inline-block;
           transition: all 0.3s;
-          color: #e2e2d3; }
+          color: #fff; }
           #collection .collection-intro .collection-description span a:hover {
             transform: translateX(10px); }
   #collection .collection-gallery h2 {
@@ -1238,24 +1196,24 @@ body {
       content: '';
       display: block;
       width: 20px;
-      border-bottom: 2px solid #e2e2d3;
+      border-bottom: 2px solid #fff;
       position: absolute;
       top: 8px;
       left: -30px; }
     #collection .collection-gallery span a {
       display: inline-block;
       transition: all 0.3s;
-      color: #e2e2d3; }
+      color: #fff; }
       #collection .collection-gallery span a:hover {
         transform: translateX(10px); }
 
 #testimonials {
-  padding: 14vh 12vw;
+  padding: 12vh 12vw;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #testimonials h1 {
-    font: bold 60px/1 'Times New Roman';
+    font: bold 60px/1 'Roboto';
     margin-bottom: 60px; }
   #testimonials .testimonial {
     text-align: center; }
@@ -1269,11 +1227,11 @@ body {
       margin: 40px 0;
       color: #9e9e9e; }
     #testimonials .testimonial span {
-      font: bold 24px 'Roboto';
+      font: bold 28px 'Roboto';
       color: #a6a695; }
 
 #guidance {
-  padding: 0vh 12vw 7vh 12vw; }
+  padding: 6vh 12vw; }
   #guidance ul {
     display: flex;
     justify-content: space-between; }
@@ -1288,7 +1246,7 @@ body {
         color: #e2e2d3;
         margin-bottom: 20px; }
       #guidance ul li span {
-        font: 16px/1 'Times New Roman'; }
+        font: 18px/1 'Roboto'; }
         #guidance ul li span a {
           color: #000; }
       #guidance ul li:hover {
@@ -1300,7 +1258,7 @@ body {
 #footer {
   background-color: #e2e2d3; }
   #footer .wrap {
-    padding: 7vh 12vw; }
+    padding: 12vh 12vw 6vh 12vw; }
     #footer .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
@@ -1314,14 +1272,14 @@ body {
           border-radius: 4px;
           color: #fff; }
         #footer .wrap .footer-upper .logo span {
-          font: 600 26px/1 'Times New Roman';
+          font: 600 28px/1 'Roboto';
           color: #000; }
       #footer .wrap .footer-upper .footer-menu {
         display: flex; }
         #footer .wrap .footer-upper .footer-menu li {
           margin-left: 24px; }
           #footer .wrap .footer-upper .footer-menu li a {
-            font: 16px/1 'Times New Roman';
+            font: 16px/1 'Roboto';
             color: #000;
             transition: all 0.3s; }
             #footer .wrap .footer-upper .footer-menu li a:hover {
@@ -1336,7 +1294,7 @@ body {
           flex-direction: column;
           padding: 10px; }
           #footer .wrap .footer-lower ul li .inner h2 {
-            font: 18px 'Times New Roman';
+            font: 18px 'Roboto';
             margin-bottom: 10px; }
           #footer .wrap .footer-lower ul li .inner p {
             font: 14px/1.5 'Roboto';
@@ -1346,7 +1304,9 @@ body {
             font: 14px/1.5 'Roboto'; }
           #footer .wrap .footer-lower ul li .inner input {
             max-width: 200px;
-            margin: 5px 0; }
+            margin: 20px 0; }
+          #footer .wrap .footer-lower ul li .inner span a {
+            color: #000; }
   #footer .copyright {
     height: 50px;
     background: #2f4858;
@@ -1394,7 +1354,7 @@ body {
     #home .background .title {
       top: 50%; }
       #home .background .title h1 {
-        font: bold 70px 'Times New Roman'; }
+        font: bold 70px 'Roboto'; }
     #home .info .inner .notice .alarm {
       display: none; }
 
@@ -1453,17 +1413,17 @@ body {
     right: 10px; }
 
   #home .background .title h1 {
-    font: bold 40px 'Times New Roman'; }
+    font: bold 40px 'Roboto'; }
   #home .info .inner h2 {
-    font: 18px/1 'Roboto'; }
+    font: bold 20px/1 'Roboto'; }
 
   #about .intro h1 {
-    font: bold 40px 'Times New Roman'; }
+    font: bold 40px 'Roboto'; }
   #about .place-pics .place2 {
     box-shadow: 15px 15px 0 #e2e2d3; }
 
   #programs h1 {
-    font: bold 40px 'Times New Roman';
+    font: bold 40px 'Roboto';
     text-align: left; }
   #programs .displays .display {
     width: 100%; }
@@ -1477,19 +1437,18 @@ body {
     flex-direction: column; }
 
   #testimonials h1 {
-    font: bold 40px/1 'Times New Roman'; }
+    font: bold 40px/1 'Roboto'; }
   #testimonials .testimonial .profile img {
     width: 200px;
     height: 200px; }
 
   #collection h1 {
-    font: bold 40px/1 'Times New Roman'; }
+    font: bold 40px/1 'Roboto'; }
 
   #guidance ul li {
     width: 50%; }
 
   #footer .wrap .footer-lower ul li {
-    width: 100%;
-    margin-bottom: 10px; } }
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

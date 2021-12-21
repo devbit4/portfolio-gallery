@@ -1,6 +1,7 @@
 .join{
     h1{
         text-align: center;
+        font-family: 'Times New Roman';
     }
     .inner{
         text-align: left;
@@ -12,6 +13,7 @@
 
             h2{
                 width: 25%;
+                font-family: 'Times New Roman';
 
             }
             .text{
@@ -21,12 +23,16 @@
                     background: #efefef;
                     padding: 10px;
                     margin-bottom: 10px;
+                    font: 12px/1.4 'Roboto';
+                    color: #777;
                 }
                 .agreement{
+                    font: 12px/1 'Roboto';
                     text-align: right;
                     input[type=checkbox]{
                         margin-left: 10px;
                         cursor: pointer;
+
                     }
                 }
             }
@@ -45,9 +51,9 @@
 
                 width: 75%;
                 th{
+                    font: 14px/1 'Roboto';
                     width: 20%;
                     text-align: left;
-                    font-size: 14px;
                     color: #000;
                     background: #E2E2D3;
                     border-right: 1px solid #bbb;
@@ -60,6 +66,7 @@
                      }
                 }
                 td{
+
                     border-bottom:1px solid #bbb;
                     padding:20px;
 
@@ -72,13 +79,16 @@
                     height:30px;
                     border:1px solid #bbb;
                     padding-left:20px;
+                    font: 14px/1 'Roboto';
                  }
                  input[type=checkbox], input[type=radio]{
                     margin-right:10px;
                     cursor: pointer;
+                    font: 14px/1 'Roboto';
                  }
                  label{
                     margin-right:30px;
+                    font: 14px/1 'Roboto';
                  }
                  select{
                     width:40%;
@@ -86,6 +96,7 @@
                     border:1px solid #bbb;
                     padding-left:20px;
                     cursor: pointer;
+                    font: 14px/1 'Roboto';
                  }
 
                  textarea#comments{
@@ -94,13 +105,15 @@
                     border:1px solid #bbb;
                     padding:20px;
                     resize:none;
-                    font-family: 'arial';
+                    font-family: 'Roboto';
+                    font: 14px/1 'Roboto';
                  }
 
                  .pathTxt, .genderTxt{
                    font-size: 12px;
                     margin-top:10px;
                     display:none;
+
                  }
                  .check td{
                      display: flex;
@@ -117,7 +130,7 @@
                 height:40px;
                 border:none;
                 background-color:#2F4858;
-                font-size: 14px;
+                font: 14px/1 'Roboto';
                 color:#fff;
                 margin:0 10px;
                 cursor: pointer;
@@ -220,16 +233,20 @@
                     th{display: none;
 
                     }
+                    td{
+                        padding: 20px 0;
+                    }
                      textarea#comments{
                         width:100%;
-                        padding-left: 5px;
+                        padding-left: 20px;
 
                      }
                      input[type=text], input[type=password]{
 
                         width: 100%;
                         min-width: auto;
-                        padding-left: 5px;
+                        padding-left: 20px;
+
 
 
                      }
@@ -238,7 +255,8 @@
                      select{
                          width: 100%;
                         min-width: auto;
-                        padding-left: 5px;
+                        padding-left: 20px;
+
                      }
 
 

@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
-// @import url('https://fonts.googleapis.com/css2?family=Work Sans&family=Open+Sans:wght@400;600;700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @import 'reset.scss';
 @import 'sub_layout.scss';
 @import 'about.scss';
@@ -37,7 +37,7 @@ body {
 			border-radius: 4px;
 		}
 		span {
-			font: 600 28px/1 'Work Sans';
+			font: 600 26px/1 'Times New Roman';
 			color: #e2e2d3;
 		}
 	}
@@ -46,7 +46,7 @@ body {
 		li {
 			margin-left: 24px;
 			a {
-				font: 16px/1 'Work Sans';
+				font: 16px/1 'Times New Roman';
 				color: #fff;
 				transition: all 0.3s;
 				&:hover {
@@ -56,7 +56,7 @@ body {
 		}
 	}
 	.toggle {
-		position: fixed;
+		position: absolute;
 		top: 28px;
 		right: 80px;
 		border: none;
@@ -93,7 +93,7 @@ body {
 			width: max-content;
 
 			h1 {
-				font: bold 90px 'Work Sans';
+				font: bold 90px 'Times New Roman';
 				margin-bottom: 40px;
 				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 			}
@@ -108,7 +108,7 @@ body {
 				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 
 				a {
-					font: 16px 'arial';
+					font: 16px 'Roboto';
 					color: #e2e2d3;
 					transition: all 0.3s;
 					display: inline-block;
@@ -135,16 +135,16 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			h2 {
-				font: bold 24px/1 'Work Sans';
+				font: 24px/1 'Roboto';
 				color: #e2e2d3;
 			}
 			.notice {
 				.alarm {
-					font: 16px/1 'arial';
+					font: 16px/1 'Roboto';
 					color: #777;
 				}
 				.more {
-					font: bold 16px/1 'Work Sans';
+					font: 16px/1 'Roboto';
 					margin-left: 40px;
 					position: relative;
 					&::before {
@@ -173,27 +173,27 @@ body {
 
 //about
 #about {
-	padding: 12vh 12vw;
+	padding: 14vh 12vw;
 	display: flex;
 	justify-content: space-between;
 	.intro {
 		flex-basis: 30%;
 		h1 {
-			font: bold 60px/1 'Work Sans';
+			font: bold 60px/1 'Times New Roman';
 			margin: 80px 0;
 		}
 		h2 {
-			font: 28px 'Work Sans';
+			font: 28px 'Roboto';
 			margin-bottom: 40px;
 			color: #a6a695;
 		}
 		p {
-			font: 16px/1.5 'arial';
+			font: 16px/1.4 'Roboto';
 			margin-bottom: 80px;
 			color: #9e9e9e;
 		}
 		span {
-			font: bold 16px/1 'Work Sans';
+			font: bold 16px/1 'Roboto';
 			margin-left: 30px;
 			position: relative;
 			&::before {
@@ -242,9 +242,9 @@ body {
 
 // programs
 #programs {
-	padding: 12vh 12vw;
+	padding: 14vh 12vw;
 	h1 {
-		font: bold 60px/1 'Work Sans';
+		font: bold 60px/1 'Times New Roman';
 		margin-bottom: 60px;
 		text-align: center;
 	}
@@ -271,32 +271,32 @@ body {
 					object-fit: cover;
 					margin-bottom: 40px;
 					transition: all 0.3s ease;
-					// opacity: 0.8;
-					box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+
 				}
 				h2 {
-					font: 18px/1 'Work Sans';
+					font: 18px/1 'Roboto';
+					color: #a6a695;
 					margin-bottom: 20px;
 				}
 				p {
-					font: 16px/1.2 'arial';
+					font: 16px/1.4 'Roboto';
 					color: #9e9e9e;
 					margin-bottom: 40px;
 				}
 			}
 
-			&:hover {
-				transform: translateY(-30px);
-				opacity: 1;
-			}
+			// &:hover {
+			// 	transform: translateY(-30px);
+			// 	opacity: 1;
+			// }
 		}
 	}
 }
 // events
 #events {
-	padding: 12vh 12vw;
+	padding: 7vh 12vw 14vh 12vw;
 	h1 {
-		font: bold 60px/1 'Work Sans';
+		font: bold 60px/1 'Roboto';
 		position: absolute;
 		left: 55%;
 	}
@@ -308,7 +308,6 @@ body {
 			width: 50%;
 			.img {
 				margin: 0 auto;
-				box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 				overflow: hidden;
 				width: 70%;
 				height: 400px;
@@ -332,17 +331,17 @@ body {
 				width: 70%;
 				margin: 0 auto;
 				h2 {
-					font: 28px 'Work Sans';
+					font: 28px 'Roboto';
 					color: #e2e2d3;
 					margin-bottom: 40px;
 				}
 				p {
-					font: 16px/1.5 'arial';
+					font: 16px/1.4 'Roboto';
 					margin-bottom: 40px;
 					color: #9e9e9e;
 				}
 				span {
-					font: bold 16px/1 'Work Sans';
+					font: bold 16px/1 'Roboto';
 					margin-left: 30px;
 					position: relative;
 					&::before {
@@ -373,10 +372,10 @@ body {
 
 // collection
 #collection {
-	padding: 12vh 12vw;
+	padding: 14vh 12vw;
 	background: url(../img/main/pic17.jpg) no-repeat center/cover fixed;
 	h1 {
-		font: bold 60px/1 'Work Sans';
+		font:  60px/1 'Times New Roman';
 		margin-bottom: 60px;
 		color: #e2e2d3;
 	}
@@ -398,37 +397,37 @@ body {
 			.collection2 {
 				width: 40%;
 				height: 80%;
-				object-fit: cover;
 				position: relative;
 				top: 40px;
 				left: -30px;
 				padding: 10px;
 				border-top: 5px solid #e2e2d3;
 				border-left: 5px solid #e2e2d3;
+				background: #e2e2d3;
 			}
 		}
 		.collection-description {
 			flex-basis: 30%;
 			padding: 20px;
 			h2 {
-				font: 28px 'Work Sans';
+				font: 28px 'Roboto';
 				margin: 40px 0;
 				color: #fff;
 			}
 			p {
-				font: 16px/1.5 'arial';
+				font: 16px/1.5 'Roboto';
 				margin-bottom: 40px;
 				color: #9e9e9e;
 			}
 			span {
-				font: bold 16px/1 'Work Sans';
+				font: bold 16px/1 'Roboto';
 				margin-left: 30px;
 				position: relative;
 				&::before {
 					content: '';
 					display: block;
 					width: 20px;
-					border-bottom: 2px solid #fff;
+					border-bottom: 2px solid #e2e2d3;
 					position: absolute;
 					top: 8px;
 					left: -30px;
@@ -436,7 +435,7 @@ body {
 				a {
 					display: inline-block;
 					transition: all 0.3s;
-					color: #fff;
+					color: #e2e2d3;
 					&:hover {
 						transform: translateX(10px);
 					}
@@ -446,24 +445,24 @@ body {
 	}
 	.collection-gallery {
 		h2 {
-			font: 28px 'Work Sans';
+			font: 28px 'Roboto';
 			margin: 40px 0;
 			color: #fff;
 		}
 		p {
-			font: 16px/1.5 'arial';
+			font: 16px/1.5 'Roboto';
 			margin-bottom: 40px;
 			color: #9e9e9e;
 		}
 		span {
-			font: bold 16px/1 'Work Sans';
+			font: bold 16px/1 'Roboto';
 			margin-left: 30px;
 			position: relative;
 			&::before {
 				content: '';
 				display: block;
 				width: 20px;
-				border-bottom: 2px solid #fff;
+				border-bottom: 2px solid #e2e2d3;
 				position: absolute;
 				top: 8px;
 				left: -30px;
@@ -471,7 +470,7 @@ body {
 			a {
 				display: inline-block;
 				transition: all 0.3s;
-				color: #fff;
+				color: #e2e2d3;
 				&:hover {
 					transform: translateX(10px);
 				}
@@ -481,12 +480,12 @@ body {
 }
 // testimonials
 #testimonials {
-	padding: 12vh 12vw;
+	padding: 14vh 12vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	h1 {
-		font: bold 60px/1 'Work Sans';
+		font: bold 60px/1 'Times New Roman';
 		margin-bottom: 60px;
 	}
 	.testimonial {
@@ -498,19 +497,19 @@ body {
 			box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 		}
 		p {
-			font: 16px/1.5 'arial';
+			font: 16px/1.5 'Roboto';
 			margin: 40px 0;
 			color: #9e9e9e;
 		}
 		span {
-			font: bold 28px 'Work Sans';
+			font: bold 24px 'Roboto';
 			color: #a6a695;
 		}
 	}
 }
 //guidance
 #guidance {
-	padding: 6vh 12vw;
+	padding: 0vh 12vw 7vh 12vw;
 	ul {
 		display: flex;
 		justify-content: space-between;
@@ -521,12 +520,12 @@ body {
 			text-align: center;
 			padding: 30px;
 			i {
-				font-size: 60px;
+				font-size: 40px;
 				color: #e2e2d3;
 				margin-bottom: 20px;
 			}
 			span {
-				font: 20px/1 'Work Sans';
+				font: 16px/1 'Times New Roman';
 				a {
 					color: #000;
 				}
@@ -547,7 +546,7 @@ body {
 #footer {
 	background-color: #e2e2d3;
 	.wrap {
-		padding: 12vh 12vw 6vh 12vw;
+		padding: 7vh 12vw;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;
@@ -562,7 +561,7 @@ body {
 					color: #fff;
 				}
 				span {
-					font: 600 28px/1 'Work Sans';
+					font: 600 26px/1 'Times New Roman';
 					color: #000;
 				}
 			}
@@ -571,7 +570,7 @@ body {
 				li {
 					margin-left: 24px;
 					a {
-						font: 16px/1 'Work Sans';
+						font: 16px/1 'Times New Roman';
 						color: #000;
 						transition: all 0.3s;
 						&:hover {
@@ -592,24 +591,22 @@ body {
 						flex-direction: column;
 						padding: 10px;
 						h2 {
-							font: bold 18px 'Work Sans';
+							font: 18px 'Times New Roman';
 							margin-bottom: 10px;
 						}
 						p {
-							font: 14px/1.5 'arial';
+							font: 14px/1.5 'Roboto';
 							color: #a6a695;
 						}
 						> a {
 							color: #a6a695;
-							font: 14px/1.5 'arial';
+							font: 14px/1.5 'Roboto';
 						}
 						input {
 							max-width: 200px;
-							margin: 20px 0;
+							margin: 5px 0 ;
 						}
-						span a {
-							color: #000;
-						}
+
 					}
 				}
 			}
@@ -684,7 +681,7 @@ body {
 			.title {
 				top: 50%;
 				h1 {
-					font: bold 70px 'Work Sans';
+					font: bold 70px 'Times New Roman';
 				}
 			}
 		}
@@ -800,14 +797,14 @@ body {
 		.background {
 			.title {
 				h1 {
-					font: bold 40px 'Work Sans';
+					font: bold 40px 'Times New Roman';
 				}
 			}
 		}
 		.info {
 			.inner {
 				h2 {
-					font: bold 20px/1 'Work Sans';
+					font: 18px/1 'Roboto';
 				}
 			}
 		}
@@ -816,7 +813,7 @@ body {
 	#about {
 		.intro {
 			h1 {
-				font: bold 40px 'Work Sans';
+				font: bold 40px 'Times New Roman';
 			}
 		}
 		.place-pics .place2 {
@@ -826,7 +823,7 @@ body {
 	// programs
 	#programs {
 		h1 {
-			font: bold 40px 'Work Sans';
+			font: bold 40px 'Times New Roman';
 			text-align: left;
 		}
 		.displays {
@@ -858,7 +855,7 @@ body {
 	// testimonials
 	#testimonials {
 		h1 {
-			font: bold 40px/1 'Work Sans';
+			font: bold 40px/1 'Times New Roman';
 		}
 		.testimonial {
 			.profile img {
@@ -869,7 +866,7 @@ body {
 	}
 	// collection
 	#collection h1 {
-		font: bold 40px/1 'Work Sans';
+		font: bold 40px/1 'Times New Roman';
 	}
 
 	//guidance
@@ -883,12 +880,12 @@ body {
 	//footer
 	#footer {
 		.wrap {
-			.footer-upper {
-			}
+
 			.footer-lower {
 				ul {
 					li {
 						width: 100%;
+						margin-bottom: 10px;
 					}
 				}
 			}
