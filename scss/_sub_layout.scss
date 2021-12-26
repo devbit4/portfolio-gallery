@@ -159,7 +159,7 @@ $mobile: 539px;
 						flex-direction: column;
 						padding: 10px;
 						h2 {
-							font: 18px 'Times New Roman';
+							font: 16px 'Roboto';
 							margin-bottom: 10px;
 						}
 						p {
@@ -195,7 +195,7 @@ $mobile: 539px;
 		background: #fff;
 		padding: 4vh 12vw;
 		flex-direction: column;
-		position: static;
+		position: fixed;
 		border-bottom: 1px solid #e2e2d3;
 
 		.logo {
@@ -241,7 +241,7 @@ $mobile: 539px;
     .content{
       padding:0px 0px 100px;
 
-    //   .sub_visual{  height:300px;  }
+      .sub_visual{  height:120px;  }
       .inner{
          width:100%;
       }

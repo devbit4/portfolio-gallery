@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a0bfa0bc39.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/gallery.js"></script>
 </head>
 
 <body>
@@ -44,7 +46,28 @@
         </div>
         <div class="inner">
             <h1>Collection</h1>
-
+            <div id="gallery">
+                <article id="searchBox">
+                    <input type="text" id="search" placeholder="검색어 입력">
+                    <button class="btnSearch">Search</button>
+                </article>
+                <article id="wrap">
+                    <img src="img/loading.gif" class="loading">
+                    <p class="errMsg"></p>
+                    <ul id="list">
+                        <!--
+                        <li class="item">
+                            <div>
+                                <a href="큰이미지주소">
+                                    <img src="썸네일이미지주소" alt="">
+                                </a>
+                                <p>이미지 제목</p>
+                            </div>
+                        </li>
+                        -->
+                    </ul>
+                </article>
+            </div>
             <!-- 컨텐츠 들어가는 부분 -->
         </div>
     </section>
