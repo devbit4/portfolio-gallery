@@ -857,7 +857,8 @@ aside {
       transform: rotate(270deg);
       opacity: 0.3;
       z-index: -3;
-      color: #e2e2d3; }
+      color: #e2e2d3;
+      font-family: "Times New Roman"; }
     .contact .inner .contactUs .description .description-upper {
       margin-bottom: 80px; }
       .contact .inner .contactUs .description .description-upper h2 {
@@ -879,7 +880,8 @@ aside {
         flex-direction: column; }
         .contact .inner .contactUs .description .description-lower .branch h3 {
           margin-bottom: 20px;
-          font-family: 'Times New Roman';
+          font-family: 'Roboto';
+          color: #9e9e9e;
           padding-bottom: 10px;
           border-bottom: 1px solid #e2e2d3; }
         .contact .inner .contactUs .description .description-lower .branch span {
@@ -919,7 +921,8 @@ aside {
       font-weight: bold; }
 .contact .inner #map {
   width: 100%;
-  height: 500px;
+  height: 400px;
+  filter: grayscale(0.2);
   background: #000; }
 .contact .inner::after {
   content: '';
