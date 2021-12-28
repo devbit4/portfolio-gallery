@@ -94,7 +94,7 @@ $mobile: 539px;
        h1{
           font-size: 50px;
           color:#000;
-          margin-bottom:80px;
+          margin-bottom:60px;
 		&::after{
 			content: "";
 			display: block;
@@ -118,7 +118,8 @@ $mobile: 539px;
 		.footer-upper {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 60px;
+			align-items: center;
+			margin-bottom: 30px;
 			.logo {
 				font-size: 24px;
 				i {
@@ -157,22 +158,23 @@ $mobile: 539px;
 					.inner {
 						display: flex;
 						flex-direction: column;
-						padding: 10px;
+						padding: 10px 0;
 						h2 {
-							font: 16px 'Roboto';
+							font: bold 14px 'Roboto';
 							margin-bottom: 10px;
 						}
 						p {
-							font: 14px/1.5 'Roboto';
+							font: 14px/1.2 'Roboto';
 							color: #a6a695;
 						}
 						> a {
 							color: #a6a695;
-							font: 14px/1.5 'Roboto';
+							font: 14px/1.2 'Roboto';
 						}
 						input {
 							max-width: 200px;
 							margin: 5px 0 ;
+							border: none;
 						}
 
 					}

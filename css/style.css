@@ -90,7 +90,7 @@ fieldset {
     .content .inner h1 {
       font-size: 50px;
       color: #000;
-      margin-bottom: 80px; }
+      margin-bottom: 60px; }
       .content .inner h1::after {
         content: "";
         display: block;
@@ -109,7 +109,8 @@ fieldset {
     #footer_sub .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 60px; }
+      align-items: center;
+      margin-bottom: 30px; }
       #footer_sub .wrap .footer-upper .logo {
         font-size: 24px; }
         #footer_sub .wrap .footer-upper .logo i {
@@ -139,19 +140,20 @@ fieldset {
         #footer_sub .wrap .footer-lower ul li .inner {
           display: flex;
           flex-direction: column;
-          padding: 10px; }
+          padding: 10px 0; }
           #footer_sub .wrap .footer-lower ul li .inner h2 {
-            font: 16px 'Roboto';
+            font: bold 14px 'Roboto';
             margin-bottom: 10px; }
           #footer_sub .wrap .footer-lower ul li .inner p {
-            font: 14px/1.5 'Roboto';
+            font: 14px/1.2 'Roboto';
             color: #a6a695; }
           #footer_sub .wrap .footer-lower ul li .inner > a {
             color: #a6a695;
-            font: 14px/1.5 'Roboto'; }
+            font: 14px/1.2 'Roboto'; }
           #footer_sub .wrap .footer-lower ul li .inner input {
             max-width: 200px;
-            margin: 5px 0; }
+            margin: 5px 0;
+            border: none; }
   #footer_sub .copyright {
     height: 50px;
     background: #2f4858;
@@ -225,7 +227,7 @@ fieldset {
   .about .aboutUs h1 {
     font-size: 50px;
     color: #000;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-family: 'Times New Roman'; }
     .about .aboutUs h1::after {
       content: '';
@@ -520,29 +522,12 @@ figure.pop {
     color: #fff;
     cursor: pointer; }
 
-#gallery #searchBox {
-  width: 100%;
-  padding: 50px;
-  box-sizing: border-box;
-  font-size: 0;
-  text-align: right; }
-  #gallery #searchBox input[type=text] {
-    width: 300px;
-    height: 30px;
-    border: 1px solid #333;
-    padding-left: 10px;
-    box-sizing: border-box; }
-  #gallery #searchBox .btnSearch {
-    width: 80px;
-    height: 30px;
-    background: #333;
-    font: bold 12px/30px 'arial';
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    margin-left: 10px;
-    vertical-align: top; }
+.collection .inner > p {
+  font: 16px/1.2 'Roboto';
+  padding: 0 60px 40px 60px;
+  color: #9e9e9e;
+  border-bottom: 2px dashed #e2e2d3; }
+
 #gallery #wrap {
   width: 100%;
   padding: 50px 0; }
@@ -559,73 +544,47 @@ figure.pop {
     width: 100%;
     transform: translateY(100px);
     opacity: 0;
-    transition: 1s; }
+    transition: 1s;
+    display: flex; }
     #gallery #wrap #list.on {
       opacity: 1;
       transform: translateY(0px); }
-    #gallery #wrap #list::after {
-      content: '';
-      display: block;
-      clear: both; }
     #gallery #wrap #list li {
       float: left;
-      width: calc(100% / 4);
-      padding: 10px;
+      width: 25%;
+      padding: 20px;
       box-sizing: border-box; }
-      #gallery #wrap #list li div {
+      #gallery #wrap #list li > div {
         width: 100%;
-        padding: 20px;
         box-sizing: border-box;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 5px; }
-        #gallery #wrap #list li div a > img {
+        border: 1px solid #e2e2d3;
+        border-radius: 10px;
+        overflow: hidden; }
+        #gallery #wrap #list li > div > img {
           width: 100%;
           filter: grayscale(100%); }
-        #gallery #wrap #list li div p {
-          font: 12px/1.2 'arial';
-          color: #777;
-          margin-top: 10px;
-          margin-bottom: 10px; }
-        #gallery #wrap #list li div span {
-          display: flex;
-          align-items: center;
-          margin-top: 20px; }
-          #gallery #wrap #list li div span > img {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin-right: 5px; }
-          #gallery #wrap #list li div span strong {
-            font: 11px/1 'arial';
-            color: orange; }
-        #gallery #wrap #list li div:hover a > img {
+        #gallery #wrap #list li > div .text {
+          padding: 20px 10px; }
+          #gallery #wrap #list li > div .text h2 {
+            font: bold 14px/1 'Roboto';
+            color: #e2e2d3;
+            margin-top: 10px;
+            margin-bottom: 10px; }
+          #gallery #wrap #list li > div .text p {
+            font: 12px/1.2 'Roboto';
+            margin-bottom: 20px; }
+          #gallery #wrap #list li > div .text a {
+            background: #2f4858;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: #fff;
+            font: 12px/1 'Roboto'; }
+        #gallery #wrap #list li > div:hover > img {
           filter: grayscale(0%); }
-
-aside {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 5vw;
-  box-sizing: border-box; }
-  aside .con {
-    width: 100%;
-    height: 100%; }
-    aside .con > img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; }
-  aside .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #fff; }
 
 @media screen and (max-width: 999px) {
   #gallery #wrap #list li {
-    width: calc(100% /3); } }
+    width: 33.333%; } }
 @media screen and (max-width: 749px) {
   #gallery #searchBox {
     padding: 50px 0px 0px; }
@@ -636,10 +595,10 @@ aside {
       margin-left: 0px;
       margin-top: 10px; }
   #gallery #wrap #list li {
-    width: calc(100% /2); } }
+    width: 50%; } }
 @media screen and (max-width: 439px) {
   #gallery #wrap #list li {
-    width: calc(100% /1); } }
+    width: 100%; } }
 .community .inner h1 {
   font-family: 'Times New Roman'; }
 .community .inner .services {
@@ -746,7 +705,7 @@ aside {
   border-bottom: 2px solid #000;
   margin-bottom: 50px;
   border-collapse: collapse;
-  font-family: 'Times New Roman'; }
+  font: 14px/1 'Roboto'; }
   .community .inner table tr:nth-of-type(odd) {
     background: #eee; }
   .community .inner table tr th {
@@ -755,7 +714,7 @@ aside {
     color: #000;
     border-top: 2px solid #000;
     border-bottom: 1px solid #000;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 40px; }
     .community .inner table tr th:nth-of-type(1) {
       width: 10%; }
@@ -764,7 +723,7 @@ aside {
     .community .inner table tr th:nth-of-type(4) {
       width: 15%; }
   .community .inner table tr td {
-    font-size: 16px;
+    font-size: 14px;
     padding: 16px;
     border-bottom: 1px solid #ddd;
     text-align: center;
@@ -783,12 +742,15 @@ aside {
     display: none; }
 .community .inner .pagination {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .community .inner .pagination a {
     display: inline-block;
     width: 30px;
     height: 30px;
     line-height: 30px; }
+    .community .inner .pagination a span {
+      font: 12px/1 'Roboto'; }
   .community .inner .pagination button {
     width: 30px;
     height: 30px;
@@ -852,8 +814,8 @@ aside {
     .contact .inner .contactUs .description strong {
       font-size: 100px;
       position: absolute;
-      top: 240px;
-      left: -240px;
+      top: 180px;
+      left: -200px;
       transform: rotate(270deg);
       opacity: 0.3;
       z-index: -3;
@@ -877,7 +839,8 @@ aside {
       .contact .inner .contactUs .description .description-lower .branch {
         width: 45%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        text-align: center; }
         .contact .inner .contactUs .description .description-lower .branch h3 {
           margin-bottom: 20px;
           font-family: 'Roboto';
@@ -905,11 +868,11 @@ aside {
     .contact .inner .contactUs #contact-form p {
       color: #9e9e9e;
       font-size: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       font-family: 'Roboto'; }
     .contact .inner .contactUs #contact-form input,
     .contact .inner .contactUs #contact-form textarea {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       padding: 1vw 0;
       padding-left: 20px;
       font-family: 'Roboto'; }
@@ -1070,7 +1033,7 @@ aside {
       height: 40px;
       border: none;
       background-color: #2F4858;
-      font: 14px/1 'Roboto';
+      font: bold 14px/1 'Roboto';
       color: #fff;
       margin: 0 10px;
       cursor: pointer; }
@@ -1540,7 +1503,6 @@ body {
       width: 15%;
       text-align: center;
       padding: 30px;
-      border: 1px dashed #e2e2d3;
       border-radius: 4px; }
       #guidance ul li i {
         font-size: 40px;
@@ -1563,7 +1525,8 @@ body {
     #footer .wrap .footer-upper {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 60px; }
+      align-items: center;
+      margin-bottom: 30px; }
       #footer .wrap .footer-upper .logo {
         font-size: 24px; }
         #footer .wrap .footer-upper .logo i {
@@ -1593,19 +1556,20 @@ body {
         #footer .wrap .footer-lower ul li .inner {
           display: flex;
           flex-direction: column;
-          padding: 10px; }
+          padding: 10px 0; }
           #footer .wrap .footer-lower ul li .inner h2 {
-            font: 16px 'Roboto';
+            font: bold 14px 'Roboto';
             margin-bottom: 10px; }
           #footer .wrap .footer-lower ul li .inner p {
-            font: 14px/1.5 'Roboto';
+            font: 14px/1.2 'Roboto';
             color: #a6a695; }
           #footer .wrap .footer-lower ul li .inner > a {
             color: #a6a695;
-            font: 14px/1.5 'Roboto'; }
+            font: 14px/1.2 'Roboto'; }
           #footer .wrap .footer-lower ul li .inner input {
             max-width: 200px;
-            margin: 5px 0; }
+            margin: 5px 0;
+            border: none; }
   #footer .copyright {
     height: 50px;
     background: #2f4858;

@@ -8,105 +8,12 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "7867f2d006615cd9c7c79d1275688a01";
-const per_page = 20;
+const per_page = 15;
 const format = "json";
 
-//flickr.interestingness.getList method
 const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
 
 callData(url1);
-
-
-//이미지 검색 버튼 클릭시
-btn.addEventListener("click", e => {
-    let tag = input.value;
-    //flickr.photos.search method
-    const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
-
-    if (tag != "") {
-        callData(url);
-        errMsg.style.display = "none";
-    } else {
-        console.log("검색어를 입력하세요.");
-        errMsg.innerText = "검색어를 입력하세요";
-        errMsg.style.display = "block";
-
-        frame.innerHTML = "";
-        frame.classList.remove("on");
-        frame.style.height = 0;
-    }
-
-});
-
-//검색어 입력후 enter 눌렀을 때
-input.addEventListener("keyup", e => {
-    if (e.key === "Enter") {
-        let tag = input.value;
-        //flickr.photos.search method
-        const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
-
-        if (tag != "") {
-            callData(url);
-            errMsg.style.display = "none";
-        } else {
-            console.log("검색어를 입력하세요.");
-            errMsg.innerText = "검색어를 입력하세요";
-            errMsg.style.display = "block";
-
-            frame.innerHTML = "";
-            frame.classList.remove("on");
-            frame.style.height = 0;
-        }
-    }
-});
-
-//동적으로 레이어팝업 생성 이벤트
-frame.addEventListener("click", e => {
-    e.preventDefault();
-
-    if (e.target == frame) return;
-
-    let target = e.target.closest(".item").querySelector(".thumb");
-
-    if (e.target == target) {
-
-        //순간적으로 body의 속성을 overflow:hidden 적용해서 스크롤 기능 방지
-        body.style.overflow = "hidden";
-
-        let imgSrc = target.parentElement.getAttribute("href");
-
-        let pop = document.createElement("aside");
-        pop.classList.add("pop");
-        let pops = `
-                  <div class="con">
-                     <img src="${imgSrc}">
-                  </div>
-                  <span class="close">close</span>
-                  `;
-        pop.innerHTML = pops;
-        body.append(pop);
-    } else {
-        return;
-    }
-});
-
-
-//팝업 닫기 버튼 클릭시
-body.addEventListener("click", e => {
-
-    let pop = body.querySelector(".pop");
-
-    if (pop != null) {
-        let close = pop.querySelector(".close");
-        if (e.target == close) {
-
-            body.style.overflow = "auto";
-            pop.remove();
-        }
-
-    }
-});
-
 
 
 function callData(url) {
@@ -120,27 +27,14 @@ function callData(url) {
         })
         .then(json => {
             let items = json.photos.photo;
+            creatList(items);
+            delayLoading();
 
-            if (items.length > 0) {
-                creatList(items);
-                delayLoading();
-            } else {
-                console.log("검색하신 이미지의 데이터가 없습니다.");
-
-                loading.classList.add("off");
-                errMsg.innerText = "검색하신 이미지의 데이터가 없습니다.";
-                errMsg.style.display = "block";
-
-                //이전 list li의 높이값이 남아 있는 것을 제거
-                frame.classList.remove("on");
-                frame.style.height = 0;
-            }
         });
 }
 
 function creatList(items) {
     let htmls = "";
-    //https://live.staticflickr.com/{server_id}/{id}_{secret}_{size-suffix}.jpg
     items.forEach(data => {
         console.log(data);
         let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg`;
@@ -149,14 +43,12 @@ function creatList(items) {
         htmls += `
                   <li class="item">
                      <div>
-                        <a href="${imgSrcBig}">
                            <img class="thumb" src="${imgSrc}">
-                        </a>
-                        <p>${data.title}</p>
-                        <span>
-                           <img class="profile" src="http://farm${data.farm}.staticflickr.com/${data.server}/buddyicons/${data.owner}.jpg">
-                           <strong>${data.owner}</strong>
-                        </span>
+                        <div class="text">
+                        <h2>${data.title}</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aperiam accusamus impedit sapiente, reiciendis fugit.</p>
+                        <a href="${imgSrcBig}">See More</a>
+                        </div>
                      </div>
                   </li>
          `;
@@ -173,18 +65,12 @@ function delayLoading() {
     for (let el of imgs) {
         el.onload = () => {
             count++;
-
             if (count === len) isoLayout();
         }
 
         let thumb = el.closest(".item").querySelector(".thumb");
         thumb.onerror = e => {
             e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("src", "img/k1.jpg");
-        }
-
-        let profile = el.closest(".item").querySelector(".profile");
-        profile.onerror = e => {
-            e.currentTarget.closest(".item").querySelector(".profile").setAttribute("src", "https://combo.staticflickr.com/pw/images/buddyicon09.png");
         }
 
     }

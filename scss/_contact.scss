@@ -17,8 +17,8 @@
 				strong{
 					font-size: 100px;
 					position: absolute;
-					top: 240px;
-					left: -240px;
+					top: 180px;
+					left: -200px;
 					transform: rotate(270deg);
 					opacity: 0.3;
 					z-index: -3;
@@ -49,6 +49,7 @@
 						width: 45%;
 						display: flex;
 						flex-direction: column;
+						text-align: center;
 
 						h3 {
 							margin-bottom: 20px;
@@ -83,12 +84,12 @@
 				p {
 					color: #9e9e9e;
 					font-size: 16px;
-					margin-bottom: 40px;
+					margin-bottom: 20px;
 					font-family: 'Roboto';
 				}
 				input,
 				textarea {
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 					padding: 1vw 0;
 					padding-left: 20px;
 					font-family: 'Roboto';

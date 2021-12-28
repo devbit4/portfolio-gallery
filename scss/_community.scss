@@ -128,7 +128,7 @@
 			border-bottom: 2px solid #000;
 			margin-bottom: 50px;
 			border-collapse: collapse;
-			font-family: 'Times New Roman';
+			font: 14px/1 'Roboto';
 
 			tr {
 				&:nth-of-type(odd) {
@@ -141,7 +141,7 @@
 					color: #000;
 					border-top: 2px solid #000;
 					border-bottom: 1px solid #000;
-					font-size: 18px;
+					font-size: 14px;
 					margin-bottom: 40px;
 
 					&:nth-of-type(1) {
@@ -155,7 +155,7 @@
 					}
 				}
 				td {
-					font-size: 16px;
+					font-size: 14px;
 					padding: 16px;
 					border-bottom: 1px solid #ddd;
 					text-align: center;
@@ -189,11 +189,15 @@
 		.pagination {
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			a {
 				display: inline-block;
 				width: 30px;
 				height: 30px;
 				line-height: 30px;
+				span{
+				font: 12px/1 'Roboto';
+				}
 			}
 			button {
 				width: 30px;
