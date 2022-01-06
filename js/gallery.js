@@ -8,7 +8,7 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "7867f2d006615cd9c7c79d1275688a01";
-const per_page = 15;
+const per_page = 12;
 const format = "json";
 
 const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
@@ -45,9 +45,9 @@ function creatList(items) {
                      <div>
                            <img class="thumb" src="${imgSrc}">
                         <div class="text">
-                        <h2>${data.title}</h2>
+                        <h2>${data.title.toUpperCase()}</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aperiam accusamus impedit sapiente, reiciendis fugit.</p>
-                        <a href="${imgSrcBig}">See More</a>
+                        <a href="${imgSrcBig}">SEE MORE <i class="fas fa-angle-right"></i></a>
                         </div>
                      </div>
                   </li>

@@ -1,5 +1,6 @@
 .community {
 	.inner {
+		animation: fade 1s ease-in-out;
 		h1{
 			font-family: 'Times New Roman';
 		}
@@ -83,24 +84,6 @@
 			}
 		}
 
-		> a {
-			font-family: 'Times New Roman';
-			display: inline-block;
-			font-size: 20px;
-			color: #e2e2d3;
-			margin-right: 20px;
-			margin-bottom: 40px;
-			&:nth-of-type(1)::after {
-				content: '/';
-				margin-left: 20px;
-
-			}
-			&.active {
-				color: #000;
-				font-weight: bold;
-			}
-		}
-
 		.searchbox {
 			text-align: right;
 			input {
@@ -119,9 +102,7 @@
 		.notice {
 			display: block;
 		}
-		.faq {
-			display: none;
-		}
+
 		table {
 			width: 100%;
 			margin-top: 20px;

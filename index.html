@@ -8,7 +8,10 @@
     <title>main page</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/testimonials.js"></script>
     <script src="https://kit.fontawesome.com/a0bfa0bc39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -186,18 +189,60 @@
     <!-- testimonials -->
     <section id="testimonials">
         <h1>Testimonials</h1>
-        <div class="testimonial">
-            <div class="profile">
-                <img src="img/main/pic11.jpg" alt="">
-            </div>
-            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reprehenderit commodi.<br> Ab totam sequi
-                assumenda
-                maxime nemo placeat aliquam vel ut.<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorum,
-                iusto."</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="profile">
+                            <img src="img/main/pic11.jpg" alt="">
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reprehenderit commodi.<br> Ab
+                            totam sequi
+                            assumenda
+                            maxime nemo placeat aliquam vel ut.<br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Dolorum,
+                            iusto."</p>
 
-            <span>Tim Arnault</span>
-        </div class="testimonial">
+                        <span>Tim Arnault</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="profile">
+                            <img src="img/main/pic12.jpg" alt="">
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reprehenderit commodi.<br> Ab
+                            totam sequi
+                            assumenda
+                            maxime nemo placeat aliquam vel ut.<br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Dolorum,
+                            iusto."</p>
+
+                        <span>Alen Hwang</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="profile">
+                            <img src="img/main/pic13.jpg" alt="">
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reprehenderit commodi.<br> Ab
+                            totam sequi
+                            assumenda
+                            maxime nemo placeat aliquam vel ut.<br> Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Dolorum,
+                            iusto."</p>
+
+                        <span>Lena Jin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
     <!-- guidance -->
     <section id="guidance">
@@ -286,7 +331,6 @@
         </div class="wrap">
         <div class="copyright">&copy; All Rights Are Reserved. </div>
     </footer>
-
 </body>
 
 </html>

@@ -2,9 +2,10 @@
 	.aboutUs {
 		padding: 0 12vw;
 		padding-bottom: 80px;
+		animation: fade 1s ease-in-out;
 
 		h1 {
-			font-size: 50px;
+			font-size: 38px;
 			color: #000;
 			margin-bottom: 60px;
 			font-family: 'Times New Roman';
@@ -25,9 +26,9 @@
 			display: flex;
 			justify-content: space-between;
 			p {
-				font: 16px/1.2 'Roboto';
+				font: 300 16px/1.2 'Roboto';
 				width: 48%;
-				color: #9e9e9e;
+				color: #2f4858;
 				margin-bottom: 80px;
 				&:nth-of-type(1) {
 					text-align: right;
@@ -89,7 +90,7 @@
 		}
 	}
 	.space {
-		padding: 14vh 0 7vh 0;
+		padding: 7vh 0 7vh 0;
 		display: flex;
 		.left {
 			width: 50%;
@@ -182,15 +183,15 @@
 
 	.inner {
 		.team {
-			padding-top: 14vh;
+			padding-top: 10vh;
 			display: flex;
 			justify-content: space-around;
 			flex-wrap: wrap;
 			> p {
-				font: 16px/1.2 'Roboto';
+				font: 16px/1 'Roboto';
 				margin-bottom: 40px;
 				padding: 0 60px;
-				color: #9e9e9e;
+				color: #2f4858;
 			}
 			.member {
 				display: flex;

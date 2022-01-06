@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
 @import 'reset.scss';
 @import 'sub_layout.scss';
 @import 'about.scss';
@@ -96,6 +97,18 @@ body {
 				font: bold 90px 'Times New Roman';
 				margin-bottom: 40px;
 				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
+				&::before{
+					content: "Woodworking";
+					display: block;
+					position: absolute;
+					top: -20px;
+					left: 20px;
+					z-index: -1;
+					-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: rgba(231, 248, 74, 0.452);
+			color: transparent;
+				}
+
 			}
 
 			span {
@@ -108,7 +121,7 @@ body {
 				// text-shadow: 4px -2px 5px rgba(119, 119, 119, 1);
 
 				a {
-					font: 16px 'Roboto';
+					font: bold 16px 'Roboto';
 					color: #e2e2d3;
 					transition: all 0.3s;
 					display: inline-block;
@@ -173,17 +186,17 @@ body {
 
 //about
 #about {
-	padding: 14vh 12vw;
+	padding: 4vh 12vw 8vh 12vw;
 	display: flex;
 	justify-content: space-between;
 	.intro {
 		flex-basis: 30%;
 		h1 {
-			font: bold 60px/1 'Times New Roman';
+			font: bold 48px/1 'Times New Roman';
 			margin: 80px 0;
 		}
 		h2 {
-			font: 28px 'Roboto';
+			font: 24px 'Roboto';
 			margin-bottom: 40px;
 			color: #a6a695;
 		}
@@ -242,9 +255,9 @@ body {
 
 // programs
 #programs {
-	padding: 14vh 12vw;
+	padding: 8vh 12vw;
 	h1 {
-		font: bold 60px/1 'Times New Roman';
+		font: bold 48px/1 'Times New Roman';
 		margin-bottom: 60px;
 		text-align: center;
 	}
@@ -293,18 +306,15 @@ body {
 }
 // events
 #events {
-	padding: 7vh 12vw 14vh 12vw;
-	h1 {
-		font: bold 60px/1 'Roboto';
-		position: absolute;
-		left: 55%;
-	}
+	padding: 4vh 12vw 8vh 12vw;
 	.event {
 		display: flex;
 		align-items: center;
 		margin-bottom: 40px;
 		.event-pic {
 			width: 50%;
+			position: relative;
+
 			.img {
 				margin: 0 auto;
 				overflow: hidden;
@@ -335,8 +345,8 @@ body {
 					border-bottom: 1px solid #e2e2d3;
 				}
 				h2 {
-					font: 28px 'Roboto';
-					color: #e2e2d3;
+					font: 24px 'Roboto';
+					color: #a6a695;
 					margin-top: 10px;
 					margin-bottom: 40px;
 				}
@@ -346,7 +356,7 @@ body {
 					color: #9e9e9e;
 				}
 				span {
-					font: bold 16px/1 'Roboto';
+					font: bold 14px/1 'Roboto';
 					margin-left: 30px;
 					position: relative;
 					&::before {
@@ -377,10 +387,10 @@ body {
 
 // collection
 #collection {
-	padding: 14vh 12vw;
+	padding: 8vh 12vw;
 	background: url(../img/main/pic17.jpg) no-repeat center/cover fixed;
 	h1 {
-		font: 60px/1 'Times New Roman';
+		font: bold 48px/1 'Times New Roman';
 		margin-bottom: 60px;
 		color: #e2e2d3;
 	}
@@ -395,6 +405,7 @@ body {
 				object-fit: cover;
 				box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 				border-radius: 10px;
+
 			}
 
 			.collection1 {
@@ -430,7 +441,7 @@ body {
 			flex-basis: 40%;
 			padding: 20px;
 			h2 {
-				font: 28px 'Roboto';
+				font: 24px 'Roboto';
 				margin: 40px 0;
 				color: #fff;
 				padding-bottom: 10px;
@@ -442,7 +453,7 @@ body {
 				color: #9e9e9e;
 			}
 			span {
-				font: bold 16px/1 'Roboto';
+				font: bold 14px/1 'Roboto';
 				margin-left: 30px;
 				position: relative;
 				&::before {
@@ -467,7 +478,7 @@ body {
 	}
 	.collection-gallery {
 		h2 {
-			font: 28px 'Roboto';
+			font: 24px 'Roboto';
 			margin: 40px 0;
 			color: #fff;
 			padding-bottom: 10px;
@@ -504,20 +515,25 @@ body {
 }
 // testimonials
 #testimonials {
-	padding: 14vh 12vw;
+	padding: 8vh 12vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 	h1 {
-		font: bold 60px/1 'Times New Roman';
+		font: bold 48px/1 'Times New Roman';
 		margin-bottom: 60px;
 	}
+	.swiper{
+		width: 100%;
+		height: 100%;
 	.testimonial {
 		text-align: center;
 		.profile img {
 			width: 300px;
 			height: 300px;
 			object-fit: cover;
+			filter: grayscale(0.8);
 		}
 		p {
 			font: 16px/1.2 'Roboto';
@@ -525,14 +541,21 @@ body {
 			color: #9e9e9e;
 		}
 		span {
-			font: bold 24px 'Roboto';
+			font: bold 18px 'Roboto';
 			color: #a6a695;
 		}
 	}
+	.swiper-button-prev, .swiper-button-next{
+		color: #a6a695;
+		position: absolute;
+		top: 35%;
+
+	}
+}
 }
 //guidance
 #guidance {
-	padding: 0vh 12vw 7vh 12vw;
+	padding: 0vh 12vw 4vh 12vw;
 	ul {
 		display: flex;
 		justify-content: space-between;
@@ -549,9 +572,10 @@ body {
 				margin-bottom: 20px;
 			}
 			span {
-				font: 16px/1 'Roboto';
-				a {
-					color: #000;
+				font: bold 14px/1 'Roboto';
+				color: #a6a695;
+				a{
+					color: #a6a695;
 				}
 			}
 			&:hover {
@@ -560,6 +584,12 @@ body {
 				i {
 					color: #fff;
 					transform: rotateY(180deg);
+				}
+				span{
+					color: #fff;
+					a{
+						color: #fff;
+					}
 				}
 			}
 		}
@@ -639,11 +669,11 @@ body {
 		}
 	}
 	.copyright {
-		height: 50px;
+		height: 40px;
 		background: #2f4858;
 		color: #000;
 		text-align: center;
-		line-height: 50px;
+		line-height: 40px;
 	}
 }
 
@@ -889,6 +919,9 @@ body {
 				width: 200px;
 				height: 200px;
 			}
+		}
+		.swiper-button-prev,.swiper-button-next{
+			display: none;
 		}
 	}
 	// collection

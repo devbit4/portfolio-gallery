@@ -1,9 +1,10 @@
 .collection{
 .inner{
+   animation: fade 1s ease-in-out;
    >p {
       font: 16px/1.2 'Roboto';
       padding: 0 60px 40px 60px;
-      color: #9e9e9e;
+      color: #2f4858;
       border-bottom: 2px dashed #e2e2d3;
    }
 }
@@ -24,7 +25,7 @@
        }
 
        #list{
-          width:100%; transform:translateY(100px); opacity:0; transition:1s;
+          width:100%; transform:translateY(-100px); opacity:0; transition:1s;
          display: flex;
           &.on{
              opacity:1; transform:translateY(0px);
@@ -36,25 +37,31 @@
              >div{
                 width:100%; box-sizing:border-box;
                border: 1px solid #e2e2d3;
-               border-radius: 10px;
+               border-radius: 4px;
                overflow: hidden;
                    >img{ width:100%; filter:grayscale(100%);  }
                 .text{
-                   padding: 20px 10px;
+
                 h2{
-                   font:bold 14px/1 'Roboto'; color:#e2e2d3;
+                   font:bold 14px/1 'Roboto'; color:#333;
                    margin-top:10px; margin-bottom:10px;
+                   padding: 10px;
                 }
                 p{
                    font: 12px/1.2 'Roboto';
                    margin-bottom:20px;
+                   padding: 10px;
+                   color: #b7c3b4;;
                 }
                 a{
-                   background: #2f4858;
-                   padding: 5px 10px;
-                   border-radius: 4px;
-                   color: #fff;
-                   font: 12px/1 'Roboto';
+                   display: block;
+                   background: #e2e2d3;
+                   padding: 10px;
+                   color: #555;
+                   font: bold 10px/1 'Times New Roman';
+                   letter-spacing: 5px;
+                   border-bottom: 1px solid #2f4858;
+
                 }
                }
 

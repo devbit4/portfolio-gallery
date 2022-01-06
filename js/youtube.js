@@ -1,83 +1,73 @@
-const vidList = document.querySelector(".vidList");
-// const key = "AIzaSyCaMHpUSfzx7r4sjOMvOrs9nhRpKOXtcKo";
-// const playListId = "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd";
-const num = 10;
+// tab
+const tabs = document.querySelectorAll(".tabs li");
+const contexts = document.querySelectorAll(".context");
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+
+        tabs.forEach((tab) => {
+            tab.classList.remove("active");
+        })
+        tab.classList.add("active");
+        contexts.forEach((context) => {
+            context.classList.remove("active");
+        })
+        contexts[index].classList.add("active");
+    })
+
+})
+
+tabs[0].click();
+
+// youtube
+
+const key = "AIzaSyDsfN60C3q050t7aRRi2gw5CcR9CkegDz8";
+const playListId = "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd";
+const num = 6;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`;
+
+const list = document.querySelector(".videos");
 
 fetch(url)
     .then(data => {
-        return data.json();
+        return data.json()
     })
-    .then(json => {
-        console.log(json);
+    .then(data => {
 
-        let items = json.items;
-        let result = '';
-
-        items.forEach(item => {
-            //string.substr(start, length) : 문자열 자르기
-            let title = item.snippet.title;
+        let videos = data.items;
+        let html = "";
+        videos.forEach(video => {
+            let title = video.snippet.title;
             if (title.length > 35) {
                 title = title.substr(0, 35) + "...";
             }
-            //description 내용 자르기
-            let con = item.snippet.description;
-            if (con.length > 100) {
-                con = con.substr(0, 100) + "...";
+            let des = video.snippet.description;
+            if (des.length > 100) {
+                des = des.substr(0, 100) + "...";
             }
-
-            //publishedAt 날짜 변환
-            let date = item.snippet.publishedAt;
-
+            let date = video.snippet.publishedAt;
             date = date.split("T")[0];
 
-
-            result += `
-               <article>
-                  <a href="${item.snippet.resourceId.videoId}" class="pic">
-                     <img src="${item.snippet.thumbnails.medium.url}">
-                  </a>
-                  <div class="con">
-                     <h2>${title}</h2>
-                     <p>${con}</p>
-                     <span>${date}</span>
-                  </div>
-               </article>
-      `;
-
-        });
-        vidList.innerHTML = result;
-
-    });
-
-//팝업 생성 이벤트
-vidList.addEventListener("click", e => {
-    e.preventDefault();
-
-    //클릭한 이미지의 부모요소가 a태그가 아니라면 중지
-    // if(e.target.parentNode.nodeName != "A") return;
-    // if(!e.target.closest("a")) return;
-    if (e.target.closest("a") == null) return;
-
-    const vidId = e.target.closest("a").getAttribute("href");
-    let pop = document.createElement("figure");
-    pop.classList.add("pop");
-    pop.innerHTML = `
-         <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-         <span class="btnClose">close</span>
-   `;
-
-    vidList.append(pop);
-});
-
-//팝업 닫기 버튼 클릭시
-vidList.addEventListener("click", e => {
-    const pop = vidList.querySelector("figure");
-    if (pop != null) {
-        const close = pop.querySelector("span");
-
-        if (e.target == close) {
-            e.target.closest("figure").remove();
-        }
-    }
-});
+            html += `
+            <article>
+                <div class="innertxt">
+                    <div class="pic">
+                        <a href="${video.snippet.resourceId.videoId}" class="link">
+                            <img src="${video.snippet.thumbnails.medium.url}">
+                        </a>
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    <div class="text">
+                        <h2>${title}</h2>
+                        <p>${des}</p>
+                        <span>${date}</span>
+                    </div>
+                </div>
+            </article>
+    `
+        })
+        let articles = document.createElement("div");
+        articles.classList.add("vids");
+        articles.innerHTML = html;
+        list.append(articles);
+    })
