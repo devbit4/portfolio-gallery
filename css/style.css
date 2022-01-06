@@ -481,12 +481,12 @@ fieldset {
     justify-content: space-around;
     margin-bottom: 40px; }
     .youtube .intro .tabs li {
-      font: bold 18px/1 "Times New Roman";
+      font: bold 18px/1 'Times New Roman';
       color: #2f4858;
       cursor: pointer;
       position: relative; }
       .youtube .intro .tabs li::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -60%;
         left: -3%;
@@ -514,7 +514,7 @@ fieldset {
         height: 280px;
         background: #fff; }
       .youtube .intro .container .context p {
-        font: 300 16px/1.2 "Roboto";
+        font: 300 16px/1.2 'Roboto';
         text-align: center;
         width: 100%;
         background: #2f4858;
@@ -584,12 +584,60 @@ fieldset {
             bottom: 0;
             right: 0;
             font: 300 12px/1 'Roboto'; }
+    .youtube .videos .pop {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      padding: 5vw;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .youtube .videos .pop .btnClose {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        color: #fff;
+        cursor: pointer; }
 
 @keyframes fade {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+@media screen and (max-width: 1000px) {
+  .youtube .videos {
+    flex-direction: column; }
+    .youtube .videos .txt {
+      width: 100%;
+      border-right: none;
+      margin-bottom: 40px; }
+    .youtube .videos .vids {
+      width: 100%; } }
+@media screen and (max-width: 770px) {
+  .youtube .intro .container .context p {
+    padding: 20px 10px; }
+  .youtube .videos {
+    flex-direction: column; }
+    .youtube .videos .txt {
+      width: 100%;
+      border-right: none;
+      margin-bottom: 40px;
+      margin-top: 80px; }
+    .youtube .videos .vids {
+      width: 100%;
+      flex-wrap: wrap; }
+      .youtube .videos .vids article {
+        width: 49%; } }
+@media screen and (max-width: 500px) {
+  .youtube .videos .txt {
+    margin-top: 100px; }
+  .youtube .videos .vids article {
+    width: 100%; } }
 .collection .inner {
   animation: fade 1s ease-in-out; }
   .collection .inner > p {
@@ -947,44 +995,35 @@ fieldset {
     height: 350px;
     filter: grayscale(0.2);
     background: #000; }
-  .contact .inner::after {
-    content: '';
-    display: block;
-    clear: both; }
-  .contact .inner .traffic {
-    float: left;
-    margin-top: 20px; }
-    .contact .inner .traffic li {
-      float: left;
-      margin-right: 10px; }
-      .contact .inner .traffic li a {
-        display: block;
-        width: 200px;
-        height: 40px;
+  .contact .inner .map-info {
+    display: flex;
+    justify-content: space-between; }
+    .contact .inner .map-info .traffic {
+      display: flex;
+      margin-top: 20px; }
+      .contact .inner .map-info .traffic li {
+        width: 150px;
+        padding: 10px 20px;
         background: #e2e2d3;
-        font: bold 12px/40px 'Roboto';
-        color: #000;
-        text-align: center; }
-      .contact .inner .traffic li.on a {
-        background: #2f4858;
-        color: #fff; }
-  .contact .inner .branch {
-    float: right;
-    margin-top: 20px; }
-    .contact .inner .branch li {
-      float: left;
-      margin-left: 10px; }
-      .contact .inner .branch li a {
-        display: block;
-        width: 200px;
-        height: 40px;
+        margin-right: 10px; }
+        .contact .inner .map-info .traffic li.on {
+          background: #2f4858; }
+        .contact .inner .map-info .traffic li a {
+          font: bold 14px/1 'Roboto';
+          color: #fff; }
+    .contact .inner .map-info .branch {
+      display: flex;
+      margin-top: 20px; }
+      .contact .inner .map-info .branch li {
+        width: 120px;
+        padding: 10px 20px;
         background: #e2e2d3;
-        font: bold 12px/40px 'Roboto';
-        color: #000;
-        text-align: center; }
-      .contact .inner .branch li.on a {
-        background: #2f4858;
-        color: #fff; }
+        margin-right: 10px; }
+        .contact .inner .map-info .branch li.on {
+          background: #2f4858; }
+        .contact .inner .map-info .branch li a {
+          font: bold 14px/1 'Roboto';
+          color: #fff; }
 
 @media screen and (max-width: 1179px) {
   .contact .inner .contactUs {
@@ -995,6 +1034,19 @@ fieldset {
       margin-bottom: 20px; }
     .contact .inner .contactUs #contact-form {
       width: 100%; } }
+@media screen and (max-width: 770px) {
+  .contact .inner .map-info {
+    flex-direction: column; }
+    .contact .inner .map-info .traffic {
+      width: 100%; }
+      .contact .inner .map-info .traffic li {
+        width: 50%;
+        margin-right: 0px; }
+    .contact .inner .map-info .branch {
+      width: 100%; }
+      .contact .inner .map-info .branch li {
+        width: 50%;
+        margin-right: 0px; } }
 .join {
   animation: fade 1s ease-in-out; }
   .join h1 {

@@ -28,6 +28,7 @@ const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&ke
 
 const list = document.querySelector(".videos");
 
+
 fetch(url)
     .then(data => {
         return data.json()
@@ -54,8 +55,9 @@ fetch(url)
                     <div class="pic">
                         <a href="${video.snippet.resourceId.videoId}" class="link">
                             <img src="${video.snippet.thumbnails.medium.url}">
-                        </a>
-                        <i class="far fa-play-circle"></i>
+                            <i class="far fa-play-circle"></i>
+                            </a>
+
                     </div>
                     <div class="text">
                         <h2>${title}</h2>
@@ -70,4 +72,37 @@ fetch(url)
         articles.classList.add("vids");
         articles.innerHTML = html;
         list.append(articles);
+
     })
+
+
+
+// 유튜브 불러오기
+list.addEventListener("click", e => {
+    e.preventDefault();
+
+    if (e.target.nodeName !== "IMG" && e.target.nodeName !== "I") return;
+
+
+    const id = e.target.closest("a").getAttribute("href");
+    let pop = document.createElement("figure");
+    pop.classList.add("pop");
+    pop.innerHTML = `
+              <iframe src="https://www.youtube.com/embed/${id}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+              <span class="btnClose">close</span>
+        `;
+
+    list.append(pop);
+});
+
+list.addEventListener("click", e => {
+    const pop = list.querySelector("figure");
+
+    if (pop != null) {
+        const close = pop.querySelector("span");
+
+        if (e.target == close) {
+            e.target.closest("figure").remove();
+        }
+    }
+});
