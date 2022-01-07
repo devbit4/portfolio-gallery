@@ -39,6 +39,7 @@
                border: 1px solid #e2e2d3;
                border-radius: 4px;
                overflow: hidden;
+               transition: all 0.3s;
                    >img{ width:100%; filter:grayscale(100%);  }
                 .text{
 
@@ -67,6 +68,9 @@
 
 
                 &:hover >img{ filter:grayscale(0%); }
+                &:hover{
+                   transform: translateY(-20px);
+                }
              }
           }
        }

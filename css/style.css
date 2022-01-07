@@ -492,7 +492,7 @@ fieldset {
         left: -3%;
         width: 0%;
         height: 3px;
-        background: #e2e2d3;
+        background: #2f4858;
         border-radius: 30px;
         transition: width 0.8s ease; }
       .youtube .intro .tabs li.active::after {
@@ -509,10 +509,15 @@ fieldset {
       .youtube .intro .container .context.active {
         display: block;
         animation: fade 1s ease; }
-      .youtube .intro .container .context img {
+      .youtube .intro .container .context .boxPic {
         width: 100%;
         height: 280px;
+        border-top: 2px dashed #e2e2d3;
         background: #fff; }
+        .youtube .intro .container .context .boxPic img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
       .youtube .intro .container .context p {
         font: 300 16px/1.2 'Roboto';
         text-align: center;
@@ -677,7 +682,8 @@ fieldset {
         box-sizing: border-box;
         border: 1px solid #e2e2d3;
         border-radius: 4px;
-        overflow: hidden; }
+        overflow: hidden;
+        transition: all 0.3s; }
         #gallery #wrap #list li > div > img {
           width: 100%;
           filter: grayscale(100%); }
@@ -702,6 +708,8 @@ fieldset {
           border-bottom: 1px solid #2f4858; }
         #gallery #wrap #list li > div:hover > img {
           filter: grayscale(0%); }
+        #gallery #wrap #list li > div:hover {
+          transform: translateY(-20px); }
 
 @media screen and (max-width: 999px) {
   #gallery #wrap #list li {
@@ -1412,12 +1420,37 @@ body {
         width: 100%;
         border-bottom: 8px solid #2f4858;
         padding: 0 10px; }
-        #programs .displays .display .inner img {
+        #programs .displays .display .inner:hover .pic .txt {
+          opacity: 1;
+          bottom: 0; }
+        #programs .displays .display .inner .pic {
           width: 100%;
           height: 200px;
-          object-fit: cover;
           margin-bottom: 40px;
-          transition: all 0.3s ease; }
+          position: relative;
+          overflow: hidden; }
+          #programs .displays .display .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease; }
+          #programs .displays .display .inner .pic .txt {
+            position: absolute;
+            width: 100%;
+            height: 80px;
+            bottom: -80px;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            color: #fff;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px; }
+            #programs .displays .display .inner .pic .txt span {
+              margin-bottom: 5px;
+              color: #fff;
+              font: 14px/1 'Roboto'; }
         #programs .displays .display .inner h2 {
           font: 18px/1 'Roboto';
           color: #a6a695;
