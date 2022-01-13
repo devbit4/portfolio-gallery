@@ -1,11 +1,12 @@
-// programs
+// programs, collections
 const programs = document.querySelector("#programs");
 const displays = document.querySelector(".displays");
-
-const base = -200;
+const collection = document.querySelector("#collection");
+const base = -300;
 
 window.addEventListener("scroll", e => {
     scrollMotion(programs, displays, base);
+    scrollMotion(collection, collection, base);
 });
 
 function scrollMotion(section, target, base) {

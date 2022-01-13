@@ -397,10 +397,10 @@ fieldset {
     transition: 1s; }
     .about .inner .team .member:nth-child(odd) {
       opacity: 0;
-      transform: translateX(-200px); }
+      transform: translateX(-130px); }
     .about .inner .team .member:nth-child(even) {
       opacity: 0;
-      transform: translateX(200px); }
+      transform: translateX(130px); }
     .about .inner .team .member .text {
       width: 60%;
       padding: 20px; }
@@ -506,7 +506,7 @@ fieldset {
     margin-bottom: 40px; }
     .youtube .intro .tabs li {
       font: bold 18px/1 'Times New Roman';
-      color: #2f4858;
+      color: #ddd;
       cursor: pointer;
       position: relative; }
       .youtube .intro .tabs li::after {
@@ -519,6 +519,8 @@ fieldset {
         background: #2f4858;
         border-radius: 30px;
         transition: width 0.8s ease; }
+      .youtube .intro .tabs li.active {
+        color: #2f4858; }
       .youtube .intro .tabs li.active::after {
         width: 104%; }
   .youtube .intro .container {
@@ -729,7 +731,7 @@ fieldset {
           color: #555;
           font: bold 10px/1 'Times New Roman';
           letter-spacing: 5px;
-          border-bottom: 1px solid #2f4858; }
+          border-bottom: 2px solid #2f4858; }
         #gallery #wrap #list li > div:hover > img {
           filter: grayscale(0%); }
         #gallery #wrap #list li > div:hover {
@@ -1349,27 +1351,29 @@ body {
     #home .info .inner h2 {
       font: bold 22px/1 'Roboto';
       color: #e2e2d3; }
-    #home .info .inner .notice .alarm {
-      font: 16px/1 'Roboto';
-      color: #777; }
-    #home .info .inner .notice .more {
-      font: bold 16px/1 'Roboto';
-      margin-left: 40px;
-      position: relative; }
-      #home .info .inner .notice .more::before {
-        content: '';
-        display: block;
-        width: 20px;
-        border-bottom: 2px solid #e2e2d3;
-        position: absolute;
-        top: 8px;
-        left: -30px; }
-      #home .info .inner .notice .more a {
-        transition: all 0.3s;
-        display: inline-block;
-        color: #e2e2d3; }
-        #home .info .inner .notice .more a:hover {
-          transform: translateX(10px); }
+    #home .info .inner .notice {
+      display: flex; }
+      #home .info .inner .notice .alarm {
+        font: 16px/1 'Roboto';
+        color: #777; }
+      #home .info .inner .notice .more {
+        font: bold 16px/1 'Roboto';
+        margin-left: 40px;
+        position: relative; }
+        #home .info .inner .notice .more::before {
+          content: '';
+          display: block;
+          width: 20px;
+          border-bottom: 2px solid #e2e2d3;
+          position: absolute;
+          top: 8px;
+          left: -30px; }
+        #home .info .inner .notice .more a {
+          transition: all 0.3s;
+          display: inline-block;
+          color: #e2e2d3; }
+          #home .info .inner .notice .more a:hover {
+            transform: translateX(10px); }
 
 #about {
   padding: 4vh 12vw 8vh 12vw;
@@ -1558,6 +1562,20 @@ body {
               transform: translateX(10px); }
   #events .reverse {
     flex-direction: row-reverse; }
+    #events .reverse .event-pic .img {
+      position: relative; }
+      #events .reverse .event-pic .img span {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: inline-block;
+        padding: 5px 30px;
+        background: transparent;
+        border-radius: 20px;
+        font: bold 12px/1 'Roboto';
+        color: #e2e2d3;
+        border: 2px solid #e2e2d3;
+        cursor: default; }
 
 #collection {
   padding: 8vh 12vw;
@@ -1566,9 +1584,15 @@ body {
     font: bold 48px/1 'Times New Roman';
     margin-bottom: 60px;
     color: #e2e2d3; }
+  #collection.on .collection-intro, #collection.on .collection-gallery {
+    opacity: 1;
+    transform: translateX(0); }
   #collection .collection-intro {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transform: translateX(-130px);
+    opacity: 0;
+    transition: all 1s; }
     #collection .collection-intro .colection-pics {
       flex-basis: 60%;
       display: flex; }
@@ -1631,34 +1655,38 @@ body {
           color: #e2e2d3; }
           #collection .collection-intro .collection-description span a:hover {
             transform: translateX(10px); }
-  #collection .collection-gallery h2 {
-    font: 24px 'Roboto';
-    margin: 40px 0;
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #9e9e9e; }
-  #collection .collection-gallery p {
-    font: 16px/1.2 'Roboto';
-    margin-bottom: 40px;
-    color: #9e9e9e; }
-  #collection .collection-gallery span {
-    font: bold 16px/1 'Roboto';
-    margin-left: 30px;
-    position: relative; }
-    #collection .collection-gallery span::before {
-      content: '';
-      display: block;
-      width: 20px;
-      border-bottom: 2px solid #e2e2d3;
-      position: absolute;
-      top: 8px;
-      left: -30px; }
-    #collection .collection-gallery span a {
-      display: inline-block;
-      transition: all 0.3s;
-      color: #e2e2d3; }
-      #collection .collection-gallery span a:hover {
-        transform: translateX(10px); }
+  #collection .collection-gallery {
+    opacity: 0;
+    transform: translateX(130px);
+    transition: all 1s; }
+    #collection .collection-gallery h2 {
+      font: 24px 'Roboto';
+      margin: 40px 0;
+      color: #fff;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #9e9e9e; }
+    #collection .collection-gallery p {
+      font: 16px/1.2 'Roboto';
+      margin-bottom: 40px;
+      color: #9e9e9e; }
+    #collection .collection-gallery span {
+      font: bold 16px/1 'Roboto';
+      margin-left: 30px;
+      position: relative; }
+      #collection .collection-gallery span::before {
+        content: '';
+        display: block;
+        width: 20px;
+        border-bottom: 2px solid #e2e2d3;
+        position: absolute;
+        top: 8px;
+        left: -30px; }
+      #collection .collection-gallery span a {
+        display: inline-block;
+        transition: all 0.3s;
+        color: #e2e2d3; }
+        #collection .collection-gallery span a:hover {
+          transform: translateX(10px); }
 
 #testimonials {
   padding: 8vh 12vw;

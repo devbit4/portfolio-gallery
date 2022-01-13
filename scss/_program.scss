@@ -7,7 +7,7 @@
 			margin-bottom: 40px;
 			li {
 				font: bold 18px/1 'Times New Roman';
-				color: #2f4858;
+				color: #ddd;
 				cursor: pointer;
 				position: relative;
 				&::after {
@@ -20,6 +20,9 @@
 					background: #2f4858;
 					border-radius: 30px;
 					transition: width 0.8s ease;
+				}
+				&.active{
+					color: #2f4858;
 				}
 				&.active::after {
 					width: 104%;

@@ -17,7 +17,6 @@ tabs.forEach((tab, index) => {
 
 })
 
-tabs[0].click();
 
 // youtube
 
@@ -95,6 +94,7 @@ list.addEventListener("click", e => {
     list.append(pop);
 });
 
+// close 버튼
 list.addEventListener("click", e => {
     const pop = list.querySelector("figure");
 

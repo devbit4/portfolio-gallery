@@ -152,6 +152,7 @@ body {
 				color: #e2e2d3;
 			}
 			.notice {
+				display:flex;
 				.alarm {
 					font: 16px/1 'Roboto';
 					color: #777;
@@ -423,6 +424,24 @@ body {
 	}
 	.reverse {
 		flex-direction: row-reverse;
+		.event-pic{
+			.img{
+				position: relative;
+				span{position: absolute;
+					top: 20px;
+					right: 20px;
+					display: inline-block;
+					padding: 5px 30px;
+					background: transparent;
+					border-radius: 20px;
+					font: bold 12px/1 'Roboto';
+					color: #e2e2d3;
+					border: 2px solid #e2e2d3;
+					cursor: default;
+
+				}
+			}
+		}
 	}
 }
 
@@ -435,9 +454,18 @@ body {
 		margin-bottom: 60px;
 		color: #e2e2d3;
 	}
+	&.on {
+		.collection-intro,.collection-gallery{
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
 	.collection-intro {
 		display: flex;
 		justify-content: space-between;
+		transform: translateX(-130px);
+		opacity: 0;
+		transition: all 1s;
 		.colection-pics {
 			flex-basis: 60%;
 			display: flex;
@@ -518,6 +546,9 @@ body {
 		}
 	}
 	.collection-gallery {
+		opacity: 0;
+		transform: translateX(130px);
+		transition: all 1s;
 		h2 {
 			font: 24px 'Roboto';
 			margin: 40px 0;

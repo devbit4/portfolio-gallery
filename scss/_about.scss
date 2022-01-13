@@ -220,11 +220,11 @@
 
 				&:nth-child(odd){
 					opacity: 0;
-					transform: translateX(-200px);
+					transform: translateX(-130px);
 				}
 				&:nth-child(even){
 					opacity: 0;
-					transform: translateX(200px);
+					transform: translateX(130px);
 				}
 				.text {
 					width: 60%;
