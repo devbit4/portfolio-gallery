@@ -4,7 +4,7 @@ const t_off = document.querySelectorAll(".traffic li")[1];
 const branch_btns = document.querySelectorAll(".branch li");
 
 var options = {
-    center: new kakao.maps.LatLng(37.5069502, 126.7563291),
+    center: new kakao.maps.LatLng(37.509502, 126.7563291),
     level: 3
 };
 
@@ -13,18 +13,18 @@ var map = new kakao.maps.Map(container, options);
 var markerOptions = [
     {
         title: 'branch1',
-        latlng: new kakao.maps.LatLng(37.5069502, 126.7563291),
+        latlng: new kakao.maps.LatLng(37.509502, 126.7563291),
         imgSrc: 'img/marker1.png',
-        imgSize: new kakao.maps.Size(232, 99),
-        imgPos: { offset: new kakao.maps.Point(116, 99) },
+        imgSize: new kakao.maps.Size(50, 70),
+        imgPos: { offset: new kakao.maps.Point(25, 70) },
         button: branch_btns[0]
     },
     {
         title: 'branch2',
         latlng: new kakao.maps.LatLng(33.450936, 126.569477),
-        imgSrc: 'img/marker2.png',
-        imgSize: new kakao.maps.Size(232, 99),
-        imgPos: { offset: new kakao.maps.Point(116, 99) },
+        imgSrc: 'img/marker1.png',
+        imgSize: new kakao.maps.Size(50, 70),
+        imgPos: { offset: new kakao.maps.Point(25, 70) },
         button: branch_btns[1]
     }
 ];

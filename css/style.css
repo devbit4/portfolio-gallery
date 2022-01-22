@@ -27,7 +27,7 @@ fieldset {
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(-10px); }
+    transform: translateY(50px); }
   to {
     opacity: 1;
     transform: translateY(0px); } }
@@ -555,11 +555,20 @@ fieldset {
     width: 100%;
     display: flex;
     justify-content: space-between; }
+    .youtube .videos.on .txt {
+      opacity: 1;
+      transform: translateX(0px); }
+    .youtube .videos.on .vids {
+      opacity: 1;
+      transform: translateX(0px); }
     .youtube .videos .txt {
       width: 24%;
       border-right: 2px solid #e2e2d3;
       text-align: left;
-      padding-right: 20px; }
+      padding-right: 20px;
+      opacity: 0;
+      transform: translateX(-130px);
+      transition: all 1s; }
       .youtube .videos .txt h3 {
         font: 16px/1 'Roboto';
         margin-bottom: 20px; }
@@ -574,7 +583,10 @@ fieldset {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      text-align: left; }
+      text-align: left;
+      opacity: 0;
+      transform: translateX(130px);
+      transition: all 1s; }
       .youtube .videos .vids article {
         width: 32%;
         height: 340px;
@@ -635,11 +647,20 @@ fieldset {
         color: #fff;
         cursor: pointer; }
 
-@keyframes fade {
+@keyframes slide {
   from {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateX(-50px); }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes disappear {
+  from {
+    opacity: 1;
+    transform: translateX(0px); }
+  to {
+    opacity: 0;
+    transform: translateX(-50px); } }
 @media screen and (max-width: 1000px) {
   .youtube .videos {
     flex-direction: column; }
@@ -691,7 +712,7 @@ fieldset {
       opacity: 0; }
   #gallery #wrap #list {
     width: 100%;
-    transform: translateY(-100px);
+    transform: translateY(50px);
     opacity: 0;
     transition: 1s;
     display: flex; }
@@ -1081,110 +1102,109 @@ fieldset {
       .contact .inner .map-info .branch li {
         width: 50%;
         margin-right: 0px; } }
-.join {
-  animation: fade 1s ease-in-out; }
-  .join h1 {
+.join .inner {
+  animation: fade 1s ease-in-out;
+  text-align: left; }
+  .join .inner h1 {
     text-align: center;
     font-family: 'Times New Roman'; }
-  .join .inner {
-    text-align: left; }
-    .join .inner .pricacy {
-      border-top: 2px solid #000;
-      margin-bottom: 20px;
-      padding: 20px;
-      display: flex; }
-      .join .inner .pricacy h2 {
-        width: 25%;
-        font-family: 'Times New Roman'; }
-      .join .inner .pricacy .text {
-        width: 75%; }
-        .join .inner .pricacy .text textarea {
-          width: 100%;
-          background: #efefef;
-          padding: 10px;
-          margin-bottom: 10px;
-          font: 12px/1.4 'Roboto';
-          color: #777; }
-        .join .inner .pricacy .text .agreement {
-          font: 12px/1 'Roboto';
-          text-align: right; }
-          .join .inner .pricacy .text .agreement input[type=checkbox] {
-            margin-left: 10px;
-            cursor: pointer; }
-    .join .inner .user {
-      border-top: 2px solid #000;
-      border-bottom: 2px solid #000;
-      margin-bottom: 40px;
-      padding: 20px;
-      display: flex; }
-      .join .inner .user h2 {
-        width: 25%; }
-      .join .inner .user table {
-        width: 75%; }
-        .join .inner .user table th {
-          font: 14px/1 'Roboto';
-          width: 20%;
-          text-align: left;
-          color: #000;
-          background: #E2E2D3;
-          border-right: 1px solid #bbb;
-          border-bottom: 1px solid #bbb;
-          padding: 20px; }
-          .join .inner .user table th:last-child {
-            border-right: none;
-            text-align: center;
-            background-color: #fff; }
-        .join .inner .user table td {
-          border-bottom: 1px solid #bbb;
-          padding: 20px; }
-        .join .inner .user table th.submit {
-          text-align: right; }
-        .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
-          width: 50%;
-          height: 30px;
-          border: 1px solid #bbb;
-          padding-left: 20px;
-          font: 14px/1 'Roboto'; }
-        .join .inner .user table input[type=checkbox], .join .inner .user table input[type=radio] {
-          margin-right: 10px;
-          cursor: pointer;
-          font: 14px/1 'Roboto'; }
-        .join .inner .user table label {
-          margin-right: 30px;
-          font: 14px/1 'Roboto'; }
-        .join .inner .user table select {
-          width: 40%;
-          height: 30px;
-          border: 1px solid #bbb;
-          padding-left: 20px;
-          cursor: pointer;
-          font: 14px/1 'Roboto'; }
-        .join .inner .user table textarea#comments {
-          width: 80%;
-          height: 100px;
-          border: 1px solid #bbb;
-          padding: 20px;
-          resize: none;
-          font-family: 'Roboto';
-          font: 14px/1 'Roboto'; }
-        .join .inner .user table .pathTxt, .join .inner .user table .genderTxt {
-          font-size: 12px;
-          margin-top: 10px;
-          display: none; }
-        .join .inner .user table .check td {
-          display: flex;
-          flex-wrap: wrap; }
-    .join .inner .btns {
-      text-align: center; }
-      .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
-        width: 150px;
-        height: 40px;
-        border: none;
-        background-color: #2F4858;
-        font: bold 14px/1 'Roboto';
-        color: #fff;
-        margin: 0 10px;
-        cursor: pointer; }
+  .join .inner .pricacy {
+    border-top: 2px solid #000;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex; }
+    .join .inner .pricacy h2 {
+      width: 25%;
+      font-family: 'Times New Roman'; }
+    .join .inner .pricacy .text {
+      width: 75%; }
+      .join .inner .pricacy .text textarea {
+        width: 100%;
+        background: #efefef;
+        padding: 10px;
+        margin-bottom: 10px;
+        font: 12px/1.4 'Roboto';
+        color: #777; }
+      .join .inner .pricacy .text .agreement {
+        font: 12px/1 'Roboto';
+        text-align: right; }
+        .join .inner .pricacy .text .agreement input[type=checkbox] {
+          margin-left: 10px;
+          cursor: pointer; }
+  .join .inner .user {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex; }
+    .join .inner .user h2 {
+      width: 25%; }
+    .join .inner .user table {
+      width: 75%; }
+      .join .inner .user table th {
+        font: 14px/1 'Roboto';
+        width: 20%;
+        text-align: left;
+        color: #000;
+        background: #E2E2D3;
+        border-right: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+        .join .inner .user table th:last-child {
+          border-right: none;
+          text-align: center;
+          background-color: #fff; }
+      .join .inner .user table td {
+        border-bottom: 1px solid #bbb;
+        padding: 20px; }
+      .join .inner .user table th.submit {
+        text-align: right; }
+      .join .inner .user table input[type=text], .join .inner .user table input[type=password] {
+        width: 50%;
+        height: 30px;
+        border: 1px solid #bbb;
+        padding-left: 20px;
+        font: 14px/1 'Roboto'; }
+      .join .inner .user table input[type=checkbox], .join .inner .user table input[type=radio] {
+        margin-right: 10px;
+        cursor: pointer;
+        font: 14px/1 'Roboto'; }
+      .join .inner .user table label {
+        margin-right: 30px;
+        font: 14px/1 'Roboto'; }
+      .join .inner .user table select {
+        width: 40%;
+        height: 30px;
+        border: 1px solid #bbb;
+        padding-left: 20px;
+        cursor: pointer;
+        font: 14px/1 'Roboto'; }
+      .join .inner .user table textarea#comments {
+        width: 80%;
+        height: 100px;
+        border: 1px solid #bbb;
+        padding: 20px;
+        resize: none;
+        font-family: 'Roboto';
+        font: 14px/1 'Roboto'; }
+      .join .inner .user table .pathTxt, .join .inner .user table .genderTxt {
+        font-size: 12px;
+        margin-top: 10px;
+        display: none; }
+      .join .inner .user table .check td {
+        display: flex;
+        flex-wrap: wrap; }
+  .join .inner .btns {
+    text-align: center; }
+    .join .inner .btns input[type=reset], .join .inner .btns input[type=submit] {
+      width: 150px;
+      height: 40px;
+      border: none;
+      background-color: #2F4858;
+      font: bold 14px/1 'Roboto';
+      color: #fff;
+      margin: 0 10px;
+      cursor: pointer; }
 
 @media screen and (max-width: 1179px) {
   .join .inner .pricacy {

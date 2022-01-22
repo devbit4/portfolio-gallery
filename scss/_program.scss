@@ -70,11 +70,25 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+
+		&.on{
+			.txt{
+				opacity: 1;
+				transform: translateX(0px);
+			}
+			.vids{
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
 		.txt {
 			width: 24%;
 			border-right: 2px solid #e2e2d3;
 			text-align: left;
 			padding-right: 20px;
+			opacity: 0;
+			transform: translateX(-130px);
+			transition: all 1s;
 			h3 {
 				font: 16px/1 'Roboto';
 				margin-bottom: 20px;
@@ -94,6 +108,9 @@
 			justify-content: space-between;
 			flex-wrap: wrap;
 			text-align: left;
+			opacity: 0;
+			transform: translateX(130px);
+			transition: all 1s;
 			article {
 				width: 32%;
 				height: 340px;
@@ -169,15 +186,27 @@
 		}
 	}
 }
-
-@keyframes fade {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
+@keyframes disappear{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
 	.youtube {
