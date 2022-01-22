@@ -668,6 +668,29 @@ body {
 	}
 }
 
+.arrow-up{
+	position:fixed;
+	/* display: block; */
+	width: 50px;
+	height: 50px;
+	bottom: 50px;
+	right: 50px;
+	font-size: 30px;
+	color: #fff;
+	background: #334754;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.3s ease;
+	pointer-events: none;
+	cursor: pointer;
+	&.visible{
+		opacity: 1;
+	pointer-events: auto;
+	}
+
+}
+
+
 // footer
 #footer {
 	background-color: #e2e2d3;
