@@ -300,6 +300,8 @@ fieldset {
         top: -40px;
         font-size: 25px;
         color: #e2e2d3; }
+        .about .aboutUs .roles .role .left i {
+          font-size: 30px; }
       .about .aboutUs .roles .role .right {
         width: 80%;
         text-align: left; }
@@ -567,7 +569,7 @@ fieldset {
       text-align: left;
       padding-right: 20px;
       opacity: 0;
-      transform: translateX(-130px);
+      transform: translateX(-100px);
       transition: all 1s; }
       .youtube .videos .txt h3 {
         font: 16px/1 'Roboto';
@@ -585,7 +587,7 @@ fieldset {
       flex-wrap: wrap;
       text-align: left;
       opacity: 0;
-      transform: translateX(130px);
+      transform: translateX(100px);
       transition: all 1s; }
       .youtube .videos .vids article {
         width: 32%;
@@ -647,20 +649,6 @@ fieldset {
         color: #fff;
         cursor: pointer; }
 
-@keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(-50px); }
-  to {
-    opacity: 1;
-    transform: translateX(0px); } }
-@keyframes disappear {
-  from {
-    opacity: 1;
-    transform: translateX(0px); }
-  to {
-    opacity: 0;
-    transform: translateX(-50px); } }
 @media screen and (max-width: 1000px) {
   .youtube .videos {
     flex-direction: column; }

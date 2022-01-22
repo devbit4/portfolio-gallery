@@ -1,3 +1,13 @@
+const toggle = document.querySelector('.toggle');
+const toggleMenu = document.querySelector(".header-menu")
+
+toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleMenu.classList.toggle("on");
+});
+
+
+
 // tab
 const tabs = document.querySelectorAll(".tabs li");
 const contexts = document.querySelectorAll(".context");

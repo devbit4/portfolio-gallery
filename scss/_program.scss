@@ -87,7 +87,7 @@
 			text-align: left;
 			padding-right: 20px;
 			opacity: 0;
-			transform: translateX(-130px);
+			transform: translateX(-100px);
 			transition: all 1s;
 			h3 {
 				font: 16px/1 'Roboto';
@@ -109,7 +109,7 @@
 			flex-wrap: wrap;
 			text-align: left;
 			opacity: 0;
-			transform: translateX(130px);
+			transform: translateX(100px);
 			transition: all 1s;
 			article {
 				width: 32%;
@@ -185,26 +185,6 @@
 			}
 		}
 	}
-}
-@keyframes slide{
-    from{
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-@keyframes disappear{
-    from{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to{
-        opacity: 0;
-        transform: translateX(-50px);
-    }
 }
 
 
