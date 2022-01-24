@@ -97,7 +97,8 @@ fieldset {
     .content .inner h1 {
       font-size: 38px;
       color: #000;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      font-family: 'Times New Roman'; }
       .content .inner h1::after {
         content: "";
         display: block;
