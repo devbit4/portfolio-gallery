@@ -781,6 +781,7 @@ body {
 	background: #000;
 	z-index: 100;
 	opacity: 0.9;
+
 	.inner{
 		width: 260px;
 		height: 340px;
@@ -789,6 +790,7 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		border-radius: 4px;
 		.content{
 			background: #e2e2d3;
 			width: 100%;
@@ -827,6 +829,14 @@ body {
 				color: #ddd;
 			}
 
+		}
+		i{
+			position: absolute;
+			top:-20px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #2f4858;
+			font-size: 50px;
 		}
 	}
 
