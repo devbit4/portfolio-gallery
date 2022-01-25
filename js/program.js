@@ -98,7 +98,7 @@ list.addEventListener("click", e => {
     pop.classList.add("pop");
     pop.innerHTML = `
               <iframe src="https://www.youtube.com/embed/${id}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-              <span class="btnClose">close</span>
+              <span class="btnClose">CLOSE</span>
         `;
 
     list.append(pop);

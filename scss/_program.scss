@@ -170,18 +170,19 @@
 			left: 0;
 			background: rgba(0, 0, 0, 0.8);
 			overflow: hidden;
-			padding: 5vw;
+			padding: 10vw;
 			box-sizing: border-box;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-
+			z-index: 500;
 			.btnClose {
 				position: absolute;
 				top: 50px;
 				right: 50px;
 				color: #fff;
 				cursor: pointer;
+				font: bold 16px/1 'Roboto';
 			}
 		}
 	}
