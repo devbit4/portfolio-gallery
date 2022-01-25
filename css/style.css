@@ -1837,6 +1837,46 @@ body {
     text-align: center;
     line-height: 40px; }
 
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  opacity: 0.9; }
+  #popup .inner {
+    width: 260px;
+    height: 340px;
+    background: #e2e2d3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #popup .inner .content {
+      background: #fff;
+      width: 100%;
+      height: 300px;
+      padding: 80px 40px 40px 40px; }
+      #popup .inner .content h2 {
+        font: bold 18px/1 'Times New Roman';
+        margin-bottom: 20px; }
+      #popup .inner .content p {
+        font: 300 16px/1 'Times New Roman'; }
+    #popup .inner .close {
+      background: #999;
+      width: 100%;
+      height: 40px;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #popup .inner .close label {
+        font: 300 14px/1 'Roboto'; }
+      #popup .inner .close a {
+        font: 300 14px/1 'Roboto'; }
+
 @media screen and (max-width: 1179px) {
   #header {
     background: #fff;
