@@ -14,7 +14,7 @@ var markerOptions = [
     {
         title: 'branch1',
         latlng: new kakao.maps.LatLng(37.509502, 126.7563291),
-        imgSrc: 'img/marker1.png',
+        imgSrc: 'img/contact/marker1.png',
         imgSize: new kakao.maps.Size(50, 70),
         imgPos: { offset: new kakao.maps.Point(25, 70) },
         button: branch_btns[0]
@@ -22,7 +22,7 @@ var markerOptions = [
     {
         title: 'branch2',
         latlng: new kakao.maps.LatLng(33.450936, 126.569477),
-        imgSrc: 'img/marker1.png',
+        imgSrc: 'img/contact/marker1.png',
         imgSize: new kakao.maps.Size(50, 70),
         imgPos: { offset: new kakao.maps.Point(25, 70) },
         button: branch_btns[1]
@@ -57,17 +57,17 @@ window.onresize = () => {
     map.setCenter(markerOptions[active_index].latlng);
 }
 
-//컨트롤 보이기
+//controller
 var mapTypeControl = new kakao.maps.MapTypeControl();
 map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 
-//지도 이동 함수 정의
+//map moving
 function moveTo(target) {
     var moveLatLon = target;
     map.setCenter(moveLatLon);
 }
 
-//교통정보 보기/끄기 버튼 클릭시
+//traffic info
 t_on.addEventListener("click", e => {
     e.preventDefault();
     if (t_on.classList.contains("on")) return;

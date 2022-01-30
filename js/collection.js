@@ -70,7 +70,7 @@ function delayLoading() {
 
         let thumb = el.closest(".item").querySelector(".thumb");
         thumb.onerror = e => {
-            e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("src", "img/k1.jpg");
+            e.currentTarget.closest(".item").querySelector(".thumb").setAttribute("src", "img/collection/ins.jpg");
         }
 
     }
