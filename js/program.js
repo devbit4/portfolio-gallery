@@ -37,6 +37,7 @@ const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&ke
 
 const list = document.querySelector(".videos");
 
+// 유튜브 불러오기
 
 fetch(url)
     .then(data => {
@@ -86,7 +87,7 @@ fetch(url)
 
 
 
-// 유튜브 불러오기
+// 유튜브 팝업창
 list.addEventListener("click", e => {
     e.preventDefault();
 
@@ -117,7 +118,7 @@ list.addEventListener("click", e => {
     }
 });
 
-// 유튜브 스크롤 모션
+// 스크롤 모션
 const videos = document.querySelector(".videos");
 const base = -300;
 

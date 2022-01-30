@@ -14,6 +14,12 @@
 
 ### 사용된 주요색상(Color) 및 폰트(Font):
 
+- #e2e2d3
+- #2f4858
+
+- Roboto
+- Times New Roman
+
 ### 사용된 라이브러리(Library):
 
 - fontawesome
@@ -100,3 +106,43 @@
   - \_join.scss
   - main.js
   - join.js
+
+### 주요 기능(main function & prototype method):
+
+- main.js
+
+  - navbar toggle : navbar 토글 기능
+
+- home.js
+
+  - scrollMotion() : 스크롤 애니메이션 method
+  - swiper : 슬라이드 기능
+  - arrow-up : 상단 위로 이동하는 기능
+
+- cookie_popup.js
+
+  - setCookie() : 쿠키 저장 method - 하루 동안 창 보지 않기
+
+- about.js
+
+  - scrollMotion() : 스크롤 애니메이션 method
+
+- program.js
+
+  - tab 기능
+  - fetch를 통해 youtube 불러오기
+  - 유튜브 팝업 창 띄우기 / close 버튼
+  - scrollMotion() : 스크롤 애니메이션 method
+
+- collections.js
+
+  - callData() : fetch를 통해 flickr 불러오기
+  - createList() : 리스트 만들기
+  - delayLoading() : 로딩 기다리기
+  - isLayout() : 아이소톱(벽돌 정렬)
+
+- contact.js
+  - youtube api 활용 지도 불러오기
+  - 리사이즈 할 때 중심이동
+  - 교통정보 on/off
+  

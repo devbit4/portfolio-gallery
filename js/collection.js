@@ -27,13 +27,13 @@ function callData(url) {
         })
         .then(json => {
             let items = json.photos.photo;
-            creatList(items);
+            createList(items);
             delayLoading();
 
         });
 }
 
-function creatList(items) {
+function createList(items) {
     let htmls = "";
     items.forEach(data => {
         console.log(data);

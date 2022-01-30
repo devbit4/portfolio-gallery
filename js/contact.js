@@ -51,6 +51,7 @@ for (let i = 0; i < markerOptions.length; i++) {
 }
 
 
+// 리사이즈할 때
 window.onresize = () => {
     let active_btn = document.querySelector(".branch li.on");
     let active_index = active_btn.getAttribute("data-index");
