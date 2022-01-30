@@ -144,6 +144,7 @@
 
     }
 }
+/* tablet ----------------------------------------------------- */
 
 @media screen and (max-width: $tablet) {
     .join{
@@ -226,6 +227,8 @@
     }
 
 }
+
+/* mobile ----------------------------------------------------- */
 @media screen and (max-width: $mobile) {
     .join{
         .inner{

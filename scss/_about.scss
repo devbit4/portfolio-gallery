@@ -309,7 +309,7 @@
 	}
 }
 /* tablet ----------------------------------------------------- */
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: $tablet) {
 	.about {
 		.aboutUs {
 			.roles {
@@ -348,7 +348,7 @@
 }
 /* mobile ----------------------------------------------------- */
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: $mobile) {
 	.about {
 		.aboutUs {
 			padding: 0;

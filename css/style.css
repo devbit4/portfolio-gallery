@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -170,6 +169,7 @@ fieldset {
     text-align: center;
     line-height: 40px; }
 
+/* tablet ----------------------------------------------------- */
 @media screen and (max-width: 1179px) {
   #header_sub {
     background: #fff;
@@ -215,6 +215,7 @@ fieldset {
     flex-wrap: wrap; }
     #footer_sub .wrap .footer-lower ul li {
       width: 50%; } }
+/* mobile ----------------------------------------------------- */
 @media screen and (max-width: 539px) {
   #header_sub .toggle {
     right: 10px; }
@@ -1072,6 +1073,7 @@ fieldset {
           font: bold 14px/1 'Roboto';
           color: #fff; }
 
+/* tablet ----------------------------------------------------- */
 @media screen and (max-width: 1179px) {
   .contact .inner .contactUs {
     flex-wrap: wrap; }
@@ -1081,7 +1083,8 @@ fieldset {
       margin-bottom: 20px; }
     .contact .inner .contactUs #contact-form {
       width: 100%; } }
-@media screen and (max-width: 770px) {
+/* mobile ----------------------------------------------------- */
+@media screen and (max-width: 539px) {
   .contact .inner .map-info {
     flex-direction: column; }
     .contact .inner .map-info .traffic {
@@ -1199,6 +1202,7 @@ fieldset {
       margin: 0 10px;
       cursor: pointer; }
 
+/* tablet ----------------------------------------------------- */
 @media screen and (max-width: 1179px) {
   .join .inner .pricacy {
     flex-wrap: wrap; }
@@ -1241,6 +1245,7 @@ fieldset {
         min-width: 200px; }
       .join .inner .user table textarea#comments {
         width: 80%; } }
+/* mobile ----------------------------------------------------- */
 @media screen and (max-width: 539px) {
   .join .inner .user table th {
     display: none; }

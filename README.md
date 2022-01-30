@@ -1,16 +1,32 @@
 ### Guide Book
 
-### 프로젝트 제목 : WORKSHOP WEBSITE
+### 프로젝트 제목(Title) : WORKSHOP WEBSITE
 
-### 프로젝트 소개:
+### 프로젝트 소개(Intro):
 
 공방의 교육프로그램(ex) 원데이클래스) 및 제품을 소개하는 웹앱 형태(반응형-responsive 제공)의 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
 
-### 사용된 스킬:
+### 사용된 스킬(Skill):
 
 - html
 - css(scss)
 - js
+
+### 사용된 주요색상(Color) 및 폰트(Font):
+
+### 사용된 라이브러리(Library):
+
+- fontawesome
+- swiper (home)
+- isotope (collection)
+- kakao api (contact)
+- form
+- google font
+
+### media query:
+
+- $tablet: 1179px;
+- $mobile: 539px;
 
 ### 프로젝트 구성:
 

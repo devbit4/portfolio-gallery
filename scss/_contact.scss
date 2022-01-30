@@ -151,8 +151,9 @@
 
 	}
 }
+/* tablet ----------------------------------------------------- */
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: $tablet) {
 	.contact {
 		.inner {
 			.contactUs {
@@ -172,7 +173,9 @@
 	}
 }
 
-@media screen and (max-width: 770px) {
+/* mobile ----------------------------------------------------- */
+
+@media screen and (max-width: $mobile) {
 	.contact {
 		.inner {
 			.map-info{
