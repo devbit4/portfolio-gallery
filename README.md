@@ -1,5 +1,6 @@
 ### 🗺️ Guide Book 🗺️
 ---
+![website1](https://user-images.githubusercontent.com/88700967/152277402-fb2d94bd-0855-48bf-b3c9-07b20332431d.png)
 
 ### 1. 🪵프로젝트 제목(Title) : WORKSHOP WEBSITE
 ---
