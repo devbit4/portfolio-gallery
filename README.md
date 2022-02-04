@@ -151,3 +151,12 @@
   - 리사이즈 할 때 중심이동
   - 교통정보 on/off
   
+  
+  ### 10. 어려웠던 점
+  
+  ---
+  
+  ### 11. 수정할 점
+  ---
+  
+  - 협업 시 커밋 메시지 descriptive하게 쓸 것 참고 [commit message](https://chiamakaikeanyi.dev/how-to-write-good-git-commit-messages/)
