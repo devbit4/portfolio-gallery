@@ -155,7 +155,12 @@
   ### 10. 어려웠던 점
   
   ---
-  
+  - setCookie 쿠키 저장하는 부분 toGMTString() 시간대로 바꾼 후 적용해야 제대로 작동함.
+  - sub page 중 program section 상태에 있을 때만 toggle 기능이 제대로 작동하지 않음. 추가로 해당 section에만 script를 재작성하니
+   해결되었지만 깔끔한 해결은 아님 -> 아직 미해결
+  - about 페이지 평행사변형 ui 부분 -> skewX 
+  - kakao map api를 사용하여 지도에 여러 개 마커를 표시할 때 -> 마커 배열옵션을 만들어서 표현
+   
   ### 11. 수정할 점
   ---
   
