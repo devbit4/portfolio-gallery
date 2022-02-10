@@ -8,7 +8,7 @@
 ---
 \* I participated in making this website from designing to developing.
 
-공방의 교육프로그램(ex) 원데이클래스) 및 제품을 소개하는 웹앱 형태(반응형-responsive 제공)의 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함.
+공방의 교육프로그램(ex) 원데이클래스) 및 제품을 소개하는 웹앱 형태(반응형-responsive 제공)의 사이트. 직접 코드를 작성하였으며 디자인(design)부터 초안(draft), 개발(development)까지 참여함. 구글링/강의/스터디 등을 통해 배운 코드를 바탕으로 이해/수정/적용하여 커스터마이징함.
 
 ### 3. 👷‍사용된 스킬(Skill): 
 ---
